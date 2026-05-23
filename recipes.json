@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Shirazi Salad",
+    "slug": "shirazi-salad",
+    "description": "Crisp cucumber, ripe tomato, red onion, and dried lime. A Persian classic that goes with absolutely everything.",
+    "category": "Salads · Vegetarian",
+    "prepTime": "10 min",
+    "cookTime": "None",
+    "servings": "4",
+    "difficulty": "Easy",
+    "coverImage": "",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "quick"
+    ],
+    "emoji": "🥗"
+  }
+]

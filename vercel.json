@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    { "source": "/recipes.json", "destination": "/recipes.json" },
+    { "source": "/recipes/:slug", "destination": "/recipes/:slug.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    }
+  ]
+}
