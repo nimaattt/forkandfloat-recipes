@@ -1,5 +1,19 @@
 [
   {
+    "title": "1",
+    "slug": "1",
+    "description": "1",
+    "category": "1",
+    "prepTime": "1",
+    "cookTime": "1",
+    "servings": "1",
+    "difficulty": "1",
+    "coverImage": "",
+    "tags": [],
+    "emoji": "🍽️",
+    "dietaryTags": "1"
+  },
+  {
     "title": "",
     "slug": "",
     "description": "",
