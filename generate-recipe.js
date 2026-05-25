@@ -141,7 +141,9 @@ function generateRecipe(data) {
   }
 
   existing = existing.filter(r => r.slug !== slug);
-  const entry = { title, slug, description, category, prepTime, cookTime, servings, difficulty, coverImage, tags, emoji, dietaryTags };
+  // Use the converted image URL in the index too
+  const coverImageConverted = parseCoverImage(coverImage).match(/src="([^"]+)"/)?.[1] || coverImage;
+  const entry = { title, slug, description, category, prepTime, cookTime, servings, difficulty, coverImage: coverImageConverted, tags, emoji, dietaryTags };
   existing.unshift(entry);
 
   const json = JSON.stringify(existing, null, 2);
