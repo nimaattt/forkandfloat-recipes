@@ -93,6 +93,11 @@ function generateRecipe(data) {
   const tags        = Array.isArray(data.tags) ? data.tags : (data.tags || '').split(',').map(t => t.trim()).filter(Boolean);
   const emoji       = data.emoji || '🍽️';
 
+  // Unescape \n back to real newlines (Make.com sends them escaped)
+  const unescape = s => s.replace(/\\n/g, '\n');
+  const ingredientsClean = unescape(ingredients);
+  const stepsClean = unescape(steps);
+
   const slug = data.slug || slugify(title);
 
   const templatePath = path.join(__dirname, 'template.html');
@@ -108,8 +113,8 @@ function generateRecipe(data) {
     .replace(/{{DIFFICULTY}}/g, difficulty)
     .replace(/{{RECIPE_COVER_IMAGE}}/g, coverImage)
     .replace(/{{COVER_IMAGE_HTML}}/g, parseCoverImage(coverImage))
-    .replace(/{{INGREDIENTS_HTML}}/g, parseIngredients(ingredients))
-    .replace(/{{STEPS_HTML}}/g, parseSteps(steps))
+    .replace(/{{INGREDIENTS_HTML}}/g, parseIngredients(ingredientsClean))
+    .replace(/{{STEPS_HTML}}/g, parseSteps(stepsClean))
     .replace(/{{HOW_TO_SERVE_HTML}}/g, parseHowToServe(howToServe))
     .replace(/{{CHEFS_NOTE_HTML}}/g, parseChefsNote(chefsNote));
 
