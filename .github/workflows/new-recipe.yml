@@ -1,0 +1,32 @@
+name: Generate Recipe Page
+
+on:
+  repository_dispatch:
+    types: [new-recipe]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate recipe page
+        run: |
+          node generate-recipe.js '${{ toJSON(github.event.client_payload) }}'
+
+      - name: Commit and push new recipe
+        run: |
+          git config user.email "bot@forkandfloat.com"
+          git config user.name "Fork & Float Bot"
+          git add .
+          git diff --staged --quiet || git commit -m "✨ New recipe: ${{ github.event.client_payload.title }}"
+          git push
