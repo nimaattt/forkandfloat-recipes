@@ -71,7 +71,15 @@ function parseCoverImage(url) {
   if (!url || !url.trim()) {
     return '<div class="cover-placeholder">🍽️</div>';
   }
-  return `<img class="cover-img" src="${url.trim()}" alt="Recipe cover photo">`;
+  let src = url.trim();
+  // Convert Google Drive share URL to direct image URL
+  if (src.includes('drive.google.com')) {
+    const idMatch = src.match(/id=([^&]+)/);
+    if (idMatch) {
+      src = `https://drive.google.com/uc?export=view&id=${idMatch[1]}`;
+    }
+  }
+  return `<img class="cover-img" src="${src}" alt="Recipe cover photo">`;
 }
 
 function generateRecipe(data) {
