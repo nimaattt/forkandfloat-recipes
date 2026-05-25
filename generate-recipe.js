@@ -1,19 +1,6 @@
 #!/usr/bin/env node
-/**
- * generate-recipe.js
- * 
- * Called by Make.com (or manually) with recipe data as a JSON argument.
- * Reads template.html, replaces all {{PLACEHOLDERS}}, writes to recipes/[slug].html
- * Then regenerates recipes.json for the index page.
- * 
- * Usage:
- *   node generate-recipe.js '{"title":"Shirazi Salad","slug":"shirazi-salad",...}'
- */
-
 const fs = require('fs');
 const path = require('path');
-
-// ── Helpers ──────────────────────────────────────────────────────────────────
 
 function slugify(text) {
   return text
@@ -22,12 +9,8 @@ function slugify(text) {
     .replace(/^-|-$/g, '');
 }
 
-/**
- * Parse ingredients string.
- * Ava types one ingredient per line: "Persian cucumbers [3, diced]"
- * The part in [...] becomes the amount (shown in accent colour on the right).
- */
 function parseIngredients(raw) {
+  if (!raw) return '';
   return raw
     .split('\n')
     .map(line => line.trim())
@@ -42,20 +25,8 @@ function parseIngredients(raw) {
     .join('\n        ');
 }
 
-/**
- * Parse steps string.
- * Ava types steps separated by blank lines.
- * First line of each step = the step title (becomes H3).
- * Remaining lines = the step body.
- * 
- * Example:
- *   Dice everything small
- *   Cut the cucumbers and tomatoes into very fine, even dice...
- *
- *   Make the dressing
- *   Whisk together lemon juice, olive oil...
- */
 function parseSteps(raw) {
+  if (!raw) return '';
   const blocks = raw.trim().split(/\n\s*\n/);
   return blocks
     .map(block => {
@@ -72,9 +43,6 @@ function parseSteps(raw) {
     .join('\n        ');
 }
 
-/**
- * Parse "how to serve" — plain bullet list, one item per line
- */
 function parseHowToServe(raw) {
   if (!raw || !raw.trim()) return '';
   const items = raw
@@ -90,9 +58,6 @@ function parseHowToServe(raw) {
     </div>`;
 }
 
-/**
- * Chef's note section
- */
 function parseChefsNote(raw) {
   if (!raw || !raw.trim()) return '';
   return `
@@ -102,9 +67,6 @@ function parseChefsNote(raw) {
     </div>`;
 }
 
-/**
- * Cover image HTML
- */
 function parseCoverImage(url) {
   if (!url || !url.trim()) {
     return '<div class="cover-placeholder">🍽️</div>';
@@ -112,33 +74,30 @@ function parseCoverImage(url) {
   return `<img class="cover-img" src="${url.trim()}" alt="Recipe cover photo">`;
 }
 
-// ── Main ──────────────────────────────────────────────────────────────────────
-
 function generateRecipe(data) {
-  const {
-    title,
-    description = '',
-    category = '',
-    prepTime = '',
-    cookTime = '',
-    servings = '',
-    difficulty = 'Easy',
-    ingredients = '',
-    steps = '',
-    howToServe = '',
-    chefsNote = '',
-    coverImage = '',
-    tags = [],
-    emoji = '🍽️',
-  } = data;
+  // Accept both camelCase (from generate-recipe.js CLI) and
+  // the exact field names as sent from Make.com / Google Sheets
+  const title       = data.title       || data['Recipe Name']          || '';
+  const description = data.description || data['One-line description'] || '';
+  const category    = data.category    || data['Category']             || '';
+  const prepTime    = data.prepTime    || data['Prep Time']            || '';
+  const cookTime    = data.cookTime    || data['Cook Time']            || '';
+  const servings    = data.servings    || data['Servings']             || '';
+  const difficulty  = data.difficulty  || data['Difficulty']           || 'Easy';
+  const ingredients = data.ingredients || data['Ingredients']          || '';
+  const steps       = data.steps       || data['Steps / Method']       || '';
+  const howToServe  = data.howToServe  || data['How to Serve']         || '';
+  const chefsNote   = data.chefsNote   || data["Chef's Note"]          || '';
+  const coverImage  = data.coverImage  || data['Cover Photo']          || '';
+  const dietaryTags = data.dietaryTags || data['Dietary Tags']         || '';
+  const tags        = Array.isArray(data.tags) ? data.tags : (data.tags || '').split(',').map(t => t.trim()).filter(Boolean);
+  const emoji       = data.emoji || '🍽️';
 
   const slug = data.slug || slugify(title);
 
-  // Read template
   const templatePath = path.join(__dirname, 'template.html');
   let html = fs.readFileSync(templatePath, 'utf8');
 
-  // Replace all placeholders
   html = html
     .replace(/{{RECIPE_TITLE}}/g, title)
     .replace(/{{RECIPE_DESCRIPTION}}/g, description)
@@ -154,45 +113,37 @@ function generateRecipe(data) {
     .replace(/{{HOW_TO_SERVE_HTML}}/g, parseHowToServe(howToServe))
     .replace(/{{CHEFS_NOTE_HTML}}/g, parseChefsNote(chefsNote));
 
-  // Write recipe page
   const recipesDir = path.join(__dirname, 'recipes');
   if (!fs.existsSync(recipesDir)) fs.mkdirSync(recipesDir);
   const outputPath = path.join(recipesDir, `${slug}.html`);
   fs.writeFileSync(outputPath, html, 'utf8');
   console.log(`✅ Recipe page written: recipes/${slug}.html`);
 
-  // Update recipes.json (index data)
-  const indexPath = path.join(__dirname, 'public', 'recipes.json');
-  // Also check root for Vercel static serving
   const rootIndexPath = path.join(__dirname, 'recipes.json');
+  const publicIndexPath = path.join(__dirname, 'public', 'recipes.json');
 
   let existing = [];
-  const indexFile = fs.existsSync(rootIndexPath) ? rootIndexPath : indexPath;
-  if (fs.existsSync(indexFile)) {
-    try { existing = JSON.parse(fs.readFileSync(indexFile, 'utf8')); } catch(e) {}
+  if (fs.existsSync(rootIndexPath)) {
+    try { existing = JSON.parse(fs.readFileSync(rootIndexPath, 'utf8')); } catch(e) {}
   }
 
-  // Remove existing entry with same slug
   existing = existing.filter(r => r.slug !== slug);
-
-  // Add new entry at the top (newest first)
-  const entry = { title, slug, description, category, prepTime, cookTime, servings, difficulty, coverImage, tags, emoji };
+  const entry = { title, slug, description, category, prepTime, cookTime, servings, difficulty, coverImage, tags, emoji, dietaryTags };
   existing.unshift(entry);
 
   const json = JSON.stringify(existing, null, 2);
   fs.writeFileSync(rootIndexPath, json, 'utf8');
   if (!fs.existsSync(path.join(__dirname, 'public'))) fs.mkdirSync(path.join(__dirname, 'public'));
-  fs.writeFileSync(indexPath, json, 'utf8');
+  fs.writeFileSync(publicIndexPath, json, 'utf8');
   console.log(`✅ recipes.json updated (${existing.length} recipes)`);
 
   return { slug, path: `recipes/${slug}.html` };
 }
 
-// Run from CLI
 if (require.main === module) {
   const arg = process.argv[2];
   if (!arg) {
-    console.error('Usage: node generate-recipe.js \'{"title":"...","ingredients":"...",...}\'');
+    console.error('Usage: node generate-recipe.js \'{"title":"..."}\'');
     process.exit(1);
   }
   try {
