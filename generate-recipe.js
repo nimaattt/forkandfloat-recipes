@@ -72,11 +72,11 @@ function parseCoverImage(url) {
     return '<div class="cover-placeholder">🍽️</div>';
   }
   let src = url.trim();
-  // Convert Google Drive share URL to direct image URL
+  // Convert Google Drive share URL to embeddable thumbnail URL
   if (src.includes('drive.google.com')) {
     const idMatch = src.match(/id=([^&]+)/);
     if (idMatch) {
-      src = `https://drive.google.com/uc?export=view&id=${idMatch[1]}`;
+      src = `https://lh3.googleusercontent.com/d/${idMatch[1]}`;
     }
   }
   return `<img class="cover-img" src="${src}" alt="Recipe cover photo">`;
