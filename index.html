@@ -161,6 +161,9 @@ nav{
 }
 .strip-btn:hover{background:var(--blush);color:var(--deep);border-color:var(--blush)}
 .strip-note{font-size:.66rem;color:rgba(196,181,165,.4);margin-top:10px}
+.strip-checkbox-row{display:flex;align-items:center;gap:9px;margin-top:14px}
+.strip-checkbox{width:14px;height:14px;accent-color:var(--blush);cursor:pointer;flex-shrink:0}
+.strip-checkbox-label{font-size:.64rem;color:rgba(196,181,165,.45);cursor:pointer;line-height:1.5}
 
 /* FOOTER */
 footer{border-top:1px solid var(--sand);padding:28px 56px}
@@ -256,11 +259,18 @@ footer{border-top:1px solid var(--sand);padding:28px 56px}
       <h2 class="strip-heading">New recipes, straight<br>to your <em>inbox</em></h2>
     </div>
     <div>
-      <div class="strip-form" id="stripForm">
-        <input type="email" class="strip-input" id="stripEmail" placeholder="your@email.com">
-        <button class="strip-btn" onclick="stripSubmit()">Join the kitchen →</button>
+      <div id="stripWrap">
+        <div class="strip-form">
+          <input type="email" class="strip-input" id="stripEmail" placeholder="your@email.com">
+          <button class="strip-btn" onclick="stripSubmit()">Join the kitchen →</button>
+        </div>
+        <div class="strip-checkbox-row">
+          <input type="checkbox" class="strip-checkbox" id="stripNewsletter" checked>
+          <label class="strip-checkbox-label" for="stripNewsletter">Also subscribe me to the Fork &amp; Float newsletter</label>
+        </div>
+        <p class="strip-note">No spam. Unsubscribe any time.</p>
       </div>
-      <p class="strip-note" id="stripNote">No spam. Just good food. Unsubscribe any time.</p>
+      <p id="stripSuccess" style="display:none;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:300;color:var(--cream)">✦ &nbsp;Welcome to the kitchen!</p>
     </div>
   </div>
 </div>
@@ -337,11 +347,20 @@ function setFilter(el, tag) {
   renderCards(filtered);
 }
 
-function stripSubmit() {
-  const e = document.getElementById('stripEmail').value;
-  if (!e || !e.includes('@')) { document.getElementById('stripEmail').style.borderColor='#c0392b'; return; }
-  document.getElementById('stripForm').innerHTML = '<p style="font-family:\'Cormorant Garamond\',serif;font-size:1.3rem;font-weight:300;color:var(--cream)">✦ &nbsp;Welcome to the kitchen, ' + e.split('@')[0] + '</p>';
-  document.getElementById('stripNote').style.display = 'none';
+async function stripSubmit() {
+  const email = document.getElementById('stripEmail').value.trim();
+  const input = document.getElementById('stripEmail');
+  if (!email || !email.includes('@')) { input.style.borderColor='#c0392b'; return; }
+  input.style.borderColor='';
+  try {
+    const fd = new FormData();
+    fd.append('email_address', email);
+    await fetch('https://app.kit.com/forms/9484805/subscriptions', {
+      method: 'POST', body: fd, mode: 'no-cors'
+    });
+  } catch(e) {}
+  document.getElementById('stripWrap').style.display = 'none';
+  document.getElementById('stripSuccess').style.display = 'block';
 }
 </script>
 </body>

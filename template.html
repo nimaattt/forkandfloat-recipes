@@ -95,6 +95,9 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 5
 .btn-send{padding:13px 22px;background:transparent;border:1px solid rgba(251,220,220,.35);color:var(--blush);border-radius:2px;font-family:'Jost',sans-serif;font-size:.72rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:all .22s}
 .btn-send:hover{background:var(--blush);color:var(--deep);border-color:var(--blush)}
 .email-fine{font-size:.7rem;color:rgba(196,181,165,.4)}
+.email-checkbox-row{display:flex;align-items:center;gap:9px;margin-top:14px;justify-content:center}
+.email-checkbox{width:14px;height:14px;accent-color:var(--blush);cursor:pointer;flex-shrink:0}
+.email-checkbox-label{font-size:.64rem;color:rgba(196,181,165,.45);cursor:pointer;line-height:1.5;text-align:left}
 .success-msg{display:none;padding:12px}
 .success-msg.show{display:block}
 .success-msg h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--cream);margin-bottom:8px}
@@ -194,13 +197,17 @@ footer{border-top:1px solid var(--sand);padding:26px 56px}
   <div class="email-card">
     <div id="formWrap">
       <span class="email-eyebrow">Save this recipe</span>
-      <h2>Send it to<br><em>my email</em></h2>
-      <p>Get this recipe in your inbox, plus new recipes from Ava's kitchen as they drop.</p>
+      <h2>Send it to<br><em>my inbox</em></h2>
+      <p>Get this recipe saved to your email — no account needed.</p>
       <div class="email-form">
         <input type="email" class="email-input" id="emailIn" placeholder="your@email.com">
         <button class="btn-send" onclick="sendIt()">Send it →</button>
       </div>
-      <p class="email-fine">No spam. Unsubscribe any time.</p>
+      <div class="email-checkbox-row">
+        <input type="checkbox" class="email-checkbox" id="emailNewsletter" checked>
+        <label class="email-checkbox-label" for="emailNewsletter">Also subscribe me to the Fork &amp; Float newsletter</label>
+      </div>
+      <p class="email-fine" style="margin-top:10px">No spam. Unsubscribe any time.</p>
     </div>
     <div class="success-msg" id="successMsg">
       <div style="font-size:1.8rem;margin-bottom:12px">✦</div>
@@ -233,12 +240,20 @@ footer{border-top:1px solid var(--sand);padding:26px 56px}
 </footer>
 
 <script>
-function sendIt(){
-  const v=document.getElementById('emailIn').value;
-  if(!v||!v.includes('@')){document.getElementById('emailIn').style.borderColor='#c0392b';return}
+async function sendIt(){
+  const email = document.getElementById('emailIn').value.trim();
+  const input = document.getElementById('emailIn');
+  if(!email||!email.includes('@')){input.style.borderColor='#c0392b';return}
+  input.style.borderColor='';
+  try {
+    const fd = new FormData();
+    fd.append('email_address', email);
+    await fetch('https://app.kit.com/forms/9484805/subscriptions', {
+      method: 'POST', body: fd, mode: 'no-cors'
+    });
+  } catch(e) {}
   document.getElementById('formWrap').style.display='none';
   document.getElementById('successMsg').classList.add('show');
-  // TODO: replace with your Kit form action URL
 }
 function copyLink(){
   navigator.clipboard.writeText(window.location.href).then(()=>{
