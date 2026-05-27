@@ -1,19 +1,5 @@
 [
   {
-    "title": "Fennel and Apple Salad",
-    "slug": "fennel-and-apple-salad",
-    "description": "Fennel and Apple salad is the crisp perfection for summer ",
-    "category": "Salads",
-    "prepTime": "10 minutes",
-    "cookTime": "10 minutes",
-    "servings": "4",
-    "difficulty": "Easy",
-    "coverImage": "https://lh3.googleusercontent.com/d/1MxTrBHrlruSOWfUpIpIV0d798auvixCV",
-    "tags": [],
-    "emoji": "🍽️",
-    "dietaryTags": ""
-  },
-  {
     "title": "Persian Yogurt & Cucumber Dip (Mast-o-Khiar)alad",
     "slug": "persian-yogurt-cucumber-dip-mast-o-khiar-alad",
     "description": "risp cucumber, tomato and red onion with dried lime — a Persian classic",
@@ -25,43 +11,6 @@
     "coverImage": "https://lh3.googleusercontent.com/d/1BQY-GAGA90b5xzhVLf8PiBGYdJJRnd4S",
     "tags": [],
     "emoji": "🍽️",
-    "dietaryTags": ""
-  },
-  {
-    "title": "Persian Yogurt & Cucumber Dip (Mast-o-Khiar)",
-    "slug": "shirazi-spersian-yogurt-cucumber-dip-mast-o-khiar-alad",
-    "description": "Creamy yogurt with cucumber, fresh herbs and rose petals — a Persian classic",
-    "category": "Sides",
-    "prepTime": "10 min",
-    "cookTime": "None",
-    "servings": "4",
-    "difficulty": "Easy",
-    "coverImage": "https://lh3.googleusercontent.com/d/1BQY-GAGA90b5xzhVLf8PiBGYdJJRnd4S",
-    "tags": [
-      "vegetarian",
-      "persian",
-      "quick"
-    ],
-    "emoji": "🍽️",
-    "dietaryTags": ""
-  },
-  {
-    "title": "Shirazi Salad",
-    "slug": "shirazi-salad",
-    "description": "Crisp cucumber, ripe tomato, red onion, and dried lime. A Persian classic that goes with absolutely everything.",
-    "category": "Salads",
-    "prepTime": "10 min",
-    "cookTime": "None",
-    "servings": "4",
-    "difficulty": "Easy",
-    "coverImage": "",
-    "tags": [
-      "salads",
-      "vegetarian",
-      "persian",
-      "quick"
-    ],
-    "emoji": "🥗",
     "dietaryTags": ""
   }
 ]

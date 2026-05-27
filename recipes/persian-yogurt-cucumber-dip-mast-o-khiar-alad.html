@@ -2,149 +2,100 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4Z60BVXLNH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4Z60BVXLNH');
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Persian Yogurt & Cucumber Dip (Mast-o-Khiar)alad – Fork & Float</title>
 <meta name="description" content="risp cucumber, tomato and red onion with dried lime — a Persian classic">
 <meta property="og:title" content="Persian Yogurt & Cucumber Dip (Mast-o-Khiar)alad – Fork & Float">
 <meta property="og:description" content="risp cucumber, tomato and red onion with dried lime — a Persian classic">
 <meta property="og:image" content="https://drive.google.com/open?id=1BQY-GAGA90b5xzhVLf8PiBGYdJJRnd4S">
-<link rel="icon" type="image/png" href="/favicon.png">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --cream:#F5EFE8;
-  --warm-white:#FAF7F3;
-  --sand:#E5D8C8;
-  --taupe:#BDA898;
-  --deep:#2C2218;
-  --accent:#8B5A38;
-  --accent-light:#C4926A;
-  --text:#2C2218;
-  --muted:#7A6A5E;
-  --blush:#FBDCDC;
-}
+:root{--cream:#F7F3EE;--warm-white:#FDFAF6;--sand:#E8DDD0;--taupe:#C4B5A5;--deep:#3A2E26;--accent:#9C6B45;--text:#2E2620;--muted:#8A7A6E}
 body{font-family:'Jost',sans-serif;background:var(--warm-white);color:var(--text);font-weight:300;line-height:1.7}
-
-/* NAV */
 nav{display:flex;align-items:center;justify-content:space-between;padding:20px 56px;background:var(--warm-white);border-bottom:1px solid var(--sand);position:sticky;top:0;z-index:100}
-.nav-logo{display:flex;align-items:center;text-decoration:none;color:var(--deep)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;letter-spacing:.06em;color:var(--deep);text-decoration:none}
 .nav-back{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:8px;transition:color .2s}
 .nav-back:hover{color:var(--accent)}
-
-/* HERO */
 .recipe-hero{max-width:760px;margin:0 auto;padding:60px 40px 0;text-align:center}
-.hero-tag{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--accent-light);display:block;margin-bottom:16px}
+.hero-tag{font-size:.63rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:16px}
 .hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,6vw,4rem);font-weight:300;line-height:1.1;color:var(--deep);margin-bottom:18px}
 .hero-sub{font-size:.98rem;color:var(--muted);max-width:500px;margin:0 auto 36px;line-height:1.85}
-.meta-row{display:flex;justify-content:center;max-width:480px;margin:0 auto 56px;border:1px solid var(--sand);border-radius:3px;overflow:hidden}
+.meta-row{display:flex;justify-content:center;max-width:480px;margin:0 auto 56px;border:1px solid var(--sand);border-radius:4px;overflow:hidden}
 .meta-pill{flex:1;padding:16px 12px;text-align:center;border-right:1px solid var(--sand)}
 .meta-pill:last-child{border-right:none}
 .meta-label{font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--taupe);display:block;margin-bottom:3px}
 .meta-val{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--deep);font-weight:400}
-
-/* COVER */
 .cover-wrap{max-width:900px;margin:0 auto;padding:0 40px 64px}
-.cover-img{width:100%;aspect-ratio:16/7;border-radius:3px;overflow:hidden;background:var(--sand);object-fit:cover;display:block}
-.cover-placeholder{width:100%;aspect-ratio:16/7;border-radius:3px;background:linear-gradient(135deg,#E8D5B7,#C4A882);display:flex;align-items:center;justify-content:center;font-size:6rem}
-
-/* BODY */
+.cover-img{width:100%;aspect-ratio:16/7;border-radius:4px;overflow:hidden;background:var(--sand);object-fit:cover;display:block}
+.cover-placeholder{width:100%;aspect-ratio:16/7;border-radius:4px;background:linear-gradient(135deg,#E8D5B7,#C4A882);display:flex;align-items:center;justify-content:center;font-size:6rem}
 .recipe-body{max-width:900px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:280px 1fr;gap:72px;align-items:start}
 .col-left{position:sticky;top:88px}
-.section-label{font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--taupe);margin-bottom:20px;display:flex;align-items:center;gap:12px}
+.section-label{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--taupe);margin-bottom:20px;display:flex;align-items:center;gap:12px}
 .section-label::after{content:'';flex:1;height:1px;background:var(--sand)}
-
-/* INGREDIENTS */
 .ingredients-rich ul{list-style:none;border-top:1px solid var(--sand)}
 .ingredients-rich ul li{padding:11px 0;border-bottom:1px solid var(--sand);font-size:.88rem;color:var(--text);display:flex;justify-content:space-between;align-items:baseline;gap:12px;line-height:1.5}
 .ingredients-rich ul li strong{color:var(--accent);font-weight:400;font-size:.82rem;white-space:nowrap;flex-shrink:0}
 .ingredients-rich p{font-size:.78rem;color:var(--muted);font-style:italic;margin-top:16px;text-align:center}
-
-/* STEPS */
 .directions-rich ol{list-style:none;counter-reset:steps}
 .directions-rich ol li{counter-increment:steps;padding:0 0 36px 56px;border-bottom:1px solid var(--sand);margin-bottom:36px;position:relative}
 .directions-rich ol li:last-child{border-bottom:none;margin-bottom:0}
 .directions-rich ol li::before{content:counter(steps,decimal-leading-zero);position:absolute;left:0;top:0;font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--sand);line-height:1}
 .directions-rich ol li h3,.directions-rich h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;color:var(--deep);margin-bottom:10px;line-height:1.3}
 .directions-rich ol li p,.directions-rich p{font-size:.92rem;color:var(--muted);line-height:1.9}
-
-/* HOW TO SERVE */
-.how-to-serve{margin-top:48px;background:var(--cream);border-left:2px solid var(--accent);padding:24px 28px;border-radius:0 3px 3px 0}
-.serve-label{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-light);margin-bottom:12px;display:block}
+.how-to-serve{margin-top:48px;background:var(--cream);border-left:2px solid var(--accent);padding:24px 28px;border-radius:0 4px 4px 0}
+.serve-label{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;display:block}
 .serve-rich ul{list-style:none}
 .serve-rich ul li{font-size:.9rem;color:var(--muted);padding:6px 0 6px 16px;position:relative;line-height:1.7}
 .serve-rich ul li::before{content:'—';position:absolute;left:0;color:var(--accent);font-size:.8rem}
-
-/* CHEF NOTE */
 .chef-note{margin-top:32px;padding:20px 24px;border-top:1px solid var(--sand)}
-.chef-note-label{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-light);margin-bottom:10px;display:block}
+.chef-note-label{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
 .chef-note p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--deep);line-height:1.75}
-
-/* EMAIL CARD */
 .email-section{max-width:760px;margin:80px auto 0;padding:0 40px 96px}
-.email-card{background:var(--deep);border-radius:3px;padding:52px 56px;text-align:center;position:relative;overflow:hidden}
-.email-card::before{content:'';position:absolute;top:-80px;right:-80px;width:240px;height:240px;background:radial-gradient(circle,rgba(139,90,56,.18) 0%,transparent 70%);pointer-events:none}
+.email-card{background:var(--deep);border-radius:4px;padding:52px 56px;text-align:center;position:relative;overflow:hidden}
+.email-card::before{content:'';position:absolute;top:-80px;right:-80px;width:240px;height:240px;background:radial-gradient(circle,rgba(156,107,69,.2) 0%,transparent 70%);pointer-events:none}
 .email-eyebrow{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--taupe);margin-bottom:14px;display:block}
 .email-card h2{font-family:'Cormorant Garamond',serif;font-size:2.1rem;font-weight:300;color:var(--cream);margin-bottom:10px;line-height:1.2}
-.email-card h2 em{font-style:italic;color:var(--blush)}
+.email-card h2 em{font-style:italic;color:var(--taupe)}
 .email-card>p{font-size:.86rem;color:var(--taupe);margin-bottom:30px;max-width:380px;margin-left:auto;margin-right:auto;line-height:1.75}
 .email-form{display:flex;gap:10px;max-width:420px;margin:0 auto 14px}
-.email-input{flex:1;padding:13px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:2px;color:var(--cream);font-family:'Jost',sans-serif;font-size:.86rem;font-weight:300;outline:none;transition:border-color .2s}
-.email-input::placeholder{color:rgba(196,181,165,.4)}
-.email-input:focus{border-color:var(--blush)}
-.btn-send{padding:13px 22px;background:transparent;border:1px solid rgba(251,220,220,.35);color:var(--blush);border-radius:2px;font-family:'Jost',sans-serif;font-size:.72rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:all .22s}
-.btn-send:hover{background:var(--blush);color:var(--deep);border-color:var(--blush)}
+.email-input{flex:1;padding:13px 18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:3px;color:var(--cream);font-family:'Jost',sans-serif;font-size:.86rem;font-weight:300;outline:none;transition:border-color .2s}
+.email-input::placeholder{color:rgba(196,181,165,.45)}
+.email-input:focus{border-color:var(--accent)}
+.btn-send{padding:13px 22px;background:var(--accent);color:white;border:none;border-radius:3px;font-family:'Jost',sans-serif;font-size:.72rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:background .2s}
+.btn-send:hover{background:#B07848}
 .email-fine{font-size:.7rem;color:rgba(196,181,165,.4)}
-.email-checkbox-row{display:flex;align-items:center;gap:9px;margin-top:14px;justify-content:center}
-.email-checkbox{width:14px;height:14px;accent-color:var(--blush);cursor:pointer;flex-shrink:0}
-.email-checkbox-label{font-size:.64rem;color:rgba(196,181,165,.45);cursor:pointer;line-height:1.5;text-align:left}
 .success-msg{display:none;padding:12px}
 .success-msg.show{display:block}
 .success-msg h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--cream);margin-bottom:8px}
 .success-msg p{font-size:.84rem;color:var(--taupe);margin:0}
-
-/* SECONDARY BUTTONS */
 .secondary{display:flex;justify-content:center;gap:14px;margin-top:20px}
-.btn-ghost{padding:10px 20px;background:transparent;color:var(--muted);border:1px solid var(--sand);border-radius:2px;font-family:'Jost',sans-serif;font-size:.72rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all .2s}
+.btn-ghost{padding:10px 20px;background:transparent;color:var(--muted);border:1px solid var(--sand);border-radius:3px;font-family:'Jost',sans-serif;font-size:.72rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all .2s}
 .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
-
-
-
-/* ANIMATIONS */
+footer{border-top:1px solid var(--sand);padding:26px 56px}
+.footer-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--taupe);letter-spacing:.06em}
+.footer-links{display:flex;gap:24px}
+.footer-links a{font-size:.67rem;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe);text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:var(--accent)}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 .recipe-hero{animation:fadeUp .5s ease both}
 .recipe-body{animation:fadeUp .5s .1s ease both}
-
-@media(max-width:800px){
-  nav{padding:18px 24px}
-  .recipe-hero{padding:48px 24px 0}
-  .cover-wrap{padding:0 24px 48px}
-  .recipe-body{grid-template-columns:1fr;gap:40px;padding:0 24px}
-  .col-left{position:static}
-  .email-card{padding:36px 24px}
-  .email-form{flex-direction:column}
-  footer{padding:20px 24px}
-  .footer-inner{flex-direction:column;gap:16px}
-}
+@media(max-width:800px){nav{padding:18px 24px}.recipe-hero{padding:48px 24px 0}.cover-wrap{padding:0 24px 48px}.recipe-body{grid-template-columns:1fr;gap:40px;padding:0 24px}.col-left{position:static}.email-card{padding:36px 24px}.email-form{flex-direction:column}footer{padding:20px 24px}.footer-inner{flex-direction:column;gap:16px}}
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="/" class="nav-logo">
-    <svg width="100" height="26" viewBox="0 0 116 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M41.6236 1.41677C41.5888 1.85863 41.5463 2.29928 41.4991 2.73998C41.4884 2.84044 41.4884 2.84044 41.4775 2.94294C41.4579 3.12703 41.4383 3.31112 41.4186 3.4952C41.3974 3.69441 41.3762 3.89363 41.355 4.09285C41.3183 4.43749 41.2816 4.78211 41.2448 5.12674C41.1867 5.67146 41.1288 6.2162 41.0708 6.76094C41.051 6.94756 41.0311 7.13418 41.0113 7.3208C41.0063 7.36743 41.0014 7.41405 40.9963 7.46209C40.9399 7.9918 40.8835 8.5215 40.8271 9.05121C40.822 9.09959 40.8168 9.14797 40.8115 9.19781C40.7279 9.98315 40.6442 10.7685 40.5606 11.5538C40.4745 12.3608 40.3887 13.1679 40.3029 13.9749C40.25 14.4724 40.197 14.9699 40.1439 15.4673C40.1075 15.8079 40.0713 16.1484 40.0352 16.489C40.0143 16.6855 39.9934 16.882 39.9723 17.0785C39.9495 17.2914 39.927 17.5043 39.9044 17.7173C39.8977 17.7794 39.891 17.8416 39.8841 17.9056C39.8781 17.9628 39.8721 18.0199 39.8659 18.0787C39.8581 18.1524 39.8581 18.1524 39.8501 18.2276C39.8382 18.3807 39.8372 18.532 39.839 18.6855C39.8509 18.6573 39.8628 18.629 39.8751 18.5998C39.9297 18.4698 39.9844 18.3399 40.0391 18.2099C40.0578 18.1654 40.0766 18.1209 40.0958 18.0751C40.9182 16.1209 41.9403 14.2561 43.3033 12.6231C44.3126 11.4119 45.3743 9.9569 45.2454 8.29279C45.1787 7.86118 45.0595 7.506 44.8255 7.13804C44.8081 7.10339 44.7908 7.06875 44.773 7.03306C46.5917 7.03306 48.4104 7.03306 50.2843 7.03306C50.1511 7.12183 50.018 7.19477 49.8757 7.26719C48.4959 7.97522 47.2756 9.03483 46.1377 10.0774C46.11 10.1027 46.0824 10.1279 46.0539 10.154C45.9636 10.2366 45.8735 10.3194 45.7834 10.4022C45.7555 10.4277 45.7276 10.4533 45.6989 10.4797C45.6446 10.5298 45.5906 10.5802 45.537 10.6311C45.4803 10.6839 45.4222 10.7353 45.3629 10.7853C45.261 10.8719 45.261 10.8719 45.1404 11.0222C45.1547 11.2435 45.217 11.4084 45.3233 11.601C45.3504 11.6506 45.3774 11.7001 45.4054 11.7512C45.4348 11.804 45.4643 11.8568 45.4947 11.9112C45.5253 11.967 45.556 12.0228 45.5876 12.0802C45.8181 12.4983 46.0541 12.9133 46.2905 13.328C46.5461 13.7787 46.7891 14.2357 47.0315 14.6935C47.287 15.1757 47.5498 15.6526 47.8209 16.1262C48.0355 16.5031 48.2401 16.8849 48.4426 17.2683C49.096 18.5046 49.7961 19.6848 50.6333 20.8058C50.8092 21.0421 50.8092 21.0421 50.8092 21.1C49.1983 21.1 47.5874 21.1 45.9277 21.1C45.9104 20.6843 45.8931 20.2686 45.8752 19.8403C45.6053 18.2932 44.8595 16.9855 44.0687 15.6467C43.866 15.3029 43.6692 14.9559 43.4739 14.6078C43.4425 14.5523 43.4112 14.4968 43.3789 14.4396C43.3499 14.3877 43.3209 14.3359 43.291 14.2824C43.2654 14.2369 43.2399 14.1913 43.2135 14.1443C43.1468 14.0159 43.0921 13.8868 43.0408 13.7516C43.0062 13.7516 42.9716 13.7516 42.9359 13.7516C42.9225 13.7877 42.9092 13.8239 42.8955 13.8611C42.8358 14.0023 42.7665 14.1331 42.691 14.2663C41.8757 15.7165 41.481 17.5323 41.9285 19.1616C41.9491 19.2305 41.9699 19.2992 41.9911 19.3679C42.0196 19.4635 42.0196 19.4635 42.0487 19.561C42.204 20.0339 42.4325 20.4571 42.6734 20.8901C42.7081 20.9594 42.7427 21.0286 42.7784 21.1C40.8557 21.1 38.9331 21.1 36.9521 21.1C37.0561 20.9441 37.16 20.7882 37.2671 20.6276C38.0129 19.4001 38.1556 18.0112 38.1871 16.6055C38.1881 16.5602 38.1892 16.515 38.1903 16.4684C38.2183 15.2841 38.2304 14.0996 38.2414 12.9151C38.2419 12.859 38.2425 12.803 38.243 12.7453C38.2499 12.0116 38.2562 11.2779 38.2619 10.5443C38.2635 10.3459 38.2651 10.1475 38.2668 9.94906C38.2711 9.45955 38.2746 8.97005 38.2765 8.48052C38.2771 8.34017 38.2781 8.19984 38.2793 8.0595C38.2907 6.65105 38.2073 4.99712 37.1873 3.9024C37.1109 3.82589 37.1109 3.82589 37.0046 3.77876C37.0571 3.62129 37.0571 3.62129 37.1596 3.55476C37.2044 3.53287 37.2492 3.51098 37.2954 3.48843C37.3458 3.46352 37.3962 3.4386 37.4481 3.41293C37.5031 3.38642 37.5581 3.35992 37.6148 3.33261C37.6719 3.30461 37.7289 3.27662 37.7877 3.24777C38.2031 3.0445 38.6207 2.84562 39.0386 2.64738C39.7083 2.32842 40.3702 1.99324 41.033 1.66004C41.0893 1.63173 41.1457 1.60341 41.2037 1.57424C41.2894 1.52973 41.2894 1.52973 41.3769 1.48433C41.5187 1.41677 41.5187 1.41677 41.6236 1.41677Z" fill="currentColor"/>
-      <path d="M0 1.41677C3.94925 1.41677 7.8985 1.41677 11.9674 1.41677C12.0194 2.6639 12.0713 3.91103 12.1249 5.19595C12.0902 5.19595 12.0556 5.19595 12.0199 5.19595C11.9541 5.10547 11.8925 5.01184 11.8329 4.91711C10.8962 3.47457 9.4716 2.25401 7.77313 1.84903C6.94692 1.67638 6.04721 1.68888 5.3112 2.13521C4.78299 2.52385 4.46975 3.02596 4.35656 3.67378C4.27686 4.72433 4.40095 5.69487 5.10452 6.52129C5.93815 7.39791 7.15924 7.69468 8.33495 7.72619C8.44795 7.72835 8.56095 7.73029 8.67396 7.73202C8.72714 7.733 8.78032 7.73398 8.83511 7.73499C9.03173 7.73854 9.22837 7.74172 9.425 7.74494C10.0859 7.7563 10.0859 7.7563 10.7602 7.7679C10.7602 8.87646 10.7602 9.98502 10.7602 11.1272C10.5559 11.025 10.4567 10.9381 10.3009 10.7762C10.1135 10.5849 9.92343 10.4037 9.72004 10.2297C9.60502 10.1295 9.49294 10.0265 9.38116 9.92272C9.06373 9.62834 8.73815 9.34848 8.39819 9.08012C8.36536 9.05398 8.33254 9.02785 8.29872 9.00092C7.28999 8.20039 6.14563 7.43017 4.83511 7.28997C4.794 7.28536 4.75289 7.28075 4.71054 7.276C4.61007 7.26478 4.50956 7.25386 4.40905 7.24301C4.41224 8.43672 4.41632 9.63041 4.42142 10.8241C4.42377 11.3785 4.42584 11.9329 4.42723 12.4873C4.42845 12.9713 4.43021 13.4552 4.4326 13.9391C4.43384 14.1947 4.43483 14.4503 4.43517 14.7059C4.43833 16.8471 4.54051 18.9622 5.5638 20.8901C5.59844 20.9594 5.63308 21.0286 5.66878 21.1C3.79808 21.1 1.92738 21.1 0 21.1C0.0818873 20.8953 0.166052 20.7277 0.275566 20.5391C1.13202 18.9579 1.21545 17.0032 1.21486 15.2442C1.21502 15.149 1.2152 15.0538 1.2154 14.9586C1.21586 14.7022 1.21598 14.4458 1.21602 14.1893C1.21606 14.0284 1.21617 13.8674 1.21631 13.7065C1.21679 13.1427 1.21701 12.579 1.21697 12.0153C1.21693 11.4934 1.21749 10.9716 1.21832 10.4497C1.21901 9.99878 1.21928 9.54786 1.21925 9.09693C1.21924 8.82891 1.21938 8.56089 1.21994 8.29287C1.23029 6.3265 1.23029 6.3265 1.00385 4.37582C0.994771 4.32399 0.985696 4.27216 0.976346 4.21876C0.816819 3.33478 0.570426 2.46621 0.115434 1.68639C0.0524887 1.57424 0.0524887 1.57424 0 1.41677Z" fill="currentColor"/>
-      <path d="M62.7764 1.41677C66.7083 1.41677 70.6402 1.41677 74.6913 1.41677C74.7402 1.56341 74.7532 1.66474 74.7594 1.8172C74.7615 1.86651 74.7636 1.91583 74.7657 1.96663C74.7678 2.0201 74.7698 2.07356 74.7719 2.12865C74.7741 2.18431 74.7764 2.23998 74.7787 2.29733C74.7835 2.41575 74.7881 2.53418 74.7926 2.65261C74.7994 2.83036 74.8067 3.00808 74.814 3.1858C74.8408 3.85624 74.8556 4.525 74.8488 5.19595C74.6814 5.03329 74.5566 4.87009 74.4289 4.67435C74.1877 4.31549 73.9076 4.00447 73.6072 3.69462C73.5474 3.63252 73.4889 3.56912 73.4307 3.50545C72.5557 2.57148 71.1868 1.82069 69.8974 1.76656C69.0911 1.75326 68.4121 1.83725 67.7628 2.36157C67.6375 2.49186 67.5408 2.62675 67.4479 2.78148C67.4281 2.81131 67.4083 2.84115 67.388 2.8719C67.1217 3.32399 67.0301 3.99621 67.0804 4.5136C67.0853 4.56448 67.0902 4.61536 67.0952 4.66779C67.1787 5.3354 67.3821 5.93518 67.8153 6.45568C67.8603 6.51049 67.8603 6.51049 67.9063 6.5664C68.6254 7.3592 69.781 7.63686 70.8071 7.71541C71.0232 7.72476 71.2392 7.72869 71.4555 7.73202C71.5086 7.733 71.5617 7.73398 71.6164 7.73499C71.8125 7.73854 72.0086 7.74171 72.2046 7.74494C72.8639 7.7563 72.8639 7.7563 73.5365 7.7679C73.5365 8.89378 73.5365 10.0197 73.5365 11.1797C73.1237 10.8258 73.1237 10.8258 72.968 10.6784C72.934 10.6463 72.8999 10.6142 72.8649 10.5811C72.83 10.548 72.795 10.515 72.7591 10.4809C72.2623 10.0134 71.7616 9.55698 71.227 9.13261C71.1949 9.10688 71.1628 9.08115 71.1297 9.05464C70.1093 8.24123 69.0559 7.55244 67.7581 7.30985C67.6675 7.29237 67.6675 7.29237 67.5752 7.27452C67.4278 7.24612 67.2804 7.21813 67.1329 7.19052C67.1386 8.23457 67.1445 9.27861 67.1507 10.3227C67.1536 10.8076 67.1564 11.2925 67.159 11.7774C67.1613 12.2008 67.1637 12.6241 67.1664 13.0475C67.1677 13.271 67.169 13.4945 67.1701 13.718C67.1639 15.5756 67.1639 15.5756 67.3002 17.4258C67.3102 17.5085 67.3102 17.5085 67.3203 17.5928C67.4858 18.8676 67.8368 19.9702 68.4451 21.1C66.5744 21.1 64.7038 21.1 62.7764 21.1C62.8524 20.9099 62.9234 20.7609 63.0257 20.5883C63.9329 18.9305 63.9919 16.8614 63.9912 15.0154C63.9914 14.9257 63.9916 14.8359 63.9918 14.7462C63.9922 14.5054 63.9924 14.2646 63.9924 14.0238C63.9924 13.8724 63.9925 13.721 63.9927 13.5696C63.9932 13.0387 63.9934 12.5077 63.9933 11.9767C63.9933 11.4863 63.9939 10.9959 63.9947 10.5055C63.9954 10.0809 63.9957 9.65619 63.9956 9.23151C63.9956 8.97951 63.9957 8.7275 63.9963 8.47549C64.052 4.84621 64.052 4.84621 62.7764 1.52175C62.7764 1.4871 62.7764 1.45246 62.7764 1.41677Z" fill="currentColor"/>
-      <path d="M104.453 7.61086C105.07 8.13741 105.442 8.7494 105.747 9.49122C105.769 9.54606 105.792 9.60089 105.815 9.65739C106.076 10.2932 106.316 10.9363 106.556 11.5803C106.604 11.7098 106.652 11.8393 106.701 11.9688C107.212 13.3387 107.719 14.7103 108.223 16.0829C108.316 16.3356 108.409 16.5883 108.502 16.841C108.546 16.9616 108.59 17.0823 108.635 17.203C108.863 17.8251 109.097 18.4436 109.35 19.0556C109.371 19.1066 109.392 19.1576 109.414 19.2101C109.661 19.7989 109.953 20.3605 110.362 20.8538C110.437 20.943 110.437 20.943 110.541 21.1004C109.26 21.1004 107.978 21.1004 106.657 21.1004C106.536 20.7486 106.415 20.3968 106.29 20.0343C106.252 19.9234 106.213 19.8124 106.174 19.6982C106.143 19.6103 106.113 19.5224 106.083 19.4345C106.067 19.3889 106.052 19.3432 106.035 19.2962C106.02 19.2525 106.005 19.2088 105.99 19.1638C105.977 19.126 105.964 19.0881 105.95 19.049C105.922 18.9484 105.922 18.9484 105.922 18.7909C105.778 18.9219 105.685 19.069 105.581 19.2338C104.907 20.2555 103.983 20.9288 102.794 21.2216C101.305 21.5242 99.773 21.2571 98.4955 20.4394C97.4569 19.7438 96.8554 18.677 96.5795 17.4787C96.2632 15.8031 96.7856 14.3276 97.5243 12.8597C97.5589 12.8597 97.5936 12.8597 97.6293 12.8597C97.6415 12.8228 97.6538 12.7858 97.6664 12.7478C97.7463 12.5705 97.8542 12.4346 97.9803 12.2889C98.0055 12.2596 98.0307 12.2303 98.0567 12.2001C99.0025 11.1183 100.243 10.0453 101.618 9.55294C101.696 9.57892 101.696 9.57892 101.776 9.60543C101.737 9.64176 101.698 9.6781 101.658 9.71553C100.413 10.906 99.5525 12.5708 99.5082 14.3157C99.4896 15.8668 99.735 17.3129 100.832 18.4842C101.494 19.1228 102.417 19.3831 103.319 19.385C104.205 19.3688 104.988 19.0499 105.66 18.476C105.627 18.1424 105.528 17.8437 105.419 17.5275C105.4 17.4704 105.381 17.4132 105.361 17.3543C105.297 17.166 105.232 16.9779 105.168 16.7898C105.134 16.6913 105.101 16.5928 105.067 16.4942C103.862 12.1484 103.862 12.1484 101.723 8.29321C101.723 8.25857 101.723 8.22393 101.723 8.18823C101.693 8.17355 101.662 8.15887 101.63 8.14374C101.521 8.08732 101.424 8.02445 101.323 7.95531C100.855 7.66484 100.394 7.64175 99.8535 7.6535C99.7908 7.65422 99.728 7.65493 99.6634 7.65566C99.5102 7.6575 99.3571 7.66007 99.2039 7.66335C99.3828 7.47459 99.5602 7.37038 99.7977 7.26968C99.8345 7.25387 99.8712 7.23807 99.909 7.22178C101.39 6.60421 103.138 6.61665 104.453 7.61086Z" fill="currentColor"/>
-      <path d="M21.423 20.7294C21.2013 20.8111 20.9783 20.8819 20.7515 20.9478C20.6956 20.9652 20.6396 20.9826 20.582 21.0006C19.1106 21.434 17.5064 21.2608 16.0844 20.7382C16.0379 20.7218 15.9914 20.7053 15.9435 20.6884C14.218 20.0102 12.8162 18.5818 12.065 16.9019C11.3142 15.1458 11.26 13.2209 11.9396 11.4358C11.9575 11.3852 11.9755 11.3347 11.994 11.2825C12.1217 10.9913 12.2812 10.7197 12.44 10.4444C12.4721 10.3876 12.5041 10.3308 12.5371 10.2722C12.828 9.76665 13.164 9.31107 13.5902 8.91139C13.6186 8.88464 13.6469 8.8579 13.6761 8.83034C13.9797 8.55062 14.3118 8.32089 14.6563 8.095C14.7221 8.05125 14.7878 8.00746 14.8536 7.96364C15.0159 7.85575 15.1787 7.74879 15.3419 7.64232C15.3719 7.65964 15.4019 7.67696 15.4328 7.69481C15.4775 7.65566 15.4775 7.65566 15.523 7.61571C15.6734 7.50667 15.8147 7.45036 15.9892 7.38723C16.0512 7.36473 16.1132 7.34222 16.177 7.31904C16.235 7.2983 16.293 7.27756 16.3527 7.25619C16.3949 7.24008 16.4371 7.22397 16.4806 7.20738C17.7669 6.72376 19.2398 6.78103 20.556 7.08814C20.6071 7.09988 20.6071 7.09988 20.6591 7.11186C21.2632 7.26257 21.8076 7.53218 22.3434 7.84359C22.375 7.86182 22.4066 7.88005 22.4391 7.89884C24.1226 8.8776 25.2699 10.4181 25.7888 12.295C25.9148 12.7741 25.987 13.2432 26.005 13.738C26.0064 13.7764 26.0078 13.8148 26.0093 13.8543C26.0965 16.9025 24.2359 19.6117 21.423 20.7294ZM25.5223 13.9442C25.1439 12.7734 24.0446 11.8643 22.9806 11.3179C20.8086 10.2296 18.2593 9.81315 15.8517 10.1186C15.7909 10.1262 15.7301 10.1338 15.6674 10.1417C14.45 10.3184 13.1189 10.7193 12.3266 11.7296C11.8964 12.3746 11.7158 13.0383 11.8444 13.8052C11.9054 14.1065 11.9907 14.3807 12.1466 14.6464C12.1916 14.6724 12.2366 14.6984 12.283 14.7251C12.2657 14.7551 12.2483 14.7851 12.2305 14.816C13.4585 16.6195 15.5696 17.4638 17.6413 17.8748C19.7806 18.2733 22.4312 18.3509 24.336 17.1241C25.414 16.3653 25.8823 15.2179 25.5223 13.9442Z" fill="currentColor"/>
-      <path d="M93.7853 19.109C93.7567 19.1372 93.7281 19.1653 93.6987 19.1943C92.8259 20.0468 91.7605 20.6232 90.5934 20.9633C90.5187 20.987 90.5187 20.987 90.4425 21.0111C88.8045 21.4998 86.8323 21.2859 85.3285 20.4865C83.8767 19.6863 82.6289 18.5629 81.9651 17.0121C81.945 16.9672 81.925 16.9222 81.9043 16.8759C81.1616 15.1439 81.0864 13.237 81.7655 11.47C81.9127 11.1086 82.0935 10.7747 82.2906 10.4384C82.322 10.3831 82.3535 10.3279 82.3859 10.2709C82.6749 9.77273 83.0113 9.32154 83.4322 8.92693C83.4749 8.88676 83.4749 8.88676 83.5184 8.84579C83.8224 8.56624 84.1504 8.33208 84.4983 8.11054C84.531 8.08953 84.5638 8.06851 84.5976 8.04686C86.2882 6.97412 88.2475 6.64677 90.2062 7.04219C91.7502 7.39442 93.4949 8.36887 94.3729 9.72315C94.401 9.76852 94.4291 9.81389 94.458 9.86064C94.501 9.92585 94.5442 9.99093 94.5875 10.0559C94.6982 10.2219 94.808 10.3883 94.917 10.5554C94.972 10.6391 95.0285 10.7219 95.085 10.8045C95.1866 10.9653 95.2183 11.1122 95.2654 11.2965C95.2982 11.3743 95.3319 11.4517 95.3661 11.5289C95.6591 12.2386 95.8288 12.9867 95.847 13.7536C95.8481 13.7908 95.8492 13.8281 95.8503 13.8664C95.9002 15.7967 95.1958 17.7603 93.7853 19.109ZM95.3643 13.9598C94.9976 12.7923 93.9405 11.9374 92.9021 11.3717C90.4805 10.1092 87.3602 9.63911 84.6984 10.3251C84.6058 10.3488 84.5128 10.3709 84.4198 10.3928C83.5287 10.6111 82.6261 11.1119 82.0857 11.8694C81.6664 12.5727 81.5345 13.2565 81.7353 14.0574C81.8457 14.4587 81.8457 14.4587 82.125 14.7407C82.1076 14.7707 82.0903 14.8007 82.0725 14.8316C83.3403 16.6692 85.482 17.508 87.6075 17.9063C89.2036 18.186 90.7907 18.2093 92.3781 17.8723C92.433 17.8608 92.4879 17.8493 92.5445 17.8375C92.8725 17.7594 93.1774 17.6418 93.4861 17.5082C93.5229 17.4923 93.5597 17.4764 93.5977 17.46C95.0014 16.8302 95.7905 15.4723 95.3643 13.9598Z" fill="currentColor"/>
-      <path d="M79.5731 1.41677C79.5732 1.46411 79.5732 1.46411 79.5733 1.5124C79.5776 3.38888 79.5824 5.26534 79.5878 7.14181C79.5885 7.36785 79.5891 7.59388 79.5898 7.81991C79.5899 7.86491 79.59 7.9099 79.5902 7.95626C79.5922 8.68183 79.594 9.4074 79.5956 10.133C79.5972 10.8792 79.5992 11.6254 79.6016 12.3716C79.6031 12.8309 79.6042 13.2902 79.605 13.7496C79.6056 14.0658 79.6065 14.3821 79.6077 14.6984C79.6084 14.8801 79.609 15.0617 79.609 15.2433C79.6097 15.9468 79.6215 16.6468 79.6718 17.3486C79.6757 17.4045 79.6796 17.4603 79.6837 17.5179C79.7855 18.795 80.072 20.0833 80.8853 21.1C79.4303 21.1 77.9754 21.1 76.4763 21.1C76.4763 20.2189 76.4769 19.3382 76.4859 18.4571C76.487 18.3511 76.488 18.2451 76.489 18.1391C76.4918 17.8603 76.4946 17.5816 76.4975 17.3029C76.4993 17.1282 76.501 16.9536 76.5028 16.779C76.5152 15.5361 76.5291 14.2935 76.5548 13.0509C76.581 11.7745 76.59 10.4981 76.5934 9.22144C76.594 9.00933 76.5949 8.79723 76.5962 8.58512C76.5976 8.3339 76.5982 8.08268 76.5983 7.83146C76.5984 7.73874 76.5988 7.64603 76.5995 7.55332C76.6084 6.29919 76.4463 4.7912 75.561 3.82141C75.5075 3.76833 75.5075 3.76833 75.453 3.71417C75.374 3.62129 75.374 3.62129 75.374 3.46383C77.6079 2.34181 77.6079 2.34181 78.5459 1.89839C78.8322 1.76291 79.115 1.62065 79.3972 1.47684C79.5206 1.41677 79.5206 1.41677 79.5731 1.41677Z" fill="currentColor"/>
-      <path d="M30.7062 6.82306C30.7235 8.4859 30.7408 10.1487 30.7587 11.862C30.8279 11.6022 30.8972 11.3423 30.9686 11.0746C31.2173 10.2986 31.5706 9.56922 32.0709 8.92261C32.0981 8.88735 32.1253 8.8521 32.1533 8.81578C33.0811 7.68856 34.589 7.02195 36.0151 6.84418C36.1532 6.83255 36.289 6.82607 36.4274 6.82306C36.3981 7.21867 36.3292 7.5978 36.2435 7.98478C36.2308 8.04346 36.218 8.10213 36.2049 8.16258C36.1645 8.34819 36.1238 8.5337 36.083 8.71921C36.0554 8.84578 36.0278 8.97236 36.0003 9.09894C35.933 9.40765 35.8654 9.71629 35.7976 10.0249C35.7545 10.0238 35.7115 10.0227 35.6672 10.0215C34.1836 9.98865 32.8066 10.1284 31.6676 11.2089C30.9079 12.0096 30.7419 12.875 30.7429 13.9371C30.7427 14.0276 30.7424 14.118 30.7422 14.2085C30.7418 14.3981 30.7418 14.5876 30.7421 14.7772C30.7423 14.969 30.742 15.1609 30.741 15.3527C30.7309 17.3907 30.8028 19.3553 31.9659 21.1C30.5282 21.1 29.0906 21.1 27.6093 21.1C27.6054 19.9329 27.6063 18.7672 27.6323 17.6005C27.6335 17.5487 27.6346 17.497 27.6358 17.4437C27.6429 17.1277 27.6504 16.8116 27.658 16.4956C27.7026 14.7359 27.7026 14.7359 27.7199 12.9757C27.72 12.9117 27.7201 12.8477 27.7202 12.7818C27.7167 11.4814 27.5017 10.0079 26.5596 9.02758C26.5249 9.01026 26.4903 8.99294 26.4546 8.97509C26.4546 8.92313 26.4546 8.87117 26.4546 8.81763C28.3536 7.88726 28.3536 7.88726 29.3127 7.44995C29.6671 7.28802 30.0172 7.11964 30.363 6.94021C30.5907 6.82306 30.5907 6.82306 30.7062 6.82306Z" fill="currentColor"/>
-      <path d="M113.428 3.25384C113.48 3.25384 113.532 3.25384 113.586 3.25384C113.586 4.44901 113.586 5.64418 113.586 6.87556C114.361 6.87348 114.361 6.87348 115.135 6.87083C115.232 6.87068 115.329 6.87055 115.426 6.87044C115.502 6.87003 115.502 6.87003 115.579 6.86962C115.627 6.86962 115.675 6.86961 115.725 6.8696C115.767 6.86949 115.808 6.86937 115.852 6.86925C115.948 6.87556 115.948 6.87556 116 6.92805C116 7.01466 116 7.10126 116 7.19049C115.203 7.19049 114.406 7.19049 113.586 7.19049C113.59 8.35541 113.595 9.52033 113.601 10.6852C113.603 11.2263 113.606 11.7673 113.608 12.3083C113.609 12.7803 113.612 13.2523 113.614 13.7244C113.615 13.9738 113.617 14.2233 113.617 14.4728C113.618 16.2688 113.618 16.2688 113.861 18.0458C113.872 18.1007 113.884 18.1556 113.895 18.2121C114.083 19.0834 114.409 20.0685 115.172 20.6048C115.42 20.7474 115.678 20.8495 115.948 20.9425C115.948 20.9945 115.948 21.0465 115.948 21.1C114.74 21.208 113.437 20.7889 112.496 20.0398C112.365 19.9246 112.239 19.8061 112.116 19.6828C112.062 19.6297 112.062 19.6297 112.007 19.5756C111.338 18.8734 111.006 17.991 110.791 17.0616C110.783 17.028 110.775 16.9943 110.766 16.9596C110.611 16.2351 110.578 15.4963 110.582 14.7582C110.582 14.6748 110.582 14.5914 110.582 14.508C110.582 14.285 110.582 14.062 110.583 13.8389C110.584 13.6046 110.584 13.3703 110.584 13.136C110.584 12.6938 110.585 12.2516 110.586 11.8093C110.587 11.3053 110.588 10.8012 110.588 10.2971C110.59 9.26156 110.591 8.22603 110.594 7.19049C110.039 7.19049 109.485 7.19049 108.914 7.19049C108.931 7.10389 108.949 7.01728 108.967 6.92805C109.043 6.90694 109.043 6.90694 109.121 6.8854C110.652 6.44467 112.211 5.43276 113.023 4.03059C113.164 3.7747 113.297 3.51509 113.428 3.25384Z" fill="currentColor"/>
-      <path d="M60.6766 0C61.0673 0.12581 61.4492 0.270454 61.8314 0.419909C61.7973 0.662991 61.7007 0.869719 61.5966 1.08935C61.5687 1.14923 61.5687 1.14923 61.5402 1.21033C61.5 1.29659 61.4596 1.3828 61.4192 1.46896C61.3107 1.70004 61.2032 1.93157 61.0957 2.16311C61.0737 2.21046 61.0517 2.2578 61.0291 2.30659C60.8133 2.77215 60.6049 3.24083 60.3978 3.71029C60.1548 4.26071 59.9083 4.80894 59.6531 5.35385C59.3969 5.90096 59.1494 6.4514 58.9051 7.00396C58.6174 7.65495 58.3244 8.30319 58.026 8.94932C57.7331 9.58347 57.4454 10.2196 57.1632 10.8586C56.8696 11.523 56.5696 12.1842 56.2643 12.8433C56.2445 12.8861 56.2246 12.929 56.2042 12.9731C56.1845 13.0157 56.1647 13.0584 56.1443 13.1023C56.1048 13.1877 56.0652 13.2732 56.0257 13.3586C55.9965 13.4214 55.9965 13.4214 55.9668 13.4855C55.6739 14.1185 55.3857 14.7537 55.0983 15.3893C55.012 15.58 54.9254 15.7707 54.8387 15.9613C53.3699 19.2034 52.1137 22.5252 50.9422 25.8846C50.6835 26.6264 50.4217 27.3672 50.1592 28.1077C50.1391 28.1644 50.119 28.2211 50.0983 28.2795C49.9853 28.5984 49.8722 28.9173 49.759 29.2362C49.727 29.2255 49.695 29.2148 49.662 29.2037C49.6198 29.1896 49.5776 29.1755 49.5341 29.1609C49.4923 29.147 49.4506 29.133 49.4075 29.1186C49.3075 29.0856 49.207 29.0541 49.1064 29.023C49.0543 29.0067 49.0023 28.9905 48.9487 28.9738C48.8957 28.9575 48.8427 28.9413 48.7882 28.9245C48.6567 28.8688 48.6567 28.8688 48.5518 28.7113C48.5855 28.5981 48.5855 28.5981 48.6508 28.4677C48.6741 28.4202 48.6974 28.3726 48.7214 28.3236C48.7466 28.274 48.7718 28.2244 48.7978 28.1733C48.8462 28.0757 48.8945 27.9781 48.9428 27.8805C48.9646 27.8373 48.9864 27.794 49.0089 27.7494C49.0895 27.5824 49.1613 27.4122 49.2341 27.2416C49.2867 27.1266 49.3397 27.0118 49.3932 26.8972C49.415 26.8503 49.415 26.8503 49.4373 26.8025C49.4987 26.6708 49.5602 26.5391 49.6217 26.4074C49.667 26.3104 49.7122 26.2134 49.7574 26.1164C49.7841 26.0591 49.8109 26.0018 49.8384 25.9427C49.8914 25.8267 49.9429 25.71 49.9931 25.5928C50.0806 25.3891 50.1728 25.1882 50.2665 24.9873C50.3047 24.905 50.3428 24.8227 50.381 24.7404C50.401 24.6974 50.421 24.6543 50.4416 24.61C50.8037 23.8295 51.1593 23.0464 51.5069 22.2592C51.7986 21.5987 52.0994 20.943 52.4058 20.2891C52.5076 20.0713 52.6052 19.8525 52.6984 19.6308C52.8523 19.2793 53.0116 18.9302 53.1708 18.581C53.2145 18.4848 53.2583 18.3885 53.302 18.2923C53.3228 18.2466 53.3435 18.2009 53.3649 18.1539C53.4053 18.0651 53.4455 17.9763 53.4857 17.8874C53.6331 17.5614 53.7832 17.2366 53.9339 16.912C53.9554 16.8656 53.977 16.8192 53.9991 16.7715C54.0892 16.5775 54.1793 16.3836 54.2694 16.1897C54.3358 16.0466 54.4022 15.9036 54.4686 15.7605C54.4888 15.7172 54.509 15.6738 54.5298 15.6291C54.6407 15.3899 54.7471 15.1494 54.8504 14.9068C54.8838 14.8338 54.9176 14.7611 54.9521 14.6886C54.9698 14.6512 54.9876 14.6138 55.0058 14.5752C55.0422 14.4988 55.0785 14.4224 55.1149 14.346C55.1326 14.3086 55.1503 14.2712 55.1686 14.2326C55.1844 14.1995 55.2001 14.1664 55.2164 14.1323C55.2609 14.035 55.3035 13.9369 55.3457 13.8386C55.4227 13.659 55.5024 13.481 55.5836 13.3032C55.6136 13.2373 55.6436 13.1713 55.6736 13.1054C55.6892 13.0712 55.7047 13.037 55.7208 13.0018C56.2128 11.9194 56.695 10.8305 57.1041 9.71369C57.1932 9.47287 57.286 9.23728 57.3961 9.00509C57.5264 8.72781 57.6254 8.44286 57.7249 8.15356C57.8206 7.87734 57.9288 7.60892 58.044 7.34021C58.1277 7.13435 58.1958 6.92447 58.2626 6.7126C58.3147 6.56109 58.3147 6.56109 58.3915 6.38271C58.4983 6.13233 58.5788 5.8758 58.6622 5.6169C58.7133 5.46284 58.7716 5.31313 58.8332 5.16296C58.9649 4.83815 59.0721 4.50596 59.1807 4.17285C59.303 3.7977 59.4288 3.42757 59.5786 3.06249C59.6585 2.85875 59.721 2.65008 59.7843 2.44072C59.8776 2.13844 59.9763 1.84405 60.0997 1.55252C60.1694 1.37145 60.2239 1.18624 60.2797 1.00057C60.3846 0.652746 60.5144 0.32579 60.6766 0Z" fill="currentColor"/>
-    </svg>
-  </a>
+  <a href="/" class="nav-logo">Fork &amp; Float</a>
   <a href="/" class="nav-back">← All Recipes</a>
 </nav>
 
@@ -208,23 +159,19 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 5
 <div class="email-section">
   <div class="email-card">
     <div id="formWrap">
-      <span class="email-eyebrow">Stay in the loop</span>
-      <h2>New recipes,<br><em>first.</em></h2>
-      <p style="color:var(--taupe)">Subscribe and get new recipes straight to your inbox.</p>
+      <span class="email-eyebrow">Save this recipe</span>
+      <h2>Send it to<br><em>my email</em></h2>
+      <p>Get this recipe in your inbox, plus new recipes from Ava's kitchen as they drop.</p>
       <div class="email-form">
         <input type="email" class="email-input" id="emailIn" placeholder="your@email.com">
         <button class="btn-send" onclick="sendIt()">Send it →</button>
       </div>
-      <div class="email-checkbox-row">
-        <input type="checkbox" class="email-checkbox" id="emailNewsletter" checked>
-        <label class="email-checkbox-label" for="emailNewsletter">Also subscribe me to the Fork &amp; Float newsletter</label>
-      </div>
-      <p class="email-fine" style="margin-top:10px">No spam. Unsubscribe any time.</p>
+      <p class="email-fine">No spam. Unsubscribe any time.</p>
     </div>
     <div class="success-msg" id="successMsg">
       <div style="font-size:1.8rem;margin-bottom:12px">✦</div>
-      <h3>You're in.</h3>
-      <p>Check your inbox to confirm — then you'll be the first to know.</p>
+      <h3>On its way to you</h3>
+      <p>Check your inbox. Welcome to the Fork &amp; Float kitchen.</p>
     </div>
   </div>
   <div class="secondary">
@@ -233,25 +180,24 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 5
   </div>
 </div>
 
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo">Fork &amp; Float</span>
+    <div class="footer-links">
+      <a href="/">All Recipes</a>
+      <a href="https://www.forkandfloat.com">Main Site</a>
+    </div>
+  </div>
+</footer>
 
 <script>
-function sendIt() {
-  const email = document.getElementById('emailIn').value.trim();
-  const input = document.getElementById('emailIn');
-  if(!email||!email.includes('@')){input.style.borderColor='#c0392b';return}
-  input.style.borderColor='';
-  const f = document.createElement('form');
-  f.action = 'https://app.kit.com/forms/9484805/subscriptions';
-  f.method = 'POST';
-  f.target = 'kit_iframe';
-  const inp = document.createElement('input');
-  inp.type = 'hidden'; inp.name = 'email_address'; inp.value = email;
-  f.appendChild(inp);
-  document.body.appendChild(f);
-  f.submit();
-  document.body.removeChild(f);
+function sendIt(){
+  const v=document.getElementById('emailIn').value;
+  if(!v||!v.includes('@')){document.getElementById('emailIn').style.borderColor='#c0392b';return}
+  gtag('event', 'email_signup', { location: 'recipe_page', recipe: document.title });
   document.getElementById('formWrap').style.display='none';
   document.getElementById('successMsg').classList.add('show');
+  // TODO: replace with your Kit form action URL
 }
 function copyLink(){
   navigator.clipboard.writeText(window.location.href).then(()=>{
@@ -262,6 +208,5 @@ function copyLink(){
 }
 document.getElementById('emailIn').addEventListener('keypress',e=>{if(e.key==='Enter')sendIt()});
 </script>
-<iframe name="kit_iframe" style="display:none"></iframe>
 </body>
 </html>
