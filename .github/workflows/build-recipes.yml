@@ -1,0 +1,39 @@
+name: Build recipe pages
+
+# Runs whenever Ava adds/edits a recipe in the CMS (which commits to content/),
+# or when the template/build script changes. Regenerates the HTML pages +
+# recipes.json and commits them. Vercel then redeploys automatically.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/**"
+      - "template.html"
+      - "build.js"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-recipes
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm install
+      - name: Build pages
+        run: node build.js
+      - name: Commit generated pages
+        run: |
+          git config user.email "bot@forkandfloat.com"
+          git config user.name "Fork & Float Bot"
+          git add recipes recipes.json public/recipes.json
+          git diff --staged --quiet || git commit -m "🍽️ Rebuild recipe pages"
+          git push
