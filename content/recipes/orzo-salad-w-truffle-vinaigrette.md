@@ -1,0 +1,55 @@
+---
+title: "Orzo Salad w/ Truffle Vinaigrette"
+description: "Orzo and blanched veggies salad is bold and rich in flavour but super refreshing too!"
+category: "Salads"
+tags:
+  - salads
+  - vegetarian
+  - quick
+prepTime: "10 mins"
+cookTime: "10 mins"
+servings: "4"
+difficulty: "Easy"
+coverImage: "/images/uploads/orzo-salad-w-truffle-vinaigrette.png"
+date: 2026-05-29T11:41:00.000Z
+emoji: "🍽️"
+dietaryTags: "Veg, Vegan, Gluten-Free, Dairy-Free"
+ingredients:
+  - name: "Asparagus"
+    amount: "Half a bunch (10-12 stems)"
+  - name: "Sugar Snap Peas"
+    amount: "1 cup"
+  - name: "Orzo"
+    amount: "2 cups"
+  - name: "Radish"
+    amount: "4 medium"
+  - name: "Arugula"
+    amount: "2 cups"
+  - name: "Radish Leaves (optional)"
+    amount: "leaves of the 4 radishes"
+  - name: "Artichoke hearts (cooked)"
+    amount: "1 cup"
+  - name: "Lime"
+    amount: "1 medium"
+  - name: "Olive oil"
+    amount: "2 tbsp"
+  - name: "Truffle Oil"
+    amount: "2 tbsp"
+  - name: "White Vinegar"
+    amount: "2 tbsp"
+  - name: "Salt and Pepper"
+    amount: "To taste"
+  - name: "Toasted Pumpkin Seeds(for garnish)"
+    amount: "1/4 cup"
+steps:
+  - title: "Prep the Vegetables"
+    body: "Chop the asparagus diagonally into 2-inch pieces. Roughly chop the arugula and radish leaves. Slice radishes thinly (use a mandoline for best results)."
+  - title: "Blanch the Vegetables"
+    body: "Bring a pot of salted water to a boil. Blanch the asparagus, then the sugar snap peas, in the same pot. Cook each for 30 seconds until they slightly turn darker in green. Remove them from the boiling water and immediately into ice water."
+  - title: "Cook the Orzo"
+    body: "Using the same water, cook the orzo until al dente, about 5–6 minutes. Drain well."
+  - title: "Assemble"
+    body: "In a large bowl, combine the orzo, asparagus, sugar snap peas, artichoke hearts, arugula, and radish leaves. Drizzle with olive oil, truffle oil, lime juice, and white vinegar. Season with salt and pepper to taste. Toss gently and plate!"
+howToServe: []
+chefsNote: "Best served fresh, but can be stored in the fridge for up to 3 days. Great for meal prep — dress just before serving to keep it crisp."
+---

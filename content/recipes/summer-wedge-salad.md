@@ -1,0 +1,52 @@
+---
+title: "Summer Wedge Salad"
+description: "Summer Wedge Salad is the winning salad when corn and strawberries are in season!"
+category: "Salads"
+tags:
+  - salads
+  - vegetarian
+prepTime: "15 mins"
+cookTime: "15 mins"
+servings: "2"
+difficulty: "Easy"
+coverImage: "/images/uploads/summer-wedge-salad.png"
+date: 2026-05-29T11:50:00.000Z
+emoji: "🍽️"
+dietaryTags: "Veg, Gluten-Free, Seasonal"
+ingredients:
+  - name: "Lettuce head of choice"
+    amount: "1"
+  - name: "Corn on the cob"
+    amount: "2"
+  - name: "Strawberries"
+    amount: "4 big"
+  - name: "Pumpkin Seeds (toasted)"
+    amount: "1/4 cup"
+  - name: "Bluecheese (chunks)"
+    amount: "1/4 cup"
+  - name: "Tahini"
+    amount: "1/4 cup"
+  - name: "Olive oil"
+    amount: "1/4 cup"
+  - name: "Lime"
+    amount: "1"
+  - name: "Maple syrup"
+    amount: "1 tbsp"
+  - name: "Salt and Pepper to taste"
+    amount: ""
+steps:
+  - title: ""
+    body: "Grill the corn on the BBQ until browned and cooked through. If you don’t have a BBQ, boil the corn in salted water for a few minutes. Once cooked, cut the kernels off the cob."
+  - title: ""
+    body: "Slice the strawberries into your desired shape and size."
+  - title: ""
+    body: "Prepare the dressing by whisking together tahini, olive oil, lime juice, maple syrup, salt, and pepper until smooth."
+  - title: ""
+    body: "To assemble, place the lettuce wedges on your serving plate."
+  - title: ""
+    body: "Top with grilled corn, drizzle with the dressing, and garnish with strawberries, pumpkin seeds, and blue cheese."
+howToServe:
+  - "Keep the wedges in the fridge until just before serving so they’re crisp and refreshing."
+  - "Add the dressing just before serving so the leaves stay crisp."
+chefsNote: "Swap the BBQ for a grill pan or stovetop skillet if you don’t have outdoor access. If blue cheese feels too strong, try feta or goat cheese for a milder option. Add crunch with extra toppings: toasted almonds, pecans, or sunflower seeds work well too. The dressing can be made up to 2 days in advance and kept in the fridg. Just whisk again before using. For a vegan version, skip the cheese and add avocado slices for creaminess."
+---

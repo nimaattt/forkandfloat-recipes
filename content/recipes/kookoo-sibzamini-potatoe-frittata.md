@@ -1,0 +1,55 @@
+---
+title: "Kookoo Sibzamini (Potatoe Frittata)"
+description: "A comforting Persian potato frittata that’s crispy on the outside and soft on the inside."
+category: "Mains"
+tags:
+  - mains
+  - vegetarian
+  - persian
+prepTime: "15 mins"
+cookTime: "20 mins"
+servings: "3-4"
+difficulty: "Easy"
+coverImage: "/images/uploads/kookoo-sibzamini-potatoe-frittata.jpeg"
+date: 2026-05-29T11:34:00.000Z
+emoji: "🍽️"
+dietaryTags: "Veg, Dairy-Free"
+ingredients:
+  - name: "Potatoes"
+    amount: "5 large"
+  - name: "Eggs"
+    amount: "5"
+  - name: "Onion"
+    amount: "1 medium"
+  - name: "All purpose four"
+    amount: "2 tbsp"
+  - name: "Garlic powder"
+    amount: "1 tsp"
+  - name: "Chilli powder"
+    amount: "1 tsp"
+  - name: "Salt and Pepper"
+    amount: "To taste"
+steps:
+  - title: ""
+    body: "Grate the potatoes and onion. Using a cheesecloth, squeeze out as much water as possible until the mixture is very dry."
+  - title: ""
+    body: "Transfer to a bowl and add the eggs, flour and  the spices. Mix until well combined."
+  - title: ""
+    body: "Cover and refrigerate for 1 to 3 hours to help the mixture bind and develop flavour."
+  - title: ""
+    body: "Remove from the fridge and shape into small, flat patties using hands."
+  - title: ""
+    body: "Heat a generous amount of oil in a large pan over medium heat."
+  - title: ""
+    body: "Fry the patties in batches, making sure not to overcrowd the pan. Cook each side for about 6–7 minutes, until golden and crispy."
+  - title: ""
+    body: "Transfer to a paper towel to absorb excess oil."
+  - title: ""
+    body: "Serve warm."
+howToServe:
+  - "Serve warm as a light meal or snack"
+  - "Pair with yogurt or a simple salad on the side"
+  - "Great for breakfast, brunch, or as part of a shared table"
+  - "Make mini versions and top with caviar for an elevated bite"
+chefsNote: "Removing as much moisture as possible from the potatoes and onion is key for a crispy texture Letting the mixture rest in the fridge helps it bind better and hold its shape when frying Keep the heat at medium to ensure the inside cooks through without burning the outside Avoid overcrowding the pan so each piece gets evenly crispy"
+---

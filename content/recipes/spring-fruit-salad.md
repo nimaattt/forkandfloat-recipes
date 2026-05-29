@@ -1,0 +1,57 @@
+---
+title: "Spring Fruit Salad"
+description: "A bright spring salad with citrus, green apple, herbs, and a creamy tangy dressing."
+category: "Salads"
+tags:
+  - salads
+  - vegetarian
+  - quick
+prepTime: "10 mins"
+cookTime: "-"
+servings: "2"
+difficulty: "Easy"
+coverImage: "/images/uploads/spring-fruit-salad.png"
+date: 2026-05-29T11:36:00.000Z
+emoji: "🍽️"
+dietaryTags: "Veg, Vegan, Gluten-Free, Dairy-Free, Seasonal"
+ingredients:
+  - name: "Green apple"
+    amount: "1 Medium"
+  - name: "Oranges"
+    amount: "2 medium"
+  - name: "Kumquats"
+    amount: "3- 4"
+  - name: "Pomegranate seeds"
+    amount: "½ cup"
+  - name: "Fresh coriander"
+    amount: "5–6 leaves"
+  - name: "Capers"
+    amount: "1 tbsp"
+  - name: "Crackers (optional)"
+    amount: "½ cup crushed"
+  - name: "Dijon mustard"
+    amount: "1 tbsp"
+  - name: "Olive oil"
+    amount: "½ cup"
+  - name: "Lemon juice"
+    amount: "Juice of 1 lemon"
+  - name: "Maple syrup"
+    amount: "1 tbsp"
+  - name: "Tahini"
+    amount: "1 tsp"
+steps:
+  - title: ""
+    body: "Thinly slice the apple. Peel and thinly slice the oranges. Slice the kumquats."
+  - title: ""
+    body: "Arrange the oranges on a serving plate first, followed by the apples."
+  - title: ""
+    body: "Top with pomegranate seeds, kumquats, capers, and coriander leaves."
+  - title: ""
+    body: "In a small bowl, whisk together dijon mustard, olive oil, lemon juice, maple syrup, and tahini until smooth."
+  - title: ""
+    body: "Pour the dressing over the salad, making sure it coats all the ingredients evenly."
+  - title: ""
+    body: "Finish with crushed crackers on top for extra crunch."
+howToServe: []
+chefsNote: "Not ideal for meal prep once assembled. The dressing can be prepared ahead and stored in the fridge for up to 5 days."
+---

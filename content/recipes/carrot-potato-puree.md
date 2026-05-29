@@ -1,0 +1,47 @@
+---
+title: "Carrot Potato Purée"
+description: "A creamy, comforting purée with carrots, potato, ricotta, and warm cumin."
+category: "Sides"
+tags:
+  - vegetarian
+prepTime: "10 mins"
+cookTime: "15 mins"
+servings: "4"
+difficulty: "Easy"
+coverImage: "/images/uploads/carrot-potato-puree.png"
+date: 2026-05-29T11:25:00.000Z
+emoji: "🍽️"
+dietaryTags: "Veg, Gluten-Free"
+ingredients:
+  - name: "Yellow potatoes"
+    amount: "4 medium"
+  - name: "Carrots"
+    amount: "5 medium"
+  - name: "Milk of choice"
+    amount: "1 cup"
+  - name: "Butter"
+    amount: "¼ cup"
+  - name: "Ricotta cheese"
+    amount: "1 cup"
+  - name: "Cumin powder"
+    amount: "1 ½ tsp"
+  - name: "Salt"
+    amount: "to taste"
+  - name: "Black pepper"
+    amount: "to taste"
+steps:
+  - title: ""
+    body: "Peel the potatoes and carrots and cut into roughly 2-inch pieces."
+  - title: ""
+    body: "Add to salted boiling water and cook for about 15 minutes, or until tender. Strain well."
+  - title: ""
+    body: "Transfer to a bowl and mash. Add milk, butter, salt, pepper, and cumin."
+  - title: ""
+    body: "Add the ricotta last and blend until smooth and creamy."
+  - title: ""
+    body: "Transfer back to a pot and warm on low heat before serving."
+howToServe:
+  - "Serve alongside meat, grilled seafood, or roasted vegetables."
+  - "Works beautifully as a stand-alone side dish."
+chefsNote: "Great for meal prep. Store in the fridge for up to 2 days. Reheat gently before serving."
+---

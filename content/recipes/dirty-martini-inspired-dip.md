@@ -1,0 +1,51 @@
+---
+title: "Dirty Martini Inspired Dip"
+description: "Creamy and sharp dip, with just enough brightness to keep it light."
+category: "Sides"
+tags:
+  - vegetarian
+  - quick
+prepTime: "10 mins"
+cookTime: "0"
+servings: "3,4"
+difficulty: "Easy"
+coverImage: "/images/uploads/dirty-martini-inspired-dip.png"
+date: 2026-05-29T11:43:00.000Z
+emoji: "🍽️"
+dietaryTags: "Veg, Gluten-Free"
+ingredients:
+  - name: "Pitted Castelvetrano olives"
+    amount: "2 cups"
+  - name: "Blue cheese"
+    amount: "1/2 cup or one block"
+  - name: "Cream cheese"
+    amount: "1 cup"
+  - name: "High-protein skyr or thick Greek yogurt"
+    amount: "1 1/2 cup"
+  - name: "Lemon zest"
+    amount: "zest of 1 medium lemon"
+  - name: "Olive brine"
+    amount: "to thin if needed"
+  - name: "Extra V Olive oil"
+    amount: "1/2 cup"
+  - name: "Dried mint (optional)"
+    amount: "1 tsp"
+  - name: "Salt"
+    amount: "to taste"
+steps:
+  - title: "Stuff the olives"
+    body: "Fill each pitted Castelvetrano with blue cheese. Set aside."
+  - title: "Make the base"
+    body: "In a bowl, mix the yogurt, cream cheese, lemon zest, and a pinch of salt until smooth. If the mixture feels too thick, loosen it with a splash of olive brine."
+  - title: "Pipe"
+    body: "Transfer the mixture into a piping bag and pipe it onto your plate in any pattern you like(swirls, dots, or a spread)."
+  - title: "Top + finish"
+    body: "Add the blue-cheese-stuffed olives over the piped base. Finish with a generous drizzle of olive oil and a light sprinkle of dried mint."
+howToServe:
+  - "Use a shallow plate so the piping and olives stay visible."
+  - "Serve with crusty bread, crostini, or seeded crackers (something sturdy enough to scoop)."
+  - "Drizzle a bit more olive oil right before serving for shine."
+  - "Add a small pinch of dried mint or fresh lemon zest on top if you want a brighter finish."
+  - "Best served chilled or just slightly cool, so the dip holds its shape."
+chefsNote: "Best served fresh, but can be stored in the fridge for up to 2 days Great snack to prep ahead, when hosting."
+---

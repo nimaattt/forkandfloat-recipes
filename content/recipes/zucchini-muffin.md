@@ -1,0 +1,50 @@
+---
+title: "Zucchini Muffin"
+description: "Soft savory muffins packed with zucchini, parmesan, and garlic."
+category: "Dessert"
+tags:
+  - dessert
+  - vegetarian
+prepTime: "10 mins"
+cookTime: "20 mins"
+servings: "4"
+difficulty: "Easy"
+coverImage: "/images/uploads/zucchini-muffin.png"
+date: 2026-05-29T11:51:00.000Z
+emoji: "🍽️"
+dietaryTags: "Veg"
+ingredients:
+  - name: "Zucchini"
+    amount: "4 medium"
+  - name: "Eggs"
+    amount: "3 large"
+  - name: "All-purpose flour"
+    amount: "2½ cups"
+  - name: "Olive oil"
+    amount: "¼ cup"
+  - name: "Parmesan cheese"
+    amount: "½ cup, grated"
+  - name: "Baking powder"
+    amount: "2 tsp"
+  - name: "Garlic powder"
+    amount: "1 tsp"
+  - name: "Salt & Black pepper"
+    amount: "to taste"
+steps:
+  - title: ""
+    body: "Grate the zucchini using the finest side of a grater. Using a cheesecloth, squeeze out as much moisture as possible."
+  - title: ""
+    body: "In a large bowl, combine the zucchini with eggs, olive oil, garlic powder, salt, and pepper."
+  - title: ""
+    body: "Add flour, baking powder, and freshly grated parmesan cheese. Mix until you get a thick, dough-like consistency."
+  - title: ""
+    body: "Scoop the mixture into muffin tins."
+  - title: ""
+    body: "Bake at 400°F for about 20 minutes until puffed and golden brown."
+  - title: ""
+    body: "Remove from the oven and let cool on a rack for about 10 minutes before serving."
+howToServe:
+  - "Serve warm on their own or alongside soups, salads, or breakfast spreads."
+  - "Can serve on it’s own or with a yogurt and dill or Tzatziki dip on the side."
+chefsNote: "Best served fresh, but can be stored in the fridge for up to 2 days. Good for meal prep (the dough only)- bake before serving."
+---

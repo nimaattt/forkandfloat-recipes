@@ -1,0 +1,50 @@
+---
+title: "Poached Pear"
+description: "A simple, elegant dessert that’s both healthy and light."
+category: "Dessert"
+tags:
+  - dessert
+  - vegetarian
+prepTime: "5 mins"
+cookTime: "25 mins"
+servings: "4"
+difficulty: "Easy"
+coverImage: "/images/uploads/poached-pear.png"
+date: 2026-05-29T12:00:00.000Z
+emoji: "🍽️"
+dietaryTags: "Veg, Gluten-Free, Contains Nuts"
+ingredients:
+  - name: "Bosc Pear (firm)"
+    amount: "2"
+  - name: "Water"
+    amount: "1 L"
+  - name: "Sugar"
+    amount: "1 cup"
+  - name: "Lemon peel strips"
+    amount: "2,3 piece"
+  - name: "Orange peel strips"
+    amount: "2,3 piece"
+  - name: "Cinnamon Stick"
+    amount: "1 big"
+  - name: "Vanilla extract"
+    amount: "Few drops"
+  - name: "Dried rose (optional)"
+    amount: "1"
+  - name: "Fresh Ginger"
+    amount: "1-inch piece"
+  - name: "Walnut/hazelnut (roasted)"
+    amount: "1/2 cup"
+  - name: "Thyme (optional for garnish)"
+    amount: "2 stems"
+steps:
+  - title: "Prep pears"
+    body: "Peel, halve and core the pears, keeping stems."
+  - title: "Make poaching liquid"
+    body: "In a medium pot, combine water, sugar, lemon and orange peel,  vanilla, cinnamon, ginger and dried rose. Bring to a gentle simmer, stirring to dissolve."
+  - title: "Poach"
+    body: "Add pears and cover with a lid. Simmer gently, turning pears every 5 minutes, until a knife slides in with slight resistance, 20-25 mins depending on ripeness."
+  - title: "Cool & infuse"
+    body: "Remove from heat and let pears sit in the liquid for a few minutes (or chill in the syrup up to 24 hours for deeper flavor)."
+howToServe: []
+chefsNote: "Best served fresh, but can be stored in the fridge for up to 2 days. Swap skyr for whipped ricotta or mascarpone, for a richer taste. Serve on it’s own if dairy free. Swap walnuts for pumpkin seeds or sunflower seeds if nut-free."
+---
