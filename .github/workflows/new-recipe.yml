@@ -15,15 +15,18 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Debug payload
-        run: echo '${{ toJSON(github.event.client_payload) }}'
-      - name: Generate recipe page
+      - name: Build payload and generate recipe page
         run: |
-          node generate-recipe.js '${{ toJSON(github.event.client_payload) }}'
+          node -e "
+            const p = ${{ toJSON(github.event.client_payload) }};
+            const flat = { ...p.meta, ...p.timing, ...p.content };
+            require('fs').writeFileSync('/tmp/payload.json', JSON.stringify(flat));
+          "
+          node generate-recipe.js "$(cat /tmp/payload.json)"
       - name: Commit and push
         run: |
           git config user.email "bot@forkandfloat.com"
           git config user.name "Fork & Float Bot"
           git add .
-          git diff --staged --quiet || git commit -m "✨ New recipe: ${{ github.event.client_payload.title }}"
+          git diff --staged --quiet || git commit -m "✨ New recipe: ${{ github.event.client_payload.meta.title }}"
           git push
