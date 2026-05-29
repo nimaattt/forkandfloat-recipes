@@ -1,16 +1,670 @@
 [
   {
-    "title": "Persian Yogurt & Cucumber Dip (Mast-o-Khiar)alad",
-    "slug": "persian-yogurt-cucumber-dip-mast-o-khiar-alad",
-    "description": "risp cucumber, tomato and red onion with dried lime — a Persian classic",
-    "category": "Sides",
-    "prepTime": "10 minutes",
-    "cookTime": "none",
+    "title": "Poached Pear",
+    "slug": "poached-pear",
+    "description": "A simple, elegant dessert that’s both healthy and light.",
+    "category": "Dessert",
+    "prepTime": "5 mins",
+    "cookTime": "25 mins",
     "servings": "4",
     "difficulty": "Easy",
-    "coverImage": "https://lh3.googleusercontent.com/d/1BQY-GAGA90b5xzhVLf8PiBGYdJJRnd4S",
-    "tags": [],
+    "coverImage": "/images/uploads/poached-pear.png",
+    "tags": [
+      "dessert",
+      "vegetarian"
+    ],
     "emoji": "🍽️",
-    "dietaryTags": ""
+    "dietaryTags": "Veg, Gluten-Free, Contains Nuts",
+    "date": "2026-05-29T12:00:00.000Z"
+  },
+  {
+    "title": "Persian Yogurt & Cucumber Dip (Mast-o-Khiar)",
+    "slug": "persian-yogurt-cucumber-dip-mast-o-khiar",
+    "description": "A creamy, herb-forward yogurt dish with crunch, sweetness, and a fresh citrus finish.",
+    "category": "Sides",
+    "prepTime": "10 mins",
+    "cookTime": "0",
+    "servings": "3-4",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/persian-yogurt-cucumber-dip-mast-o-khiar.png",
+    "tags": [
+      "vegetarian",
+      "persian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free, Contains Nuts",
+    "date": "2026-05-29T11:59:00.000Z"
+  },
+  {
+    "title": "Fennel and Apple Salad",
+    "slug": "fennel-and-apple-salad",
+    "description": "Fennel and Apple salad is the crisp perfection for summer 🤩",
+    "category": "Salads",
+    "prepTime": "10 minutes",
+    "cookTime": "10 minutes",
+    "servings": "10 minutes",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/fennel-and-apple-salad.png",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free, Contains Nuts, Seasonal",
+    "date": "2026-05-29T11:58:00.000Z"
+  },
+  {
+    "title": "Chaghaleh Badoom Salad (Green Almond Salad)",
+    "slug": "chaghaleh-badoom-salad-green-almond-salad",
+    "description": "A crisp, tangy spring salad with fresh herbs, citrus, and a touch of saltiness.",
+    "category": "Salads",
+    "prepTime": "10 mins",
+    "cookTime": "0",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/chaghaleh-badoom-salad-green-almond-salad.png",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "persian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Vegan, Gluten-Free, Dairy-Free, Seasonal",
+    "date": "2026-05-29T11:57:00.000Z"
+  },
+  {
+    "title": "Persian Marinated Olives (Zaytoon Parvardeh)",
+    "slug": "persian-marinated-olives-zaytoon-parvardeh",
+    "description": "A bold, herb-forward Persian side dish from Northern Iran.",
+    "category": "Sides",
+    "prepTime": "15 mins",
+    "cookTime": "0",
+    "servings": "8–10 (small side portions)",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/persian-marinated-olives-zaytoon-parvardeh.png",
+    "tags": [
+      "vegetarian",
+      "persian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Vegan, Gluten-Free, Dairy-Free, Contains Nuts, Seasonal",
+    "date": "2026-05-29T11:56:00.000Z"
+  },
+  {
+    "title": "Salmon Tahdig",
+    "slug": "salmon-tahdig",
+    "description": "A crispy Persian-style herbed rice layered over salmon with garlic, butter, and saffron.",
+    "category": "Mains",
+    "prepTime": "10 mins",
+    "cookTime": "35 mins",
+    "servings": "4",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/salmon-tahdig.png",
+    "tags": [
+      "mains",
+      "persian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Dairy-Free, Contains Shellfish",
+    "date": "2026-05-29T11:55:00.000Z"
+  },
+  {
+    "title": "Persimmon Pancakes",
+    "slug": "persimmon-pancakes",
+    "description": "The warm, cozy and moist persimmon pancakes  that are perfect for winter mornings!",
+    "category": "Dessert",
+    "prepTime": "",
+    "cookTime": "",
+    "servings": "",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/persimmon-pancakes.png",
+    "tags": [
+      "dessert",
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Dairy-Free, Seasonal",
+    "date": "2026-05-29T11:54:00.000Z"
+  },
+  {
+    "title": "Zucchini Felafel",
+    "slug": "zucchini-felafel",
+    "description": "Zucchini falafels are light and crispy on the outside, soft on the inside, and packed with plant-based protein and fiber.",
+    "category": "Mains",
+    "prepTime": "15 mins",
+    "cookTime": "20 mins",
+    "servings": "3",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/zucchini-felafel.png",
+    "tags": [
+      "mains",
+      "vegetarian",
+      "persian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Vegan, Dairy-Free",
+    "date": "2026-05-29T11:53:00.000Z"
+  },
+  {
+    "title": "High-Protein Green Dressing",
+    "slug": "high-protein-green-dressing",
+    "description": "A fresh, herb-packed dressing with a creamy texture and a bright, citrusy finish.",
+    "category": "Sides",
+    "prepTime": "5 mins",
+    "cookTime": "0",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/high-protein-green-dressing.png",
+    "tags": [
+      "vegetarian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Vegan, Gluten-Free, Dairy-Free, Contains Nuts",
+    "date": "2026-05-29T11:52:00.000Z"
+  },
+  {
+    "title": "Zucchini Muffin",
+    "slug": "zucchini-muffin",
+    "description": "Soft savory muffins packed with zucchini, parmesan, and garlic.",
+    "category": "Dessert",
+    "prepTime": "10 mins",
+    "cookTime": "20 mins",
+    "servings": "4",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/zucchini-muffin.png",
+    "tags": [
+      "dessert",
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg",
+    "date": "2026-05-29T11:51:00.000Z"
+  },
+  {
+    "title": "Summer Wedge Salad",
+    "slug": "summer-wedge-salad",
+    "description": "Summer Wedge Salad is the winning salad when corn and strawberries are in season!",
+    "category": "Salads",
+    "prepTime": "15 mins",
+    "cookTime": "15 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/summer-wedge-salad.png",
+    "tags": [
+      "salads",
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free, Seasonal",
+    "date": "2026-05-29T11:50:00.000Z"
+  },
+  {
+    "title": "Quince Jam",
+    "slug": "quince-jam",
+    "description": "A fragrant, slow-cooked quince jam with a deep ruby colour and delicate sweetness.",
+    "category": "Dessert",
+    "prepTime": "10 mins",
+    "cookTime": "4 hours",
+    "servings": "2 medium jars",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/quince-jam.png",
+    "tags": [
+      "dessert",
+      "vegetarian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Vegan, Gluten-Free, Dairy-Free, Seasonal",
+    "date": "2026-05-29T11:49:00.000Z"
+  },
+  {
+    "title": "Corn Ribs",
+    "slug": "corn-ribs",
+    "description": "Smoky, cheesy and effortless snack that celebrates corn season!",
+    "category": "Sides",
+    "prepTime": "10 mins",
+    "cookTime": "15 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/corn-ribs.png",
+    "tags": [
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free, Dairy-Free, Seasonal",
+    "date": "2026-05-29T11:48:00.000Z"
+  },
+  {
+    "title": "Vegetarian Kalam Polo (Persian Cabbage Rice)",
+    "slug": "vegetarian-kalam-polo-persian-cabbage-rice",
+    "description": "A fragrant Persian mixed rice layered with spiced cabbage and soy chunks.",
+    "category": "Mains",
+    "prepTime": "10 minas",
+    "cookTime": "40 mins",
+    "servings": "4",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/vegetarian-kalam-polo-persian-cabbage-rice.png",
+    "tags": [
+      "mains",
+      "vegetarian",
+      "persian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Vegan, Gluten-Free, Dairy-Free",
+    "date": "2026-05-29T11:47:00.000Z"
+  },
+  {
+    "title": "Kebab Torsh (Walnut and pomegranate marinated tenderloin)",
+    "slug": "kebab-torsh-walnut-and-pomegranate-marinated-tenderloin",
+    "description": "A northern Iranian kabob marinated with herbs, walnuts, and pomegranate molasses.",
+    "category": "Mains",
+    "prepTime": "10 mins + overnight marinade",
+    "cookTime": "10 mins",
+    "servings": "6",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/kebab-torsh-walnut-and-pomegranate-marinated-tenderloin.png",
+    "tags": [
+      "mains",
+      "persian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Gluten-Free, Dairy-Free, Contains Nuts",
+    "date": "2026-05-29T11:46:00.000Z"
+  },
+  {
+    "title": "Spinach and Ricotta Stuffed Shells",
+    "slug": "spinach-and-ricotta-stuffed-shells",
+    "description": "A cozy, cheesy pasta, lifted with spinach and a hint of lemon for balance.",
+    "category": "Mains",
+    "prepTime": "10 mins",
+    "cookTime": "20 mins",
+    "servings": "4",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/spinach-and-ricotta-stuffed-shells.png",
+    "tags": [
+      "mains",
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Dairy-Free",
+    "date": "2026-05-29T11:45:00.000Z"
+  },
+  {
+    "title": "Mirza Ghasemi or Smoky Eggplant Dish",
+    "slug": "mirza-ghasemi-or-smoky-eggplant-dish",
+    "description": "A smoky Persian eggplant dish with tomatoes, garlic, and eggs.",
+    "category": "Mains",
+    "prepTime": "",
+    "cookTime": "None",
+    "servings": "",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/mirza-ghasemi-or-smoky-eggplant-dish.png",
+    "tags": [
+      "mains",
+      "vegetarian",
+      "persian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free, Dairy-Free",
+    "date": "2026-05-29T11:44:00.000Z"
+  },
+  {
+    "title": "Dirty Martini Inspired Dip",
+    "slug": "dirty-martini-inspired-dip",
+    "description": "Creamy and sharp dip, with just enough brightness to keep it light.",
+    "category": "Sides",
+    "prepTime": "10 mins",
+    "cookTime": "0",
+    "servings": "3,4",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/dirty-martini-inspired-dip.png",
+    "tags": [
+      "vegetarian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free",
+    "date": "2026-05-29T11:43:00.000Z"
+  },
+  {
+    "title": "Stuffed Spaghetti Squash",
+    "slug": "stuffed-spaghetti-squash",
+    "description": "A warm, fibre-rich, veggie-filled dish, made for winter!",
+    "category": "Mains",
+    "prepTime": "5 mins",
+    "cookTime": "25 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/stuffed-spaghetti-squash.png",
+    "tags": [
+      "mains",
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free, Seasonal",
+    "date": "2026-05-29T11:42:00.000Z"
+  },
+  {
+    "title": "Orzo Salad w/ Truffle Vinaigrette",
+    "slug": "orzo-salad-w-truffle-vinaigrette",
+    "description": "Orzo and blanched veggies salad is bold and rich in flavour but super refreshing too!",
+    "category": "Salads",
+    "prepTime": "10 mins",
+    "cookTime": "10 mins",
+    "servings": "4",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/orzo-salad-w-truffle-vinaigrette.png",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Vegan, Gluten-Free, Dairy-Free",
+    "date": "2026-05-29T11:41:00.000Z"
+  },
+  {
+    "title": "Persian Inspired Slaw",
+    "slug": "persian-inspired-slaw",
+    "description": "A bright, textured slaw layered with fresh herbs, sweet pomegranate, and a tangy molasses dressing.",
+    "category": "Salads",
+    "prepTime": "15 mins",
+    "cookTime": "-",
+    "servings": "4",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/persian-inspired-slaw.png",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "persian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free, Dairy-Free, Seasonal",
+    "date": "2026-05-29T11:40:00.000Z"
+  },
+  {
+    "title": "Pear Carpaccio",
+    "slug": "pear-carpaccio",
+    "description": "Crisp pear carpaccio! Simple & elegant  for sunny days.",
+    "category": "Dessert",
+    "prepTime": "10 mins",
+    "cookTime": "-",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/pear-carpaccio.png",
+    "tags": [
+      "dessert",
+      "vegetarian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free, Dairy-Free, Contains Nuts, Seasonal",
+    "date": "2026-05-29T11:39:00.000Z"
+  },
+  {
+    "title": "Halloumi Quinoa Salad",
+    "slug": "halloumi-quinoa-salad",
+    "description": "High protein Halloumi Quinoa Salad is packed with flavours and all the greens you need.",
+    "category": "Salads",
+    "prepTime": "15 mins",
+    "cookTime": "10 mins",
+    "servings": "3",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/halloumi-quinoa-salad.png",
+    "tags": [
+      "salads",
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free",
+    "date": "2026-05-29T11:38:00.000Z"
+  },
+  {
+    "title": "Ricotta Pistachio Stuffed Dates",
+    "slug": "ricotta-pistachio-stuffed-dates",
+    "description": "Warm dates filled with creamy ricotta and pistachios, a simple yet elevated balance of sweet and savoury",
+    "category": "Dessert",
+    "prepTime": "10 mins",
+    "cookTime": "10 mins",
+    "servings": "4-5",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/ricotta-pistachio-stuffed-dates.png",
+    "tags": [
+      "dessert",
+      "vegetarian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free, Contains Nuts",
+    "date": "2026-05-29T11:37:00.000Z"
+  },
+  {
+    "title": "Spring Fruit Salad",
+    "slug": "spring-fruit-salad",
+    "description": "A bright spring salad with citrus, green apple, herbs, and a creamy tangy dressing.",
+    "category": "Salads",
+    "prepTime": "10 mins",
+    "cookTime": "-",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/spring-fruit-salad.png",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Vegan, Gluten-Free, Dairy-Free, Seasonal",
+    "date": "2026-05-29T11:36:00.000Z"
+  },
+  {
+    "title": "Acorn Squash & Kale Salad",
+    "slug": "acorn-squash-kale-salad",
+    "description": "A cozy seasonal salad built on warm acorn squash and soft massaged kale.",
+    "category": "Salads",
+    "prepTime": "10 mins",
+    "cookTime": "15 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/acorn-squash-kale-salad.png",
+    "tags": [
+      "salads",
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Vegan, Gluten-Free, Dairy-Free, Contains Nuts, Seasonal",
+    "date": "2026-05-29T11:35:00.000Z"
+  },
+  {
+    "title": "Kookoo Sibzamini (Potatoe Frittata)",
+    "slug": "kookoo-sibzamini-potatoe-frittata",
+    "description": "A comforting Persian potato frittata that’s crispy on the outside and soft on the inside.",
+    "category": "Mains",
+    "prepTime": "15 mins",
+    "cookTime": "20 mins",
+    "servings": "3-4",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/kookoo-sibzamini-potatoe-frittata.jpeg",
+    "tags": [
+      "mains",
+      "vegetarian",
+      "persian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Dairy-Free",
+    "date": "2026-05-29T11:34:00.000Z"
+  },
+  {
+    "title": "Radicchio & Persimmon Salad",
+    "slug": "radicchio-persimmon-salad",
+    "description": "A seasonal mix of bitter, sweet, and bright, built for winter days.",
+    "category": "Salads",
+    "prepTime": "10 mins",
+    "cookTime": "7 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/radicchio-persimmon-salad.png",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free, Contains Nuts, Seasonal",
+    "date": "2026-05-29T11:33:00.000Z"
+  },
+  {
+    "title": "Shirazi Salad",
+    "slug": "shirazi-salad",
+    "description": "A bright and refreshing Persian salad made with finely chopped vegetables and a tangy dressing.",
+    "category": "Salads",
+    "prepTime": "15 mins",
+    "cookTime": "0",
+    "servings": "4",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/shirazi-salad.png",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "persian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Vegan, Gluten-Free, Dairy-Free",
+    "date": "2026-05-29T11:32:00.000Z"
+  },
+  {
+    "title": "Miso Cauliflower Steak",
+    "slug": "miso-cauliflower-steak",
+    "description": "Cauliflower Steak is high in fiber, vitamin C, and antioxidants.",
+    "category": "Mains",
+    "prepTime": "10 mins",
+    "cookTime": "15 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/miso-cauliflower-steak.png",
+    "tags": [
+      "mains",
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free, Dairy-Free",
+    "date": "2026-05-29T11:31:00.000Z"
+  },
+  {
+    "title": "Kohlrabi Schnitzel",
+    "slug": "kohlrabi-schnitzel",
+    "description": "Crispy golden kohlrabi schnitzels served with a creamy tangy sauce.",
+    "category": "Mains",
+    "prepTime": "10 mins",
+    "cookTime": "20 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/kohlrabi-schnitzel.png",
+    "tags": [
+      "mains",
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Dairy-Free, Seasonal",
+    "date": "2026-05-29T11:30:00.000Z"
+  },
+  {
+    "title": "Persian Saffron Ice Cream (Bastani Sonnati)",
+    "slug": "persian-saffron-ice-cream-bastani-sonnati",
+    "description": "A Rich, floral, and nostalgic persian dessert with saffron, rose, and crunchy cream pieces.",
+    "category": "Dessert",
+    "prepTime": "20 mins",
+    "cookTime": "0",
+    "servings": "6-8",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/persian-saffron-ice-cream-bastani-sonnati.png",
+    "tags": [
+      "dessert",
+      "vegetarian",
+      "persian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free, Contains Nuts",
+    "date": "2026-05-29T11:29:00.000Z"
+  },
+  {
+    "title": "Spring Green Crepes",
+    "slug": "spring-green-crepes",
+    "description": "Green, high protein and too pretty!",
+    "category": "Dessert",
+    "prepTime": "5 mins",
+    "cookTime": "20 mins",
+    "servings": "10 Crepes",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/spring-green-crepes.png",
+    "tags": [
+      "dessert",
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg",
+    "date": "2026-05-29T11:28:00.000Z"
+  },
+  {
+    "title": "Wake up Shots",
+    "slug": "wake-up-shots",
+    "description": "Wake up shots are refreshing and energizing morning ritual.",
+    "category": "Sides",
+    "prepTime": "20 mins",
+    "cookTime": "-",
+    "servings": "2 bottles",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/wake-up-shots.png",
+    "tags": [
+      "vegetarian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Vegan, Gluten-Free, Dairy-Free, Seasonal",
+    "date": "2026-05-29T11:27:00.000Z"
+  },
+  {
+    "title": "Quinoa Crunch Bowl",
+    "slug": "quinoa-crunch-bowl",
+    "description": "A vibrant, nourishing bowl packed with texture, colour, and bold flavour.",
+    "category": "Mains",
+    "prepTime": "15 minutes",
+    "cookTime": "15 minutes",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/quinoa-crunch-bowl.png",
+    "tags": [
+      "mains",
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Vegan, Gluten-Free, Dairy-Free, Contains Nuts",
+    "date": "2026-05-29T11:26:00.000Z"
+  },
+  {
+    "title": "Carrot Potato Purée",
+    "slug": "carrot-potato-puree",
+    "description": "A creamy, comforting purée with carrots, potato, ricotta, and warm cumin.",
+    "category": "Sides",
+    "prepTime": "10 mins",
+    "cookTime": "15 mins",
+    "servings": "4",
+    "difficulty": "Easy",
+    "coverImage": "/images/uploads/carrot-potato-puree.png",
+    "tags": [
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "Veg, Gluten-Free",
+    "date": "2026-05-29T11:25:00.000Z"
   }
 ]
