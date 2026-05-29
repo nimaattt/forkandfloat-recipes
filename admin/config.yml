@@ -1,0 +1,74 @@
+# Fork & Float — Sveltia CMS configuration
+# This file defines the editor Ava sees at /admin.
+
+backend:
+  name: github
+  repo: nimaattt/forkandfloat-recipes   # <-- your GitHub repo
+  branch: main
+  # Paste your Cloudflare auth-worker URL here after deploying it
+  # (see SVELTIA_SETUP.md, Step 2). Example:
+  base_url: https://sveltia-cms-auth.forkandfloat.workers.dev
+
+# Where uploaded photos are stored in the repo, and how they're referenced on the site
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://recipes.forkandfloat.com
+
+# Nice-to-have: editing UX
+publish_mode: simple
+
+collections:
+  - name: recipes
+    label: Recipes
+    label_singular: Recipe
+    folder: content/recipes
+    create: true
+    delete: true
+    slug: "{{slug}}"           # filename comes from the recipe name
+    summary: "{{title}}"
+    sortable_fields: [title, date]
+    fields:
+      - { name: title, label: Recipe name, widget: string }
+      - { name: description, label: One-line description, widget: string, hint: "Shown under the title and on the card." }
+      - name: category
+        label: Category
+        widget: select
+        options: ["Salads", "Mains", "Vegetarian", "Persian-Inspired", "Sides", "Dessert", "Quick & Easy"]
+      - name: tags
+        label: Filter tags
+        widget: select
+        multiple: true
+        required: false
+        options: ["salads", "mains", "vegetarian", "persian", "quick", "crowd", "dessert"]
+        hint: "Controls which filter buttons this recipe shows up under on the homepage."
+      - { name: prepTime, label: Prep time, widget: string, hint: 'e.g. "10 min"' }
+      - { name: cookTime, label: Cook time, widget: string, default: "None", hint: 'e.g. "40 min" or "None"' }
+      - { name: servings, label: Servings, widget: string, hint: 'e.g. "4" or "4–6"' }
+      - { name: difficulty, label: Difficulty, widget: select, options: ["Easy", "Medium", "Advanced"], default: "Easy" }
+      - { name: date, label: Date added, widget: datetime, hint: "Controls ordering — newest shows first with a 'New' badge." }
+      - { name: coverImage, label: Cover photo, widget: image, required: false, hint: "Optional. A wide landscape photo looks best." }
+      - { name: emoji, label: Card emoji, widget: string, required: false, default: "🍽️", hint: "Used on the card only if there's no photo." }
+      - name: ingredients
+        label: Ingredients
+        label_singular: Ingredient
+        widget: list
+        summary: "{{fields.name}} — {{fields.amount}}"
+        fields:
+          - { name: name, label: Ingredient, widget: string }
+          - { name: amount, label: Amount, widget: string, required: false, hint: 'e.g. "2 tbsp" or "1, diced"' }
+      - name: steps
+        label: Method
+        label_singular: Step
+        widget: list
+        summary: "{{fields.title}}"
+        fields:
+          - { name: title, label: Step title, widget: string }
+          - { name: body, label: What to do, widget: text, required: false }
+      - name: howToServe
+        label: How to serve
+        widget: list
+        required: false
+        field: { name: item, label: Suggestion, widget: string }
+      - { name: chefsNote, label: "Ava's note", widget: text, required: false, hint: "Optional personal note shown in italics at the bottom." }
+      - { name: dietaryTags, label: "Dietary tags", widget: string, required: false, hint: "Comma-separated, e.g. Vegetarian, Gluten-Free, Seasonal" }
