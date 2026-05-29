@@ -1,5 +1,4 @@
 export default async function handler(req, res) {
-  // Only allow POST
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
@@ -8,6 +7,34 @@ export default async function handler(req, res) {
   if (!token) {
     return res.status(500).json({ error: 'GitHub token not configured on server.' });
   }
+
+  const d = req.body;
+
+  // GitHub repository_dispatch client_payload is capped at 10 properties.
+  // We nest everything into 3 keys to stay well under the limit.
+  const client_payload = {
+    meta: {
+      title:       d.title,
+      slug:        d.slug,
+      description: d.description,
+      category:    d.category,
+      difficulty:  d.difficulty,
+      emoji:       d.emoji,
+    },
+    timing: {
+      prepTime: d.prepTime,
+      cookTime: d.cookTime,
+      servings: d.servings,
+    },
+    content: {
+      coverImage:  d.coverImage,
+      ingredients: d.ingredients,
+      steps:       d.steps,
+      howToServe:  d.howToServe,
+      chefsNote:   d.chefsNote,
+      tags:        d.tags,
+    },
+  };
 
   try {
     const response = await fetch(
@@ -19,10 +46,7 @@ export default async function handler(req, res) {
           'Accept': 'application/vnd.github.v3+json',
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          event_type: 'new-recipe',
-          client_payload: req.body,
-        }),
+        body: JSON.stringify({ event_type: 'new-recipe', client_payload }),
       }
     );
 
