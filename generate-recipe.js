@@ -9,6 +9,15 @@ function slugify(text) {
     .replace(/^-|-$/g, '');
 }
 
+// Escape for safe insertion into HTML text / attributes
+function esc(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 function parseIngredients(raw) {
   if (!raw) return '';
   return raw
@@ -18,9 +27,9 @@ function parseIngredients(raw) {
     .map(line => {
       const match = line.match(/^(.+?)\s*\[(.+?)\]$/);
       if (match) {
-        return `<li><span>${match[1].trim()}</span><strong>${match[2].trim()}</strong></li>`;
+        return `<li><span>${esc(match[1].trim())}</span><strong>${esc(match[2].trim())}</strong></li>`;
       }
-      return `<li><span>${line}</span></li>`;
+      return `<li><span>${esc(line)}</span></li>`;
     })
     .join('\n        ');
 }
@@ -35,8 +44,8 @@ function parseSteps(raw) {
       const title = lines[0];
       const body = lines.slice(1).join(' ');
       return `<li>
-          <h3>${title}</h3>
-          ${body ? `<p>${body}</p>` : ''}
+          <h3>${esc(title)}</h3>
+          ${body ? `<p>${esc(body)}</p>` : ''}
         </li>`;
     })
     .filter(Boolean)
@@ -49,7 +58,7 @@ function parseHowToServe(raw) {
     .split('\n')
     .map(l => l.trim().replace(/^[-•*]\s*/, ''))
     .filter(Boolean)
-    .map(l => `<li>${l}</li>`)
+    .map(l => `<li>${esc(l)}</li>`)
     .join('\n          ');
   return `
     <div class="how-to-serve">
@@ -63,28 +72,37 @@ function parseChefsNote(raw) {
   return `
     <div class="chef-note">
       <span class="chef-note-label">Ava's note</span>
-      <p>"${raw.trim()}"</p>
+      <p>"${esc(raw.trim())}"</p>
     </div>`;
 }
 
-function parseCoverImage(url) {
-  if (!url || !url.trim()) {
-    return '<div class="cover-placeholder">🍽️</div>';
-  }
+// Pull the file ID out of ANY common Google Drive URL shape.
+// Handles: open?id=ID, uc?id=ID, /file/d/ID/view, /d/ID, and bare lh3 URLs.
+function extractDriveId(url) {
+  const m =
+    url.match(/[?&]id=([^&]+)/) ||
+    url.match(/\/file\/d\/([^/]+)/) ||
+    url.match(/\/d\/([^/?]+)/);
+  return m ? m[1] : null;
+}
+
+// Returns a directly-embeddable image URL (or '' if none).
+function toImageUrl(url) {
+  if (!url || !url.trim()) return '';
   let src = url.trim();
-  // Convert Google Drive share URL to embeddable thumbnail URL
   if (src.includes('drive.google.com')) {
-    const idMatch = src.match(/id=([^&]+)/);
-    if (idMatch) {
-      src = `https://lh3.googleusercontent.com/d/${idMatch[1]}`;
-    }
+    const id = extractDriveId(src);
+    if (id) src = `https://lh3.googleusercontent.com/d/${id}`;
   }
-  return `<img class="cover-img" src="${src}" alt="Recipe cover photo">`;
+  return src;
+}
+
+function coverImageHtml(imageUrl) {
+  if (!imageUrl) return '<div class="cover-placeholder">🍽️</div>';
+  return `<img class="cover-img" src="${esc(imageUrl)}" alt="Recipe cover photo">`;
 }
 
 function generateRecipe(data) {
-  // Accept both camelCase (from generate-recipe.js CLI) and
-  // the exact field names as sent from Make.com / Google Sheets
   const title       = data.title       || data['Recipe Name']          || '';
   const description = data.description || data['One-line description'] || '';
   const category    = data.category    || data['Category']             || '';
@@ -101,30 +119,35 @@ function generateRecipe(data) {
   const tags        = Array.isArray(data.tags) ? data.tags : (data.tags || '').split(',').map(t => t.trim()).filter(Boolean);
   const emoji       = data.emoji || '🍽️';
 
-  // Unescape \n back to real newlines (Make.com sends them escaped)
   const unescape = s => s.replace(/\\n/g, '\n');
   const ingredientsClean = unescape(ingredients);
   const stepsClean = unescape(steps);
 
   const slug = data.slug || slugify(title);
 
+  // Convert the cover URL ONCE, reuse everywhere (page img, og:image, JSON).
+  const coverUrl = toImageUrl(coverImage);
+
   const templatePath = path.join(__dirname, 'template.html');
   let html = fs.readFileSync(templatePath, 'utf8');
 
-  html = html
-    .replace(/{{RECIPE_TITLE}}/g, title)
-    .replace(/{{RECIPE_DESCRIPTION}}/g, description)
-    .replace(/{{RECIPE_CATEGORY}}/g, category)
-    .replace(/{{PREP_TIME}}/g, prepTime)
-    .replace(/{{COOK_TIME}}/g, cookTime)
-    .replace(/{{SERVINGS}}/g, servings)
-    .replace(/{{DIFFICULTY}}/g, difficulty)
-    .replace(/{{RECIPE_COVER_IMAGE}}/g, coverImage)
-    .replace(/{{COVER_IMAGE_HTML}}/g, parseCoverImage(coverImage))
-    .replace(/{{INGREDIENTS_HTML}}/g, parseIngredients(ingredientsClean))
-    .replace(/{{STEPS_HTML}}/g, parseSteps(stepsClean))
-    .replace(/{{HOW_TO_SERVE_HTML}}/g, parseHowToServe(howToServe))
-    .replace(/{{CHEFS_NOTE_HTML}}/g, parseChefsNote(chefsNote));
+  // NOTE: replacement values are passed via a function so a literal "$"
+  // in user text can't be interpreted as a regex replacement token.
+  const set = (tpl, token, value) => tpl.replace(token, () => value);
+
+  html = set(html, /{{RECIPE_TITLE}}/g, esc(title));
+  html = set(html, /{{RECIPE_DESCRIPTION}}/g, esc(description));
+  html = set(html, /{{RECIPE_CATEGORY}}/g, esc(category));
+  html = set(html, /{{PREP_TIME}}/g, esc(prepTime));
+  html = set(html, /{{COOK_TIME}}/g, esc(cookTime));
+  html = set(html, /{{SERVINGS}}/g, esc(servings));
+  html = set(html, /{{DIFFICULTY}}/g, esc(difficulty));
+  html = set(html, /{{RECIPE_COVER_IMAGE}}/g, esc(coverUrl));   // og:image now uses the CONVERTED url
+  html = set(html, /{{COVER_IMAGE_HTML}}/g, coverImageHtml(coverUrl));
+  html = set(html, /{{INGREDIENTS_HTML}}/g, parseIngredients(ingredientsClean));
+  html = set(html, /{{STEPS_HTML}}/g, parseSteps(stepsClean));
+  html = set(html, /{{HOW_TO_SERVE_HTML}}/g, parseHowToServe(howToServe));
+  html = set(html, /{{CHEFS_NOTE_HTML}}/g, parseChefsNote(chefsNote));
 
   const recipesDir = path.join(__dirname, 'recipes');
   if (!fs.existsSync(recipesDir)) fs.mkdirSync(recipesDir);
@@ -141,9 +164,7 @@ function generateRecipe(data) {
   }
 
   existing = existing.filter(r => r.slug !== slug);
-  // Use the converted image URL in the index too
-  const coverImageConverted = parseCoverImage(coverImage).match(/src="([^"]+)"/)?.[1] || coverImage;
-  const entry = { title, slug, description, category, prepTime, cookTime, servings, difficulty, coverImage: coverImageConverted, tags, emoji, dietaryTags };
+  const entry = { title, slug, description, category, prepTime, cookTime, servings, difficulty, coverImage: coverUrl, tags, emoji, dietaryTags };
   existing.unshift(entry);
 
   const json = JSON.stringify(existing, null, 2);
@@ -170,4 +191,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { generateRecipe, slugify };
+module.exports = { generateRecipe, slugify, toImageUrl, extractDriveId };
