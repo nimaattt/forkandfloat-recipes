@@ -103,6 +103,12 @@ function coverImageHtml(imageUrl) {
 }
 
 function generateRecipe(data) {
+  // api/publish.js nests fields into meta/timing/content to stay under the
+  // GitHub repository_dispatch 10-property cap. Flatten it back out here.
+  // (Flat payloads from the CLI / Make.com still work unchanged.)
+  if (data && (data.meta || data.timing || data.content)) {
+    data = Object.assign({}, data, data.meta || {}, data.timing || {}, data.content || {});
+  }
   const title       = data.title       || data['Recipe Name']          || '';
   const description = data.description || data['One-line description'] || '';
   const category    = data.category    || data['Category']             || '';
