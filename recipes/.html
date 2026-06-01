@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4Z60BVXLNH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4Z60BVXLNH');
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> – Fork & Float</title>
 <meta name="description" content="">
@@ -168,6 +176,7 @@ footer{border-top:1px solid var(--sand);padding:26px 56px}
 function sendIt(){
   const v=document.getElementById('emailIn').value;
   if(!v||!v.includes('@')){document.getElementById('emailIn').style.borderColor='#c0392b';return}
+  gtag('event', 'email_signup', { location: 'recipe_page', recipe: document.title });
   document.getElementById('formWrap').style.display='none';
   document.getElementById('successMsg').classList.add('show');
   // TODO: replace with your Kit form action URL

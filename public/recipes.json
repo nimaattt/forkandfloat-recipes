@@ -1,5 +1,19 @@
 [
   {
+    "title": "",
+    "slug": "",
+    "description": "",
+    "category": "",
+    "prepTime": "",
+    "cookTime": "",
+    "servings": "",
+    "difficulty": "Easy",
+    "coverImage": "",
+    "tags": [],
+    "emoji": "🍽️",
+    "dietaryTags": ""
+  },
+  {
     "title": "Nima is testing",
     "slug": "nima-is-testing",
     "description": "Nima is testing",
