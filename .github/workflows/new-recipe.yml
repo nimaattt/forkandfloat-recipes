@@ -7,6 +7,11 @@ on:
 permissions:
   contents: write
 
+# Serialize runs so two form submissions can't race on recipes.json.
+concurrency:
+  group: recipe-generation
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -15,18 +20,21 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Build payload and generate recipe page
+      - name: Debug payload
+        run: echo '${{ toJSON(github.event.client_payload) }}'
+      - name: Generate recipe page
         run: |
-          node -e "
-            const p = ${{ toJSON(github.event.client_payload) }};
-            const flat = { ...p.meta, ...p.timing, ...p.content };
-            require('fs').writeFileSync('/tmp/payload.json', JSON.stringify(flat));
-          "
-          node generate-recipe.js "$(cat /tmp/payload.json)"
-      - name: Commit and push
+          node generate-recipe.js '${{ toJSON(github.event.client_payload) }}'
+      - name: Commit and push (with rebase retry)
         run: |
           git config user.email "bot@forkandfloat.com"
           git config user.name "Fork & Float Bot"
           git add .
-          git diff --staged --quiet || git commit -m "✨ New recipe: ${{ github.event.client_payload.meta.title }}"
-          git push
+          git diff --staged --quiet && { echo "No changes"; exit 0; }
+          git commit -m "✨ New recipe: ${{ github.event.client_payload.title }}"
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            echo "Push rejected (attempt $i) — rebasing onto latest main and retrying"
+            git pull --rebase origin main
+          done
+          echo "Failed to push after 5 attempts"; exit 1
