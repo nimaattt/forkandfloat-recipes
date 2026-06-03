@@ -23,13 +23,9 @@
 body{font-family:'Jost',sans-serif;background:var(--warm-white);color:var(--text);font-weight:300;line-height:1.7}
 nav{display:flex;align-items:center;justify-content:space-between;padding:20px 56px;background:var(--warm-white);border-bottom:1px solid var(--sand);position:sticky;top:0;z-index:100}
 .nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
-.nav-logo img,.nav-logo svg{height:28px;width:auto}
-.nav-right{display:flex;align-items:center;gap:20px}
+.nav-logo img{height:28px;width:auto}
 .nav-back{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:8px;transition:color .2s}
 .nav-back:hover{color:var(--accent)}
-.nav-socials{display:flex;align-items:center;gap:12px}
-.nav-socials a{color:var(--taupe);transition:color .2s;display:flex;align-items:center}
-.nav-socials a:hover{color:var(--accent)}
 .recipe-hero{max-width:760px;margin:0 auto;padding:60px 40px 0;text-align:center}
 .hero-tag{font-size:.63rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:16px}
 .hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,6vw,4rem);font-weight:300;line-height:1.1;color:var(--deep);margin-bottom:18px}
@@ -64,29 +60,32 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 5
 .chef-note{margin-top:32px;padding:20px 24px;border-top:1px solid var(--sand)}
 .chef-note-label{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:block}
 .chef-note p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--deep);line-height:1.75}
-.email-section{max-width:760px;margin:80px auto 0;padding:0 40px 96px}
-.email-card{background:var(--deep);border-radius:4px;padding:52px 56px;text-align:center;position:relative;overflow:hidden}
-.email-card::before{content:'';position:absolute;top:-80px;right:-80px;width:240px;height:240px;background:radial-gradient(circle,rgba(156,107,69,.2) 0%,transparent 70%);pointer-events:none}
-.email-eyebrow{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--taupe);margin-bottom:14px;display:block}
-.email-card h2{font-family:'Cormorant Garamond',serif;font-size:2.1rem;font-weight:300;color:var(--cream);margin-bottom:10px;line-height:1.2}
-.email-card h2 em{font-style:italic;color:var(--taupe)}
-.email-card>p{font-size:.86rem;color:var(--taupe);margin-bottom:30px;max-width:380px;margin-left:auto;margin-right:auto;line-height:1.75}
-.email-form{display:flex;gap:10px;max-width:420px;margin:0 auto 14px}
-.email-input{flex:1;padding:13px 18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:3px;color:var(--cream);font-family:'Jost',sans-serif;font-size:.86rem;font-weight:300;outline:none;transition:border-color .2s}
-.email-input::placeholder{color:rgba(196,181,165,.45)}
-.email-input:focus{border-color:var(--accent)}
-.btn-send{padding:13px 22px;background:var(--accent);color:white;border:none;border-radius:3px;font-family:'Jost',sans-serif;font-size:.72rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:background .2s}
-.btn-send:hover{background:#B07848}
-.email-fine{font-size:.7rem;color:rgba(196,181,165,.4)}
-.success-msg{display:none;padding:12px}
-.success-msg.show{display:block}
-.success-msg h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--cream);margin-bottom:8px}
-.success-msg p{font-size:.84rem;color:var(--taupe);margin:0}
-.secondary{display:flex;justify-content:center;gap:14px;margin-top:20px}
+/* email strip — matches hub */
+.email-strip{background:var(--deep);padding:64px 56px 40px}
+.email-strip-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:48px}
+.strip-eyebrow{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--taupe);margin-bottom:12px;display:block}
+.strip-heading{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--cream);line-height:1.2}
+.strip-heading em{font-style:italic;color:var(--taupe)}
+.strip-form{display:flex;gap:10px}
+.strip-input{padding:13px 20px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:3px;color:var(--cream);font-family:'Jost',sans-serif;font-size:.85rem;font-weight:300;outline:none;width:240px;transition:border-color .2s}
+.strip-input::placeholder{color:rgba(196,181,165,.45)}
+.strip-input:focus{border-color:var(--accent)}
+.strip-btn{padding:13px 22px;background:var(--accent);color:white;border:none;border-radius:3px;font-family:'Jost',sans-serif;font-size:.72rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:background .2s}
+.strip-btn:hover{background:#B07848}
+.strip-note{font-size:.68rem;color:rgba(196,181,165,.45);margin-top:10px}
+.strip-success{display:none}
+.strip-success.show{display:block;font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;color:var(--cream)}
+/* strip footer with socials */
+.strip-footer{max-width:900px;margin:0 auto;padding:28px 0 0;border-top:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between}
+.strip-footer-logo{font-family:'Cormorant Garamond',serif;font-size:.95rem;color:var(--taupe);letter-spacing:.06em}
+.strip-socials{display:flex;align-items:center;gap:16px}
+.strip-socials a{color:rgba(196,181,165,.5);transition:color .2s;display:flex;align-items:center}
+.strip-socials a:hover{color:var(--cream)}
+.print-row{max-width:900px;margin:0 auto;padding:32px 40px 0;display:flex;gap:12px}
 .btn-ghost{padding:10px 20px;background:transparent;color:var(--muted);border:1px solid var(--sand);border-radius:3px;font-family:'Jost',sans-serif;font-size:.72rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all .2s}
 .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
 /* related recipes */
-.related-section{max-width:900px;margin:0 auto;padding:0 40px 80px}
+.related-section{max-width:900px;margin:0 auto;padding:80px 40px 80px}
 .related-heading{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--taupe);margin-bottom:32px;display:flex;align-items:center;gap:16px}
 .related-heading::after{content:'';flex:1;height:1px;background:var(--sand)}
 .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
@@ -102,7 +101,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 5
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 .recipe-hero{animation:fadeUp .5s ease both}
 .recipe-body{animation:fadeUp .5s .1s ease both}
-@media(max-width:800px){nav{padding:18px 24px}.recipe-hero{padding:48px 24px 0}.cover-wrap{padding:0 24px 48px}.recipe-body{grid-template-columns:1fr;gap:40px;padding:0 24px}.col-left{position:static}.email-card{padding:36px 24px}.email-form{flex-direction:column}.related-section{padding:0 24px 64px}.nav-socials{display:none}}
+@media(max-width:800px){nav{padding:18px 24px}.recipe-hero{padding:48px 24px 0}.cover-wrap{padding:0 24px 48px}.recipe-body{grid-template-columns:1fr;gap:40px;padding:0 24px}.col-left{position:static}.related-section{padding:60px 24px 64px}.print-row{padding:28px 24px 0}.email-strip{padding:48px 24px}.email-strip-inner{flex-direction:column;align-items:flex-start;gap:28px}.strip-form{flex-direction:column}.strip-input{width:100%}.strip-footer{flex-direction:column;gap:16px;text-align:center}}
 </style>
 </head>
 <body>
@@ -111,20 +110,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 5
   <a href="/" class="nav-logo">
     <img src="/logo.svg" alt="Fork &amp; Float" height="28">
   </a>
-  <div class="nav-right">
-    <div class="nav-socials">
-      <a href="https://www.instagram.com/forkandfloat/" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-      </a>
-      <a href="https://www.tiktok.com/@forkandfloat" target="_blank" rel="noopener" aria-label="TikTok">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
-      </a>
-      <a href="https://www.youtube.com/@forkandfloat" target="_blank" rel="noopener" aria-label="YouTube">
-        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3 3 0 0 0-2.12-2.12C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.57A3 3 0 0 0 .5 6.19C0 8.03 0 12 0 12s0 3.97.5 5.81a3 3 0 0 0 2.12 2.12C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.57a3 3 0 0 0 2.12-2.12C24 15.97 24 12 24 12s0-3.97-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
-      </a>
-    </div>
-    <a href="/" class="nav-back">← All Recipes</a>
-  </div>
+  <a href="/" class="nav-back">← All Recipes</a>
 </nav>
 
 <div class="recipe-hero">
@@ -228,60 +214,72 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 5
   </div>
 </div>
 
+<div class="print-row">
+  <button class="btn-ghost" onclick="window.print()">↓ Save / Print</button>
+  <button class="btn-ghost" onclick="copyLink()">⎘ Copy link</button>
+</div>
+
 
 <div class="related-section">
   <p class="related-heading">More from the kitchen</p>
   <div class="related-grid">
-    <a class="related-card" href="/recipes/vegetarian-kalam-polo-persian-cabbage-rice.html">
-      <div class="related-card-img"><img src="/images/uploads/vegetarian-kalam-polo-persian-cabbage-rice.png" alt="Vegetarian Kalam Polo (Persian Cabbage Rice)" loading="lazy"></div>
-      <span class="related-card-cat">Mains</span>
-      <span class="related-card-title">Vegetarian Kalam Polo (Persian Cabbage Rice)</span>
-    </a>
-    <a class="related-card" href="/recipes/miso-cauliflower-steak.html">
-      <div class="related-card-img"><img src="/images/uploads/miso-cauliflower-steak.png" alt="Miso Cauliflower Steak" loading="lazy"></div>
-      <span class="related-card-cat">Mains</span>
-      <span class="related-card-title">Miso Cauliflower Steak</span>
-    </a>
     <a class="related-card" href="/recipes/quinoa-crunch-bowl.html">
       <div class="related-card-img"><img src="/images/uploads/quinoa-crunch-bowl.png" alt="Quinoa Crunch Bowl" loading="lazy"></div>
       <span class="related-card-cat">Mains</span>
       <span class="related-card-title">Quinoa Crunch Bowl</span>
     </a>
+    <a class="related-card" href="/recipes/kookoo-sibzamini-potatoe-frittata.html">
+      <div class="related-card-img"><img src="/images/uploads/kookoo-sibzamini-potatoe-frittata.jpeg" alt="Kookoo Sibzamini (Potatoe Frittata)" loading="lazy"></div>
+      <span class="related-card-cat">Mains</span>
+      <span class="related-card-title">Kookoo Sibzamini (Potatoe Frittata)</span>
+    </a>
+    <a class="related-card" href="/recipes/spinach-and-ricotta-stuffed-shells.html">
+      <div class="related-card-img"><img src="/images/uploads/spinach-and-ricotta-stuffed-shells.png" alt="Spinach and Ricotta Stuffed Shells" loading="lazy"></div>
+      <span class="related-card-cat">Mains</span>
+      <span class="related-card-title">Spinach and Ricotta Stuffed Shells</span>
+    </a>
   </div>
 </div>
 
-<div class="email-section">
-  <div class="email-card">
-    <div id="formWrap">
-      <span class="email-eyebrow">Save this recipe</span>
-      <h2>Send it to<br><em>my email</em></h2>
-      <p>Get this recipe in your inbox, plus new recipes from Ava's kitchen as they drop.</p>
-      <div class="email-form">
-        <input type="email" class="email-input" id="emailIn" placeholder="your@email.com">
-        <button class="btn-send" onclick="sendIt()">Send it →</button>
-      </div>
-      <p class="email-fine">No spam. Unsubscribe any time.</p>
+<div class="email-strip">
+  <div class="email-strip-inner">
+    <div>
+      <span class="strip-eyebrow">Never miss a recipe</span>
+      <h2 class="strip-heading">New recipes, straight<br>to your <em>inbox</em></h2>
     </div>
-    <div class="success-msg" id="successMsg">
-      <div style="font-size:1.8rem;margin-bottom:12px">✦</div>
-      <h3>On its way to you</h3>
-      <p>Check your inbox. Welcome to the Fork &amp; Float kitchen.</p>
+    <div>
+      <div class="strip-form" id="stripForm">
+        <input type="email" class="strip-input" id="stripEmail" placeholder="your@email.com">
+        <button class="strip-btn" onclick="sendIt()">Join the kitchen →</button>
+      </div>
+      <p class="strip-note" id="stripNote">No spam. Just good food. Unsubscribe any time.</p>
+      <p class="strip-success" id="stripSuccess">✦ &nbsp;On its way to you — check your inbox.</p>
     </div>
   </div>
-  <div class="secondary">
-    <button class="btn-ghost" onclick="window.print()">↓ Save / Print</button>
-    <button class="btn-ghost" onclick="copyLink()">⎘ Copy link</button>
+  <div class="strip-footer">
+    <span class="strip-footer-logo">Fork &amp; Float</span>
+    <div class="strip-socials">
+      <a href="https://www.instagram.com/forkandfloat/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@forkandfloat" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.45a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+      </a>
+      <a href="https://www.youtube.com/@forkandfloat" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3 3 0 0 0-2.12-2.12C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.57A3 3 0 0 0 .5 6.19C0 8.03 0 12 0 12s0 3.97.5 5.81a3 3 0 0 0 2.12 2.12C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.57a3 3 0 0 0 2.12-2.12C24 15.97 24 12 24 12s0-3.97-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+      </a>
+    </div>
   </div>
 </div>
 
 <script>
 function sendIt(){
-  const v=document.getElementById('emailIn').value;
-  if(!v||!v.includes('@')){document.getElementById('emailIn').style.borderColor='#c0392b';return}
+  const v=document.getElementById('stripEmail').value;
+  if(!v||!v.includes('@')){document.getElementById('stripEmail').style.borderColor='#c0392b';return}
   gtag('event', 'email_signup', { location: 'recipe_page', recipe: document.title });
-  document.getElementById('formWrap').style.display='none';
-  document.getElementById('successMsg').classList.add('show');
-  // TODO: replace with your Kit form action URL
+  document.getElementById('stripForm').style.display='none';
+  document.getElementById('stripNote').style.display='none';
+  document.getElementById('stripSuccess').classList.add('show');
 }
 function copyLink(){
   navigator.clipboard.writeText(window.location.href).then(()=>{
@@ -290,7 +288,7 @@ function copyLink(){
     setTimeout(()=>btn.textContent='⎘ Copy link',2000);
   });
 }
-document.getElementById('emailIn').addEventListener('keypress',e=>{if(e.key==='Enter')sendIt()});
+document.getElementById('stripEmail').addEventListener('keypress',e=>{if(e.key==='Enter')sendIt()});
 </script>
 </body>
 </html>
