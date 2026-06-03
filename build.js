@@ -162,6 +162,41 @@ function build() {
   if (!fs.existsSync(pub)) fs.mkdirSync(pub, { recursive: true });
   fs.writeFileSync(path.join(pub, 'recipes.json'), json, 'utf8');
 
+  // Re-write each recipe page with related recipes injected
+  for (const recipe of index) {
+    const pagePath = path.join(RECIPES_OUT, `${recipe.slug}.html`);
+    if (!fs.existsSync(pagePath)) continue;
+    let pageHtml = fs.readFileSync(pagePath, 'utf8');
+    if (!pageHtml.includes('{{RELATED_RECIPES_HTML}}')) continue;
+
+    // Pick 3 related recipes: same category first, then fill with others
+    const sameCategory = index.filter(r => r.slug !== recipe.slug && r.category === recipe.category);
+    const others = index.filter(r => r.slug !== recipe.slug && r.category !== recipe.category);
+    // Shuffle so it's not always the same 3
+    const shuffle = arr => arr.sort(() => Math.random() - 0.5);
+    const related = [...shuffle(sameCategory), ...shuffle(others)].slice(0, 3);
+
+    const relatedHtml = related.length === 0 ? '' : `
+<div class="related-section">
+  <p class="related-heading">More from the kitchen</p>
+  <div class="related-grid">
+    ${related.map(r => {
+      const imgHtml = r.coverImage
+        ? `<img src="${esc(r.coverImage)}" alt="${esc(r.title)}" loading="lazy">`
+        : `<div class="related-card-img-placeholder">${r.emoji || '🍽️'}</div>`;
+      return `<a class="related-card" href="/recipes/${r.slug}.html">
+      <div class="related-card-img">${imgHtml}</div>
+      <span class="related-card-cat">${esc(r.category)}</span>
+      <span class="related-card-title">${esc(r.title)}</span>
+    </a>`;
+    }).join('\n    ')}
+  </div>
+</div>`;
+
+    pageHtml = pageHtml.replace('{{RELATED_RECIPES_HTML}}', relatedHtml);
+    fs.writeFileSync(pagePath, pageHtml, 'utf8');
+  }
+
   console.log(`✅ Built ${index.length} recipe page(s) + recipes.json`);
 }
 

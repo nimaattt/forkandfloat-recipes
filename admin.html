@@ -46,7 +46,7 @@ textarea{resize:vertical;line-height:1.6;min-height:140px}
 .tags-wrap{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
 .tag-check{display:none}
 .tag-label{padding:6px 14px;border:1px solid var(--sand);border-radius:100px;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);cursor:pointer;transition:all .2s;user-select:none}
-.tag-check:checked+.tag-label{background:var(--deep);border-color:var(--deep);color:var(--cream)}
+.tag-check:checked+.tag-label,.dietary-check:checked+.tag-label{background:var(--deep);border-color:var(--deep);color:var(--cream)}
 .submit-row{display:flex;align-items:center;gap:16px;margin-top:8px;flex-wrap:wrap}
 .btn-submit{padding:16px 36px;background:var(--accent);color:white;border:none;border-radius:4px;font-family:'Jost',sans-serif;font-size:.75rem;font-weight:400;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:background .2s;white-space:nowrap}
 .btn-submit:hover{background:#B07848}
@@ -145,7 +145,8 @@ textarea{resize:vertical;line-height:1.6;min-height:140px}
     </div>
   </div>
   <div class="form-section">
-    <h2 class="form-section-title">Tags <span>For filtering</span></h2>
+    <h2 class="form-section-title">Tags <span>For hub filtering</span></h2>
+    <p class="field-hint" style="margin-bottom:12px">These power the filter buttons on the recipe hub. Different from Category (the card label above).</p>
     <div class="tags-wrap">
       <input type="checkbox" class="tag-check" id="t-salads" value="salads"><label class="tag-label" for="t-salads">Salads</label>
       <input type="checkbox" class="tag-check" id="t-mains" value="mains"><label class="tag-label" for="t-mains">Mains</label>
@@ -155,6 +156,18 @@ textarea{resize:vertical;line-height:1.6;min-height:140px}
       <input type="checkbox" class="tag-check" id="t-crowd" value="crowd"><label class="tag-label" for="t-crowd">Crowd Pleaser</label>
       <input type="checkbox" class="tag-check" id="t-dessert" value="dessert"><label class="tag-label" for="t-dessert">Dessert</label>
       <input type="checkbox" class="tag-check" id="t-sides" value="sides"><label class="tag-label" for="t-sides">Sides</label>
+    </div>
+  </div>
+  <div class="form-section">
+    <h2 class="form-section-title">Dietary Tags <span>Select all that apply</span></h2>
+    <div class="tags-wrap">
+      <input type="checkbox" class="dietary-check" id="d-veg" value="Veg"><label class="tag-label" for="d-veg">🌿 Veg</label>
+      <input type="checkbox" class="dietary-check" id="d-vegan" value="Vegan"><label class="tag-label" for="d-vegan">🌱 Vegan</label>
+      <input type="checkbox" class="dietary-check" id="d-gf" value="Gluten-Free"><label class="tag-label" for="d-gf">🌾 Gluten-Free</label>
+      <input type="checkbox" class="dietary-check" id="d-df" value="Dairy-Free"><label class="tag-label" for="d-df">🥛 Dairy-Free</label>
+      <input type="checkbox" class="dietary-check" id="d-nuts" value="Contains Nuts"><label class="tag-label" for="d-nuts">🥜 Contains Nuts</label>
+      <input type="checkbox" class="dietary-check" id="d-shellfish" value="Contains Shellfish"><label class="tag-label" for="d-shellfish">🦐 Contains Shellfish</label>
+      <input type="checkbox" class="dietary-check" id="d-seasonal" value="Seasonal"><label class="tag-label" for="d-seasonal">🍂 Seasonal</label>
     </div>
   </div>
   <div class="form-section">
@@ -246,6 +259,7 @@ async function publishRecipe() {
   if (!title) { showStatus('error', 'Recipe name is required.'); return; }
 
   const tags = [...document.querySelectorAll('.tag-check:checked')].map(c => c.value);
+  const dietaryTags = [...document.querySelectorAll('.dietary-check:checked')].map(c => c.value).join(', ');
   const slug = slugify(title);
 
   const payload = {
@@ -263,6 +277,7 @@ async function publishRecipe() {
     howToServe:  document.getElementById('howToServe').value.trim(),
     chefsNote:   document.getElementById('chefsNote').value.trim(),
     tags,
+    dietaryTags,
   };
 
   const btn = document.getElementById('submitBtn');
@@ -306,7 +321,7 @@ function resetForm() {
   });
   document.getElementById('category').value = '';
   document.getElementById('difficulty').value = 'Easy';
-  document.querySelectorAll('.tag-check').forEach(c => c.checked = false);
+  document.querySelectorAll('.tag-check, .dietary-check').forEach(c => c.checked = false);
 }
 
 async function loadRecent() {
