@@ -1,5 +1,22 @@
 [
   {
+    "title": "Dates and Egg",
+    "slug": "dates-and-egg",
+    "description": "A sweet and savory breakfast made with caramelized dates, warm cinnamon, and eggs.",
+    "category": "",
+    "prepTime": "5 mins",
+    "cookTime": "15 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1BQubNyLX2FZmyNci-0YH3zxSDoiaOuKR",
+    "tags": [
+      "persian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-03T14:40:00.472Z"
+  },
+  {
     "title": "Purple Cabbage Pickles",
     "slug": "purple-cabbage-pickles",
     "description": "Quick and vibrant pickled purple cabbage with garlic and peppercorns.",
