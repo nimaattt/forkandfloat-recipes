@@ -22,9 +22,14 @@
 :root{--cream:#F7F3EE;--warm-white:#FDFAF6;--sand:#E8DDD0;--taupe:#C4B5A5;--deep:#3A2E26;--accent:#9C6B45;--text:#2E2620;--muted:#8A7A6E}
 body{font-family:'Jost',sans-serif;background:var(--warm-white);color:var(--text);font-weight:300;line-height:1.7}
 nav{display:flex;align-items:center;justify-content:space-between;padding:20px 56px;background:var(--warm-white);border-bottom:1px solid var(--sand);position:sticky;top:0;z-index:100}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;letter-spacing:.06em;color:var(--deep);text-decoration:none}
+.nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+.nav-logo img,.nav-logo svg{height:28px;width:auto}
+.nav-right{display:flex;align-items:center;gap:20px}
 .nav-back{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:8px;transition:color .2s}
 .nav-back:hover{color:var(--accent)}
+.nav-socials{display:flex;align-items:center;gap:12px}
+.nav-socials a{color:var(--taupe);transition:color .2s;display:flex;align-items:center}
+.nav-socials a:hover{color:var(--accent)}
 .recipe-hero{max-width:760px;margin:0 auto;padding:60px 40px 0;text-align:center}
 .hero-tag{font-size:.63rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:16px}
 .hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,6vw,4rem);font-weight:300;line-height:1.1;color:var(--deep);margin-bottom:18px}
@@ -80,23 +85,46 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 5
 .secondary{display:flex;justify-content:center;gap:14px;margin-top:20px}
 .btn-ghost{padding:10px 20px;background:transparent;color:var(--muted);border:1px solid var(--sand);border-radius:3px;font-family:'Jost',sans-serif;font-size:.72rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all .2s}
 .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
-footer{border-top:1px solid var(--sand);padding:26px 56px}
-.footer-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
-.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--taupe);letter-spacing:.06em}
-.footer-links{display:flex;gap:24px}
-.footer-links a{font-size:.67rem;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe);text-decoration:none;transition:color .2s}
-.footer-links a:hover{color:var(--accent)}
+/* related recipes */
+.related-section{max-width:900px;margin:0 auto;padding:0 40px 80px}
+.related-heading{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--taupe);margin-bottom:32px;display:flex;align-items:center;gap:16px}
+.related-heading::after{content:'';flex:1;height:1px;background:var(--sand)}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.related-card{text-decoration:none;display:block;transition:transform .25s ease}
+.related-card:hover{transform:translateY(-3px)}
+.related-card-img{aspect-ratio:4/3;border-radius:3px;overflow:hidden;margin-bottom:14px;background:var(--sand)}
+.related-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.related-card:hover .related-card-img img{transform:scale(1.05)}
+.related-card-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:2.5rem}
+.related-card-cat{font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;display:block}
+.related-card-title{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;line-height:1.2;color:var(--deep)}
+@media(max-width:800px){.related-grid{grid-template-columns:1fr 1fr}.related-grid .related-card:nth-child(3){display:none}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 .recipe-hero{animation:fadeUp .5s ease both}
 .recipe-body{animation:fadeUp .5s .1s ease both}
-@media(max-width:800px){nav{padding:18px 24px}.recipe-hero{padding:48px 24px 0}.cover-wrap{padding:0 24px 48px}.recipe-body{grid-template-columns:1fr;gap:40px;padding:0 24px}.col-left{position:static}.email-card{padding:36px 24px}.email-form{flex-direction:column}footer{padding:20px 24px}.footer-inner{flex-direction:column;gap:16px}}
+@media(max-width:800px){nav{padding:18px 24px}.recipe-hero{padding:48px 24px 0}.cover-wrap{padding:0 24px 48px}.recipe-body{grid-template-columns:1fr;gap:40px;padding:0 24px}.col-left{position:static}.email-card{padding:36px 24px}.email-form{flex-direction:column}.related-section{padding:0 24px 64px}.nav-socials{display:none}}
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="/" class="nav-logo">Fork &amp; Float</a>
-  <a href="/" class="nav-back">← All Recipes</a>
+  <a href="/" class="nav-logo">
+    <img src="/logo.svg" alt="Fork &amp; Float" height="28">
+  </a>
+  <div class="nav-right">
+    <div class="nav-socials">
+      <a href="https://www.instagram.com/forkandfloat/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@forkandfloat" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+      </a>
+      <a href="https://www.youtube.com/@forkandfloat" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3 3 0 0 0-2.12-2.12C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.57A3 3 0 0 0 .5 6.19C0 8.03 0 12 0 12s0 3.97.5 5.81a3 3 0 0 0 2.12 2.12C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.57a3 3 0 0 0 2.12-2.12C24 15.97 24 12 24 12s0-3.97-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+      </a>
+    </div>
+    <a href="/" class="nav-back">← All Recipes</a>
+  </div>
 </nav>
 
 <div class="recipe-hero">
@@ -167,6 +195,28 @@ footer{border-top:1px solid var(--sand);padding:26px 56px}
   </div>
 </div>
 
+
+<div class="related-section">
+  <p class="related-heading">More from the kitchen</p>
+  <div class="related-grid">
+    <a class="related-card" href="/recipes/zucchini-muffin.html">
+      <div class="related-card-img"><img src="/images/uploads/zucchini-muffin.png" alt="Zucchini Muffin" loading="lazy"></div>
+      <span class="related-card-cat">Dessert</span>
+      <span class="related-card-title">Zucchini Muffin</span>
+    </a>
+    <a class="related-card" href="/recipes/quince-jam.html">
+      <div class="related-card-img"><img src="/images/uploads/quince-jam.png" alt="Quince Jam" loading="lazy"></div>
+      <span class="related-card-cat">Dessert</span>
+      <span class="related-card-title">Quince Jam</span>
+    </a>
+    <a class="related-card" href="/recipes/ricotta-pistachio-stuffed-dates.html">
+      <div class="related-card-img"><img src="/images/uploads/ricotta-pistachio-stuffed-dates.png" alt="Ricotta Pistachio Stuffed Dates" loading="lazy"></div>
+      <span class="related-card-cat">Dessert</span>
+      <span class="related-card-title">Ricotta Pistachio Stuffed Dates</span>
+    </a>
+  </div>
+</div>
+
 <div class="email-section">
   <div class="email-card">
     <div id="formWrap">
@@ -190,16 +240,6 @@ footer{border-top:1px solid var(--sand);padding:26px 56px}
     <button class="btn-ghost" onclick="copyLink()">⎘ Copy link</button>
   </div>
 </div>
-
-<footer>
-  <div class="footer-inner">
-    <span class="footer-logo">Fork &amp; Float</span>
-    <div class="footer-links">
-      <a href="/">All Recipes</a>
-      <a href="https://www.forkandfloat.com">Main Site</a>
-    </div>
-  </div>
-</footer>
 
 <script>
 function sendIt(){
