@@ -1,5 +1,22 @@
 [
   {
+    "title": "Dates and Egg",
+    "slug": "dates-and-egg",
+    "description": "A sweet and savory breakfast made with caramelized dates, warm cinnamon, and eggs.",
+    "category": "",
+    "prepTime": "5 mins",
+    "cookTime": "15 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1BQubNyLX2FZmyNci-0YH3zxSDoiaOuKR",
+    "tags": [
+      "persian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-03T14:40:00.472Z"
+  },
+  {
     "title": "Purple Cabbage Pickles",
     "slug": "purple-cabbage-pickles",
     "description": "Quick and vibrant pickled purple cabbage with garlic and peppercorns.",
@@ -26,7 +43,7 @@
     "cookTime": "25 mins",
     "servings": "4",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/poached-pear.webp",
+    "coverImage": "/images/uploads/poached-pear.png",
     "tags": [
       "dessert",
       "vegetarian"
@@ -44,7 +61,7 @@
     "cookTime": "0",
     "servings": "3-4",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/persian-yogurt-cucumber-dip-mast-o-khiar.webp",
+    "coverImage": "/images/uploads/persian-yogurt-cucumber-dip-mast-o-khiar.png",
     "tags": [
       "vegetarian",
       "persian",
@@ -63,7 +80,7 @@
     "cookTime": "10 minutes",
     "servings": "10 minutes",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/fennel-and-apple-salad.webp",
+    "coverImage": "/images/uploads/fennel-and-apple-salad.png",
     "tags": [
       "salads",
       "vegetarian",
@@ -82,7 +99,7 @@
     "cookTime": "0",
     "servings": "2",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/chaghaleh-badoom-salad-green-almond-salad.webp",
+    "coverImage": "/images/uploads/chaghaleh-badoom-salad-green-almond-salad.png",
     "tags": [
       "salads",
       "vegetarian",
@@ -102,7 +119,7 @@
     "cookTime": "0",
     "servings": "8–10 (small side portions)",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/persian-marinated-olives-zaytoon-parvardeh.webp",
+    "coverImage": "/images/uploads/persian-marinated-olives-zaytoon-parvardeh.png",
     "tags": [
       "vegetarian",
       "persian",
@@ -121,7 +138,7 @@
     "cookTime": "35 mins",
     "servings": "4",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/salmon-tahdig.webp",
+    "coverImage": "/images/uploads/salmon-tahdig.png",
     "tags": [
       "mains",
       "persian"
@@ -139,7 +156,7 @@
     "cookTime": "",
     "servings": "",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/persimmon-pancakes.webp",
+    "coverImage": "/images/uploads/persimmon-pancakes.png",
     "tags": [
       "dessert",
       "vegetarian"
@@ -157,7 +174,7 @@
     "cookTime": "20 mins",
     "servings": "3",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/zucchini-felafel.webp",
+    "coverImage": "/images/uploads/zucchini-felafel.png",
     "tags": [
       "mains",
       "vegetarian",
@@ -176,7 +193,7 @@
     "cookTime": "0",
     "servings": "2",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/high-protein-green-dressing.webp",
+    "coverImage": "/images/uploads/high-protein-green-dressing.png",
     "tags": [
       "vegetarian",
       "quick"
@@ -194,7 +211,7 @@
     "cookTime": "20 mins",
     "servings": "4",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/zucchini-muffin.webp",
+    "coverImage": "/images/uploads/zucchini-muffin.png",
     "tags": [
       "dessert",
       "vegetarian"
@@ -212,7 +229,7 @@
     "cookTime": "15 mins",
     "servings": "2",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/summer-wedge-salad.webp",
+    "coverImage": "/images/uploads/summer-wedge-salad.png",
     "tags": [
       "salads",
       "vegetarian"
@@ -230,7 +247,7 @@
     "cookTime": "4 hours",
     "servings": "2 medium jars",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/quince-jam.webp",
+    "coverImage": "/images/uploads/quince-jam.png",
     "tags": [
       "dessert",
       "vegetarian",
@@ -249,7 +266,7 @@
     "cookTime": "15 mins",
     "servings": "2",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/corn-ribs.webp",
+    "coverImage": "/images/uploads/corn-ribs.png",
     "tags": [
       "vegetarian"
     ],
@@ -266,7 +283,7 @@
     "cookTime": "40 mins",
     "servings": "4",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/vegetarian-kalam-polo-persian-cabbage-rice.webp",
+    "coverImage": "/images/uploads/vegetarian-kalam-polo-persian-cabbage-rice.png",
     "tags": [
       "mains",
       "vegetarian",
@@ -285,7 +302,7 @@
     "cookTime": "10 mins",
     "servings": "6",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/kebab-torsh-walnut-and-pomegranate-marinated-tenderloin.webp",
+    "coverImage": "/images/uploads/kebab-torsh-walnut-and-pomegranate-marinated-tenderloin.png",
     "tags": [
       "mains",
       "persian",
@@ -304,7 +321,7 @@
     "cookTime": "20 mins",
     "servings": "4",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/spinach-and-ricotta-stuffed-shells.webp",
+    "coverImage": "/images/uploads/spinach-and-ricotta-stuffed-shells.png",
     "tags": [
       "mains",
       "vegetarian"
@@ -322,7 +339,7 @@
     "cookTime": "None",
     "servings": "",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/mirza-ghasemi-or-smoky-eggplant-dish.webp",
+    "coverImage": "/images/uploads/mirza-ghasemi-or-smoky-eggplant-dish.png",
     "tags": [
       "mains",
       "vegetarian",
@@ -341,7 +358,7 @@
     "cookTime": "0",
     "servings": "3,4",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/dirty-martini-inspired-dip.webp",
+    "coverImage": "/images/uploads/dirty-martini-inspired-dip.png",
     "tags": [
       "vegetarian",
       "quick"
@@ -359,7 +376,7 @@
     "cookTime": "25 mins",
     "servings": "2",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/stuffed-spaghetti-squash.webp",
+    "coverImage": "/images/uploads/stuffed-spaghetti-squash.png",
     "tags": [
       "mains",
       "vegetarian"
@@ -377,7 +394,7 @@
     "cookTime": "10 mins",
     "servings": "4",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/orzo-salad-w-truffle-vinaigrette.webp",
+    "coverImage": "/images/uploads/orzo-salad-w-truffle-vinaigrette.png",
     "tags": [
       "salads",
       "vegetarian",
@@ -396,7 +413,7 @@
     "cookTime": "-",
     "servings": "4",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/persian-inspired-slaw.webp",
+    "coverImage": "/images/uploads/persian-inspired-slaw.png",
     "tags": [
       "salads",
       "vegetarian",
@@ -416,7 +433,7 @@
     "cookTime": "-",
     "servings": "2",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/pear-carpaccio.webp",
+    "coverImage": "/images/uploads/pear-carpaccio.png",
     "tags": [
       "dessert",
       "vegetarian",
@@ -435,7 +452,7 @@
     "cookTime": "10 mins",
     "servings": "3",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/halloumi-quinoa-salad.webp",
+    "coverImage": "/images/uploads/halloumi-quinoa-salad.png",
     "tags": [
       "salads",
       "vegetarian"
@@ -453,7 +470,7 @@
     "cookTime": "10 mins",
     "servings": "4-5",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/ricotta-pistachio-stuffed-dates.webp",
+    "coverImage": "/images/uploads/ricotta-pistachio-stuffed-dates.png",
     "tags": [
       "dessert",
       "vegetarian",
@@ -472,7 +489,7 @@
     "cookTime": "-",
     "servings": "2",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/spring-fruit-salad.webp",
+    "coverImage": "/images/uploads/spring-fruit-salad.png",
     "tags": [
       "salads",
       "vegetarian",
@@ -491,7 +508,7 @@
     "cookTime": "15 mins",
     "servings": "2",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/acorn-squash-kale-salad.webp",
+    "coverImage": "/images/uploads/acorn-squash-kale-salad.png",
     "tags": [
       "salads",
       "vegetarian"
@@ -509,7 +526,7 @@
     "cookTime": "20 mins",
     "servings": "3-4",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/kookoo-sibzamini-potatoe-frittata.webp",
+    "coverImage": "/images/uploads/kookoo-sibzamini-potatoe-frittata.jpeg",
     "tags": [
       "mains",
       "vegetarian",
@@ -528,7 +545,7 @@
     "cookTime": "7 mins",
     "servings": "2",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/radicchio-persimmon-salad.webp",
+    "coverImage": "/images/uploads/radicchio-persimmon-salad.png",
     "tags": [
       "salads",
       "vegetarian",
@@ -547,7 +564,7 @@
     "cookTime": "0",
     "servings": "4",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/shirazi-salad.webp",
+    "coverImage": "/images/uploads/shirazi-salad.png",
     "tags": [
       "salads",
       "vegetarian",
@@ -567,7 +584,7 @@
     "cookTime": "15 mins",
     "servings": "2",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/miso-cauliflower-steak.webp",
+    "coverImage": "/images/uploads/miso-cauliflower-steak.png",
     "tags": [
       "mains",
       "vegetarian"
@@ -585,7 +602,7 @@
     "cookTime": "20 mins",
     "servings": "2",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/kohlrabi-schnitzel.webp",
+    "coverImage": "/images/uploads/kohlrabi-schnitzel.png",
     "tags": [
       "mains",
       "vegetarian"
@@ -603,7 +620,7 @@
     "cookTime": "0",
     "servings": "6-8",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/persian-saffron-ice-cream-bastani-sonnati.webp",
+    "coverImage": "/images/uploads/persian-saffron-ice-cream-bastani-sonnati.png",
     "tags": [
       "dessert",
       "vegetarian",
@@ -623,7 +640,7 @@
     "cookTime": "20 mins",
     "servings": "10 Crepes",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/spring-green-crepes.webp",
+    "coverImage": "/images/uploads/spring-green-crepes.png",
     "tags": [
       "dessert",
       "vegetarian"
@@ -641,7 +658,7 @@
     "cookTime": "-",
     "servings": "2 bottles",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/wake-up-shots.webp",
+    "coverImage": "/images/uploads/wake-up-shots.png",
     "tags": [
       "vegetarian",
       "quick"
@@ -659,7 +676,7 @@
     "cookTime": "15 minutes",
     "servings": "2",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/quinoa-crunch-bowl.webp",
+    "coverImage": "/images/uploads/quinoa-crunch-bowl.png",
     "tags": [
       "mains",
       "vegetarian"
@@ -677,7 +694,7 @@
     "cookTime": "15 mins",
     "servings": "4",
     "difficulty": "Easy",
-    "coverImage": "/images/uploads/carrot-potato-puree.webp",
+    "coverImage": "/images/uploads/carrot-potato-puree.png",
     "tags": [
       "vegetarian"
     ],
