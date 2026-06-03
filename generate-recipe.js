@@ -161,6 +161,81 @@ function generateRecipe(data) {
   fs.writeFileSync(outputPath, html, 'utf8');
   console.log(`✅ Recipe page written: recipes/${slug}.html`);
 
+  // ── Write content/recipes/<slug>.md so build.js can regenerate recipes.json ──
+  // This is the canonical source of truth. Without this file, Vercel's build step
+  // (node build.js) would overwrite recipes.json and lose the new recipe.
+  const contentDir = path.join(__dirname, 'content', 'recipes');
+  if (!fs.existsSync(contentDir)) fs.mkdirSync(contentDir, { recursive: true });
+
+  const dateStr = new Date().toISOString();
+
+  // Reconstruct structured ingredients/steps/howToServe for the MD frontmatter.
+  // The admin sends these as raw strings; we parse them back to YAML-friendly arrays.
+  function parseIngredientsToArray(raw) {
+    if (!raw) return [];
+    return String(raw).split('\n').map(l => l.trim()).filter(Boolean).map(line => {
+      const m = line.match(/^(.+?)\s*\[(.+?)\]$/);
+      return m ? { name: m[1].trim(), amount: m[2].trim() } : { name: line, amount: '' };
+    });
+  }
+  function parseStepsToArray(raw) {
+    if (!raw) return [];
+    return String(raw).replace(/\\n/g, '\n').trim().split(/\n\s*\n/).map(block => {
+      const lines = block.trim().split('\n').map(l => l.trim()).filter(Boolean);
+      return lines.length ? { title: lines[0], body: lines.slice(1).join(' ') } : null;
+    }).filter(Boolean);
+  }
+  function parseHowToServeToArray(raw) {
+    if (!raw) return [];
+    return String(raw).split('\n').map(l => l.trim().replace(/^[-•*]\s*/, '')).filter(Boolean);
+  }
+
+  function yamlStr(v) { return `"${String(v).replace(/"/g, '\\"')}"`; }
+  function yamlList(arr) {
+    if (!arr || !arr.length) return '[]';
+    return '\n' + arr.map(item => `  - ${yamlStr(item)}`).join('\n');
+  }
+  function yamlIngredients(arr) {
+    if (!arr || !arr.length) return '[]';
+    return '\n' + arr.map(item =>
+      `  - name: ${yamlStr(item.name)}\n    amount: ${yamlStr(item.amount || '')}`
+    ).join('\n');
+  }
+  function yamlSteps(arr) {
+    if (!arr || !arr.length) return '[]';
+    return '\n' + arr.map(item =>
+      `  - title: ${yamlStr(item.title || '')}\n    body: ${yamlStr(item.body || '')}`
+    ).join('\n');
+  }
+
+  const ingredientsArr = parseIngredientsToArray(ingredients);
+  const stepsArr = parseStepsToArray(steps);
+  const howToServeArr = parseHowToServeToArray(howToServe);
+
+  const mdContent = `---
+title: ${yamlStr(title)}
+description: ${yamlStr(description)}
+category: ${yamlStr(category)}
+tags:${yamlList(tags)}
+prepTime: ${yamlStr(prepTime)}
+cookTime: ${yamlStr(cookTime)}
+servings: ${yamlStr(servings)}
+difficulty: ${yamlStr(difficulty)}
+coverImage: ${yamlStr(coverUrl)}
+date: ${dateStr}
+emoji: ${yamlStr(emoji)}
+dietaryTags: ${yamlStr(dietaryTags)}
+ingredients:${yamlIngredients(ingredientsArr)}
+steps:${yamlSteps(stepsArr)}
+howToServe:${yamlList(howToServeArr)}
+chefsNote: ${yamlStr(chefsNote || '')}
+---
+`;
+  const mdPath = path.join(contentDir, `${slug}.md`);
+  fs.writeFileSync(mdPath, mdContent, 'utf8');
+  console.log(`✅ Content file written: content/recipes/${slug}.md`);
+
+  // ── Update recipes.json directly as well (belt-and-suspenders) ──
   const rootIndexPath = path.join(__dirname, 'recipes.json');
   const publicIndexPath = path.join(__dirname, 'public', 'recipes.json');
 
@@ -169,8 +244,9 @@ function generateRecipe(data) {
     try { existing = JSON.parse(fs.readFileSync(rootIndexPath, 'utf8')); } catch(e) {}
   }
 
-  existing = existing.filter(r => r.slug !== slug);
-  const entry = { title, slug, description, category, prepTime, cookTime, servings, difficulty, coverImage: coverUrl, tags, emoji, dietaryTags };
+  // Filter out any garbage entries (no slug or title) and the current slug
+  existing = existing.filter(r => r.slug && r.title && r.slug !== slug);
+  const entry = { title, slug, description, category, prepTime, cookTime, servings, difficulty, coverImage: coverUrl, tags, emoji, dietaryTags, date: dateStr };
   existing.unshift(entry);
 
   const json = JSON.stringify(existing, null, 2);
