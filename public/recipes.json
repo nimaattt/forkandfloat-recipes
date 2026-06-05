@@ -1,5 +1,26 @@
 [
   {
+    "title": "Mango Salsa",
+    "slug": "mango-salsa",
+    "description": "A fresh, sweet, sour, and spicy mango salsa.",
+    "category": "Sides",
+    "prepTime": "15 mins",
+    "cookTime": "0",
+    "servings": "1 medium bowl",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1A3ttAbzRL6lzIwWXGJxDKBlUhX42MPkj",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "quick",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-05T20:27:57.779Z"
+  },
+  {
     "title": "Spring Pea & Truffle Pasta Salad",
     "slug": "spring-pea-truffle-pasta-salad",
     "description": "A bright pasta salad with fresh ingredients and truffle dressing.",
