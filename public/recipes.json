@@ -1,5 +1,26 @@
 [
   {
+    "title": "Spring Pea & Truffle Pasta Salad",
+    "slug": "spring-pea-truffle-pasta-salad",
+    "description": "A bright pasta salad with fresh ingredients and truffle dressing.",
+    "category": "Salads",
+    "prepTime": "15 mins",
+    "cookTime": "10 mins",
+    "servings": "4-6",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1Bk4TyJVx750GjZqJ3HXfQBwmw0SWIBbb",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "quick",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-05T16:11:13.720Z"
+  },
+  {
     "title": "Fesenjoon (Persian Pomegranate & Walnut Stew)",
     "slug": "fesenjoon-persian-pomegranate-walnut-stew",
     "description": "A rich and deeply comforting Persian stew.",
