@@ -1,5 +1,64 @@
 [
   {
+    "title": "Spring Pea & Truffle Pasta Salad",
+    "slug": "spring-pea-truffle-pasta-salad",
+    "description": "A bright pasta salad with fresh ingredients and truffle dressing.",
+    "category": "Salads",
+    "prepTime": "15 mins",
+    "cookTime": "10 mins",
+    "servings": "4-6",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1Bk4TyJVx750GjZqJ3HXfQBwmw0SWIBbb",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "quick",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-05T16:11:13.720Z"
+  },
+  {
+    "title": "Fesenjoon (Persian Pomegranate & Walnut Stew)",
+    "slug": "fesenjoon-persian-pomegranate-walnut-stew",
+    "description": "A rich and deeply comforting Persian stew.",
+    "category": "Mains",
+    "prepTime": "5 mins",
+    "cookTime": "4 hours",
+    "servings": "3-4",
+    "difficulty": "Medium",
+    "coverImage": "https://lh3.googleusercontent.com/d/1HqOJsi3lwS6Z823N9WxNcoc1LgX9oCkr",
+    "tags": [
+      "mains",
+      "vegetarian",
+      "persian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-05T15:39:13.303Z"
+  },
+  {
+    "title": "Colourful Hummus Platter",
+    "slug": "colourful-hummus-platter",
+    "description": "A creamy hummus platter with beetroot, and cilantro variations.",
+    "category": "Snacks",
+    "prepTime": "15 mins",
+    "cookTime": "0",
+    "servings": "1 medium bowl",
+    "difficulty": "Medium",
+    "coverImage": "https://lh3.googleusercontent.com/d/1swa_OiJdQGlcprjFeU6_AwtgAXt8Fihy",
+    "tags": [
+      "vegetarian",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-05T15:31:17.007Z"
+  },
+  {
     "title": "Dates and Egg",
     "slug": "dates-and-egg",
     "description": "A sweet and savory breakfast made with caramelized dates, warm cinnamon, and eggs.",
