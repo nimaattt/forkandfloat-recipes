@@ -1,5 +1,24 @@
 [
   {
+    "title": "Colourful Hummus Platter",
+    "slug": "colourful-hummus-platter",
+    "description": "A creamy hummus platter with beetroot, and cilantro variations.",
+    "category": "Snacks",
+    "prepTime": "15 mins",
+    "cookTime": "0",
+    "servings": "1 medium bowl",
+    "difficulty": "Medium",
+    "coverImage": "https://lh3.googleusercontent.com/d/1swa_OiJdQGlcprjFeU6_AwtgAXt8Fihy",
+    "tags": [
+      "vegetarian",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-05T15:31:17.007Z"
+  },
+  {
     "title": "Dates and Egg",
     "slug": "dates-and-egg",
     "description": "A sweet and savory breakfast made with caramelized dates, warm cinnamon, and eggs.",
