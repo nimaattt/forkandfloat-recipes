@@ -1,5 +1,24 @@
 [
   {
+    "title": "Fesenjoon (Persian Pomegranate & Walnut Stew)",
+    "slug": "fesenjoon-persian-pomegranate-walnut-stew",
+    "description": "A rich and deeply comforting Persian stew.",
+    "category": "Mains",
+    "prepTime": "5 mins",
+    "cookTime": "4 hours",
+    "servings": "3-4",
+    "difficulty": "Medium",
+    "coverImage": "https://lh3.googleusercontent.com/d/1HqOJsi3lwS6Z823N9WxNcoc1LgX9oCkr",
+    "tags": [
+      "mains",
+      "vegetarian",
+      "persian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-05T15:39:13.303Z"
+  },
+  {
     "title": "Colourful Hummus Platter",
     "slug": "colourful-hummus-platter",
     "description": "A creamy hummus platter with beetroot, and cilantro variations.",
