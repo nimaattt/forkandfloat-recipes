@@ -1,5 +1,26 @@
 [
   {
+    "title": "Spinach Borani (Borani-e Esfenaj)",
+    "slug": "spinach-borani-borani-e-esfenaj",
+    "description": "A creamy Persian spinach and yogurt dip with garlic, perfect as a side dish, appetizer, or snack.",
+    "category": "Sides",
+    "prepTime": "1 hour",
+    "cookTime": "10 mins",
+    "servings": "1 medium bowl",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1oCenCTbQsWfnSEU--Nts9-NYtHIRzZ2U",
+    "tags": [
+      "vegetarian",
+      "persian",
+      "quick",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-07T23:42:07.225Z"
+  },
+  {
     "title": "Mango Salsa",
     "slug": "mango-salsa",
     "description": "A fresh, sweet, sour, and spicy mango salsa.",
