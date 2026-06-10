@@ -1,5 +1,24 @@
 [
   {
+    "title": "Mom-Style Persian Tahdig (Tahdig Madari)",
+    "slug": "mom-style-persian-tahdig-tahdig-madari",
+    "description": "A crispy, golden Persian tahdig made with a saffron batter base.",
+    "category": "Sides",
+    "prepTime": "10 mins",
+    "cookTime": "25 mins",
+    "servings": "4",
+    "difficulty": "Medium",
+    "coverImage": "https://lh3.googleusercontent.com/d/1H1Yk9Ljvj-F5qR4CUhFK5Iad9QC8O5Xb",
+    "tags": [
+      "persian",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-10T20:36:23.578Z"
+  },
+  {
     "title": "Spinach Borani (Borani-e Esfenaj)",
     "slug": "spinach-borani-borani-e-esfenaj",
     "description": "A creamy Persian spinach and yogurt dip with garlic, perfect as a side dish, appetizer, or snack.",
