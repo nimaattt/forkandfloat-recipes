@@ -1,5 +1,24 @@
 [
   {
+    "title": "Berry Coconut Panna Cotta",
+    "slug": "berry-coconut-panna-cotta",
+    "description": "A creamy coconut Panna cotta with a bright mixed berry compote.",
+    "category": "Dessert",
+    "prepTime": "4 hours",
+    "cookTime": "15 mins",
+    "servings": "4",
+    "difficulty": "Medium",
+    "coverImage": "https://lh3.googleusercontent.com/d/1Vr8_YszaZw1ovPw_JTlxx9xsvoVzpGTE",
+    "tags": [
+      "vegetarian",
+      "crowd",
+      "dessert"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-11T20:48:05.533Z"
+  },
+  {
     "title": "Mom-Style Persian Tahdig (Tahdig Madari)",
     "slug": "mom-style-persian-tahdig-tahdig-madari",
     "description": "A crispy, golden Persian tahdig made with a saffron batter base.",
