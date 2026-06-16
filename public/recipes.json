@@ -1,5 +1,23 @@
 [
   {
+    "title": "Basil Oil",
+    "slug": "basil-oil",
+    "description": "A vibrant green basil oil perfect for summer dishes.",
+    "category": "Sides",
+    "prepTime": "15 mins",
+    "cookTime": "5 mins",
+    "servings": "1 cup",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1eewuv5MFUqLrnDfrf2roUTaqe6TSsoiT",
+    "tags": [
+      "vegetarian",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-16T23:06:31.742Z"
+  },
+  {
     "title": "Berry Coconut Panna Cotta",
     "slug": "berry-coconut-panna-cotta",
     "description": "A creamy coconut Panna cotta with a bright mixed berry compote.",
