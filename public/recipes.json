@@ -1,5 +1,25 @@
 [
   {
+    "title": "Beetroot Salad with Whipped Ricotta & Hot Honey",
+    "slug": "beetroot-salad-with-whipped-ricotta-hot-honey",
+    "description": "Sweet roasted beetroot served over lemon ricotta with pistachios, greens, and a drizzle of hot honey.",
+    "category": "Salads",
+    "prepTime": "10 mins",
+    "cookTime": "20 mins",
+    "servings": "4",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1yZ16HsNozdU4R--Pabtfew-XIA1v7onB",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-21T14:21:44.329Z"
+  },
+  {
     "title": "Basil Oil",
     "slug": "basil-oil",
     "description": "A vibrant green basil oil perfect for summer dishes.",
