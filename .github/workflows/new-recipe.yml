@@ -1,17 +1,13 @@
 name: Generate Recipe Page
-
 on:
   repository_dispatch:
     types: [new-recipe]
-
 permissions:
   contents: write
-
 # Serialize runs so two form submissions can't race on recipes.json.
 concurrency:
   group: recipe-generation
   cancel-in-progress: false
-
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -21,20 +17,25 @@ jobs:
         with:
           node-version: '20'
       - name: Debug payload
-        run: echo '${{ toJSON(github.event.client_payload) }}'
+        env:
+          PAYLOAD: ${{ toJSON(github.event.client_payload) }}
+        run: echo "$PAYLOAD"
       - run: npm install
       - name: Generate recipe page + content MD
-        run: |
-          node generate-recipe.js '${{ toJSON(github.event.client_payload) }}'
+        env:
+          PAYLOAD: ${{ toJSON(github.event.client_payload) }}
+        run: node generate-recipe.js "$PAYLOAD"
       - name: Rebuild all pages and recipes.json from source
         run: node build.js
       - name: Commit and push (with rebase retry)
+        env:
+          TITLE: ${{ github.event.client_payload.meta.title }}
         run: |
           git config user.email "bot@forkandfloat.com"
           git config user.name "Fork & Float Bot"
           git add .
           git diff --staged --quiet && { echo "No changes"; exit 0; }
-          git commit -m "✨ New recipe: ${{ github.event.client_payload.meta.title }}"
+          git commit -m "✨ New recipe: $TITLE"
           for i in 1 2 3 4 5; do
             git push && exit 0
             echo "Push rejected (attempt $i) — rebasing onto latest main and retrying"
