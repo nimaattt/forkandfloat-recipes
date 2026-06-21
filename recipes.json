@@ -1,5 +1,25 @@
 [
   {
+    "title": "Potato Tahdig",
+    "slug": "potato-tahdig",
+    "description": "Golden crispy saffron potatoes topped with fluffy Persian rice.",
+    "category": "Persian-Inspired",
+    "prepTime": "15 mins",
+    "cookTime": "25 mins",
+    "servings": "3-4",
+    "difficulty": "Medium",
+    "coverImage": "https://lh3.googleusercontent.com/d/15OpuC6KE1eY48uLBrDMmkIbpnxLK3cTy",
+    "tags": [
+      "mains",
+      "vegetarian",
+      "persian",
+      "crowd"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-21T17:09:06.500Z"
+  },
+  {
     "title": "Beetroot Salad with Whipped Ricotta & Hot Honey",
     "slug": "beetroot-salad-with-whipped-ricotta-hot-honey",
     "description": "Sweet roasted beetroot served over lemon ricotta with pistachios, greens, and a drizzle of hot honey.",
