@@ -1,5 +1,25 @@
 [
   {
+    "title": "Persian Eggplant Yogurt Dip(Borani Bademjan )",
+    "slug": "persian-eggplant-yogurt-dip-borani-bademjan",
+    "description": "Smoky grilled eggplant yogurt dip for a classic Persian appetizer or side.",
+    "category": "Persian-Inspired",
+    "prepTime": "45 mins",
+    "cookTime": "30 mins",
+    "servings": "4-5",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1gyeWjTInTb2peL5mkQ0zrOJABY-hSvAl",
+    "tags": [
+      "vegetarian",
+      "persian",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-23T21:48:23.923Z"
+  },
+  {
     "title": "Persian Saffron Yogurt Chicken (Joojeh Kabab)",
     "slug": "persian-saffron-yogurt-chicken-joojeh-kabab",
     "description": "A classic Persian saffron yogurt marinade for juicy chicken kabobs.",
