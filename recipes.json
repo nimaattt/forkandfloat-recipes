@@ -1,5 +1,24 @@
 [
   {
+    "title": "Persian Saffron Yogurt Chicken (Joojeh Kabab)",
+    "slug": "persian-saffron-yogurt-chicken-joojeh-kabab",
+    "description": "A classic Persian saffron yogurt marinade for juicy chicken kabobs.",
+    "category": "Mains",
+    "prepTime": "2 hours",
+    "cookTime": "20 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1rfPTm6aIyMY6GOewlY8PBJ7kLYyyIX-a",
+    "tags": [
+      "mains",
+      "persian",
+      "crowd"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-23T15:45:35.773Z"
+  },
+  {
     "title": "Potato Tahdig",
     "slug": "potato-tahdig",
     "description": "Golden crispy saffron potatoes topped with fluffy Persian rice.",
