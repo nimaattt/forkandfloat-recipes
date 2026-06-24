@@ -1,5 +1,27 @@
 [
   {
+    "title": "Creamy Herb Dip with Roasted Radishes",
+    "slug": "creamy-herb-dip-with-roasted-radishes",
+    "description": "A vibrant herb-packed dip topped with buttery roasted radishes and green onions.",
+    "category": "Sides",
+    "prepTime": "15 mins",
+    "cookTime": "10 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1QaDoCZI90q847_jdxtvkbTZ0aOTV_Ahu",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "persian",
+      "quick",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-24T22:00:14.459Z"
+  },
+  {
     "title": "Persian Eggplant Yogurt Dip(Borani Bademjan )",
     "slug": "persian-eggplant-yogurt-dip-borani-bademjan",
     "description": "Smoky grilled eggplant yogurt dip for a classic Persian appetizer or side.",
