@@ -1,5 +1,23 @@
 [
   {
+    "title": "Maple Walnut Banana Loaf",
+    "slug": "maple-walnut-banana-loaf",
+    "description": "A moist, naturally sweet banana loaf packed with walnuts and perfect for breakfast or an afternoon snack.",
+    "category": "Dessert",
+    "prepTime": "10 mins",
+    "cookTime": "35 mins",
+    "servings": "7-8",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1xyQ5-EZ_Jd9z53YiS9fCTU4H3Ny9wqwF",
+    "tags": [
+      "vegetarian",
+      "dessert"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-25T22:51:36.347Z"
+  },
+  {
     "title": "Creamy Herb Dip with Roasted Radishes",
     "slug": "creamy-herb-dip-with-roasted-radishes",
     "description": "A vibrant herb-packed dip topped with buttery roasted radishes and green onions.",
