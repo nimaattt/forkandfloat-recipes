@@ -1,5 +1,24 @@
 [
   {
+    "title": "Creamy Scrambled Eggs",
+    "slug": "creamy-scrambled-eggs",
+    "description": "Soft, buttery scrambled eggs finished with fresh chives and cracked black pepper.",
+    "category": "Mains",
+    "prepTime": "5 mins",
+    "cookTime": "5 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1DOieHpc1F72PA9QHFtUaaxiw6qWcdEsF",
+    "tags": [
+      "mains",
+      "vegetarian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-28T18:43:45.664Z"
+  },
+  {
     "title": "Carrot & Hazelnut Dip",
     "slug": "carrot-hazelnut-dip",
     "description": "A creamy roasted carrot dip with toasted hazelnuts, warm spices and bright lemon.",

@@ -1,0 +1,43 @@
+---
+title: "Creamy Scrambled Eggs"
+description: "Soft, buttery scrambled eggs finished with fresh chives and cracked black pepper."
+category: "Mains"
+tags:
+  - "mains"
+  - "vegetarian"
+  - "quick"
+prepTime: "5 mins"
+cookTime: "5 mins"
+servings: "2"
+difficulty: "Easy"
+coverImage: "https://lh3.googleusercontent.com/d/1DOieHpc1F72PA9QHFtUaaxiw6qWcdEsF"
+date: 2026-06-28T18:43:45.664Z
+emoji: "🍽️"
+dietaryTags: ""
+ingredients:
+  - name: "Eggs"
+    amount: "4"
+  - name: "Milk"
+    amount: "½ cup"
+  - name: "Butter"
+    amount: "25 g"
+  - name: "Fresh chives"
+    amount: "2 tbsp, finely chopped"
+  - name: "Salt"
+    amount: "to taste"
+  - name: "Black pepper"
+    amount: "to taste"
+steps:
+  - title: "Whisk the eggs"
+    body: "In a medium bowl, whisk together the eggs, milk and a pinch of salt until fully combined."
+  - title: "Cook the eggs"
+    body: "Heat a non-stick pan over medium heat and melt the butter. Once the butter is hot and foamy, pour in the egg mixture. Stir continuously with a spatula, scraping the bottom of the pan as the eggs cook, until they reach your desired consistency."
+  - title: "Finish and serve"
+    body: "Transfer the scrambled eggs onto your desired toasted bread. Top with freshly cracked black pepper and finely chopped chives before serving."
+howToServe:
+  - "On toasted sourdough"
+  - "Alongside fresh fruit"
+  - "With avocado and herbs"
+  - "As part of a brunch spread"
+chefsNote: "For extra-soft scrambled eggs, remove them from the heat just before they look fully cooked. The residual heat will finish cooking them while keeping them creamy."
+---
