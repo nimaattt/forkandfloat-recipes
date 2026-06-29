@@ -1,5 +1,25 @@
 [
   {
+    "title": "Herb Frittata (Iranian Kookoo Sabzi)",
+    "slug": "herb-frittata-iranian-kookoo-sabzi",
+    "description": "A classic Persian herb-packed frittata filled with walnuts and barberries, crisp on the outside and soft in the middle.",
+    "category": "Mains",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "servings": "4",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1nBYoGVb_UP9V3BickgjYpFpVfjNZnY0l",
+    "tags": [
+      "mains",
+      "vegetarian",
+      "persian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-29T22:32:31.687Z"
+  },
+  {
     "title": "Creamy Scrambled Eggs",
     "slug": "creamy-scrambled-eggs",
     "description": "Soft, buttery scrambled eggs finished with fresh chives and cracked black pepper.",
