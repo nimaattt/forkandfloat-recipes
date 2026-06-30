@@ -1,5 +1,24 @@
 [
   {
+    "title": "Cheese & Jalapeño Stuffed Portobello Mushrooms",
+    "slug": "cheese-jalape-o-stuffed-portobello-mushrooms",
+    "description": "Juicy BBQ portobello mushrooms stuffed with creamy cheese, fresh herbs and jalapeños.",
+    "category": "Mains",
+    "prepTime": "10 mins",
+    "cookTime": "20 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1Ef9qcJZpCfFxjX519g5no2tlKTAZwnRn",
+    "tags": [
+      "mains",
+      "vegetarian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-06-30T16:53:42.185Z"
+  },
+  {
     "title": "Herb Frittata (Iranian Kookoo Sabzi)",
     "slug": "herb-frittata-iranian-kookoo-sabzi",
     "description": "A classic Persian herb-packed frittata filled with walnuts and barberries, crisp on the outside and soft in the middle.",
