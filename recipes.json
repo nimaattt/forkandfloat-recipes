@@ -1,5 +1,25 @@
 [
   {
+    "title": "Halloumi Skewers with Melon Relish",
+    "slug": "halloumi-skewers-with-melon-relish",
+    "description": "Crispy grilled halloumi skewers topped with a sweet and zesty melon relish and hot honey.",
+    "category": "Vegetarian",
+    "prepTime": "10 mins",
+    "cookTime": "15 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1qOIZsQTWIh6x06-73SZhC3WW3tdycWnQ",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-01T14:04:53.942Z"
+  },
+  {
     "title": "Cheese & Jalapeño Stuffed Portobello Mushrooms",
     "slug": "cheese-jalape-o-stuffed-portobello-mushrooms",
     "description": "Juicy BBQ portobello mushrooms stuffed with creamy cheese, fresh herbs and jalapeños.",
