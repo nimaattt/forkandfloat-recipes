@@ -1,5 +1,26 @@
 [
   {
+    "title": "Vegetarian Olivier Salad",
+    "slug": "vegetarian-olivier-salad",
+    "description": "A creamy potato and egg salad, inspired by the Olivier salad enjoyed across Iran.",
+    "category": "Salads",
+    "prepTime": "15 mins",
+    "cookTime": "20 mins",
+    "servings": "4",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1i1xhRVHJmM_RyZfeCDfKKXw_xf_r3uTd",
+    "tags": [
+      "salads",
+      "vegetarian",
+      "persian",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-02T13:03:54.491Z"
+  },
+  {
     "title": "Halloumi Skewers with Melon Relish",
     "slug": "halloumi-skewers-with-melon-relish",
     "description": "Crispy grilled halloumi skewers topped with a sweet and zesty melon relish and hot honey.",
