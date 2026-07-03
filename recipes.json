@@ -1,5 +1,24 @@
 [
   {
+    "title": "Spinach and Artichoke Dip",
+    "slug": "spinach-and-artichoke-dip",
+    "description": "A creamy, cheesy baked dip loaded with spinach, artichokes, and garlic, with a golden mozzarella topping.",
+    "category": "Sides",
+    "prepTime": "10 mins",
+    "cookTime": "20 mins",
+    "servings": "3-4",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/19ykabqiyS-77n8qNnU2UF9YhXRiAbOOP",
+    "tags": [
+      "vegetarian",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-03T13:38:33.536Z"
+  },
+  {
     "title": "Vegetarian Olivier Salad",
     "slug": "vegetarian-olivier-salad",
     "description": "A creamy potato and egg salad, inspired by the Olivier salad enjoyed across Iran.",
