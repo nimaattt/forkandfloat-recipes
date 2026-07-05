@@ -1,0 +1,55 @@
+---
+title: "Melon, Blue Cheese & Prosciutto Salad"
+description: "A simple summer salad with sweet melon ribbons, creamy blue cheese, and fragrant basil oil."
+category: "Salads"
+tags:
+  - "salads"
+  - "quick"
+  - "crowd"
+  - "sides"
+prepTime: "10 mins"
+cookTime: "0"
+servings: "2-3"
+difficulty: "Easy"
+coverImage: "https://lh3.googleusercontent.com/d/1DtXp0KVcNquhfabtYIshF0ICXXMCR3l_"
+date: 2026-07-05T23:03:37.558Z
+emoji: "🍽️"
+dietaryTags: ""
+ingredients:
+  - name: "Persian Melon"
+    amount: "1/2"
+  - name: "Prosciutto"
+    amount: "150 g"
+  - name: "Good quality blue cheese"
+    amount: "1 block"
+  - name: "Lime"
+    amount: "1, zest and juice"
+  - name: "Fresh basil"
+    amount: "5–6 leaves"
+  - name: "Basil oil"
+    amount: "2–3 tbsp"
+  - name: "Flaky salt"
+    amount: "to taste"
+  - name: "Freshly ground black pepper"
+    amount: "to taste"
+steps:
+  - title: "Prepare the melon"
+    body: "Using a vegetable peeler, peel the melon into thin ribbons. Arrange the ribbons on a serving platter."
+  - title: "Add the toppings"
+    body: "Tear or fold the prosciutto and place it over the melon. Crumble or break the blue cheese into chunks and scatter over the top."
+  - title: "Add the herbs and citrus"
+    body: "Thinly slice the basil leaves and sprinkle them over the salad. Using a zester, finely zest the lime over the entire dish."
+  - title: "Finish the salad"
+    body: "Drizzle with basil oil. Squeeze the juice of half the lime over the top and finish with flaky salt and freshly ground black pepper."
+  - title: "Serve"
+    body: "Serve immediately while the melon is cold and fresh."
+howToServe:
+  - "Serve as a summer appetizer or starter."
+  - "Pair with grilled bread and a glass of chilled wine."
+  - "Serve alongside grilled vegetables or BBQ dishes."
+  - "Enjoy as part of a grazing table or picnic spread."
+chefsNote: "The quality of the blue cheese makes a big difference in this recipe, so choose one you really enjoy eating on its own. 
+For the best texture and flavour, serve the salad immediately after assembling. 
+Feel free to use any kind of desired melon.
+The basil oil recipe can be found in the recipe hub."
+---

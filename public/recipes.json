@@ -1,5 +1,25 @@
 [
   {
+    "title": "Melon, Blue Cheese & Prosciutto Salad",
+    "slug": "melon-blue-cheese-prosciutto-salad",
+    "description": "A simple summer salad with sweet melon ribbons, creamy blue cheese, and fragrant basil oil.",
+    "category": "Salads",
+    "prepTime": "10 mins",
+    "cookTime": "0",
+    "servings": "2-3",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1DtXp0KVcNquhfabtYIshF0ICXXMCR3l_",
+    "tags": [
+      "salads",
+      "quick",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-05T23:03:37.558Z"
+  },
+  {
     "title": "Spinach and Artichoke Dip",
     "slug": "spinach-and-artichoke-dip",
     "description": "A creamy, cheesy baked dip loaded with spinach, artichokes, and garlic, with a golden mozzarella topping.",
