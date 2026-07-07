@@ -1,5 +1,23 @@
 [
   {
+    "title": "Crispy Okra Fries with Spicy Aioli",
+    "slug": "crispy-okra-fries-with-spicy-aioli",
+    "description": "Crunchy panko-crusted okra fries served with a tangy, spicy aioli for dipping.",
+    "category": "Sides",
+    "prepTime": "10 mins",
+    "cookTime": "20 mins",
+    "servings": "2-3",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1Mjq_soGr7TCwQpQ4Hh_rhm-VPSW7ouyE",
+    "tags": [
+      "vegetarian",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-07T22:10:21.215Z"
+  },
+  {
     "title": "Melon, Blue Cheese & Prosciutto Salad",
     "slug": "melon-blue-cheese-prosciutto-salad",
     "description": "A simple summer salad with sweet melon ribbons, creamy blue cheese, and fragrant basil oil.",
