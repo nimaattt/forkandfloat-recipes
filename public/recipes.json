@@ -1,5 +1,22 @@
 [
   {
+    "title": "Sekanjebin (Iranian Sweet and Sour Syrup)",
+    "slug": "sekanjebin-iranian-sweet-and-sour-syrup",
+    "description": "A traditional Persian sweet-and-sour mint syrup.",
+    "category": "Persian-Inspired",
+    "prepTime": "5 mins",
+    "cookTime": "20 mins",
+    "servings": "12 (1 bottle)",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/12h5AEbuuTdfkXvCwPIcKW_H2Wv_gIGKH",
+    "tags": [
+      "persian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-08T22:22:03.185Z"
+  },
+  {
     "title": "Crispy Okra Fries with Spicy Aioli",
     "slug": "crispy-okra-fries-with-spicy-aioli",
     "description": "Crunchy panko-crusted okra fries served with a tangy, spicy aioli for dipping.",
