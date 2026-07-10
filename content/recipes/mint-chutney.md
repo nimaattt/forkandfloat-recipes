@@ -1,0 +1,47 @@
+---
+title: "Mint Chutney"
+description: "A bright, herbaceous chutney with a refreshing kick to wraps, sandwiches, and grilled dishes."
+category: "Sides"
+tags:
+  - "quick"
+  - "sides"
+prepTime: "10 mins"
+cookTime: "0"
+servings: "4-5"
+difficulty: "Easy"
+coverImage: "https://lh3.googleusercontent.com/d/1G8_Nd97CutNvMPcifIlcyXT_lj1gFCei"
+date: 2026-07-10T20:36:02.715Z
+emoji: "🍽️"
+dietaryTags: ""
+ingredients:
+  - name: "Fresh mint"
+    amount: "2 cups"
+  - name: "Fresh cilantro"
+    amount: "1 cup"
+  - name: "Lemon"
+    amount: "1 medium"
+  - name: "Yogurt"
+    amount: "2 tbsp, any kind"
+  - name: "Jalapeños"
+    amount: "1 medium"
+  - name: "Cumin powder"
+    amount: "1 tsp"
+  - name: "Salt"
+    amount: "1 tsp"
+  - name: "Freshly ground black pepper"
+    amount: "To taste"
+steps:
+  - title: "Blend the ingredients"
+    body: "Add the mint, cilantro, lemon juice, yogurt, jalapeños, cumin powder, salt, and black pepper to a blender or food processor."
+  - title: "Blend until smooth"
+    body: "Blend until smooth and creamy, scraping down the sides as needed. If the chutney is too thick, add a small splash of water to help it b"
+  - title: "Serve"
+    body: "Transfer to a serving bowl and refrigerator for at least 30 minutes before serving."
+howToServe:
+  - "Spread on wraps and sandwiches."
+  - "Serve alongside grilled vegetables or kebabs."
+  - "Use as a dipping sauce."
+  - "Add a spoonful to grain bowls or salads for extra flavour."
+chefsNote: "The heat level will vary depending on your jalapeños, so feel free to start with one and add more to taste. 
+This chutney keeps well in the refrigerator for up to 3 days and may become even more flavourful after a few hours of chilling."
+---

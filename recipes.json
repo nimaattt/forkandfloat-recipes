@@ -1,5 +1,23 @@
 [
   {
+    "title": "Mint Chutney",
+    "slug": "mint-chutney",
+    "description": "A bright, herbaceous chutney with a refreshing kick to wraps, sandwiches, and grilled dishes.",
+    "category": "Sides",
+    "prepTime": "10 mins",
+    "cookTime": "0",
+    "servings": "4-5",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1G8_Nd97CutNvMPcifIlcyXT_lj1gFCei",
+    "tags": [
+      "quick",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-10T20:36:02.715Z"
+  },
+  {
     "title": "Sekanjebin (Iranian Sweet and Sour Syrup)",
     "slug": "sekanjebin-iranian-sweet-and-sour-syrup",
     "description": "A traditional Persian sweet-and-sour mint syrup.",
