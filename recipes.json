@@ -1,5 +1,23 @@
 [
   {
+    "title": "Crispy Rice Salad",
+    "slug": "crispy-rice-salad",
+    "description": "A crunchy, flavour-packed salad with crispy rice, roasted vegetables, fresh herbs, and a creamy tahini dressing.",
+    "category": "Salads",
+    "prepTime": "15 mins",
+    "cookTime": "25 mins",
+    "servings": "2-3",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1y4pcleoD5_3jK9-SrTOtlyh2bYQgKj_j",
+    "tags": [
+      "salads",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-14T21:14:57.977Z"
+  },
+  {
     "title": "Mint Chutney",
     "slug": "mint-chutney",
     "description": "A bright, herbaceous chutney with a refreshing kick to wraps, sandwiches, and grilled dishes.",
