@@ -1,5 +1,23 @@
 [
   {
+    "title": "Garlic Scape Pesto Pasta",
+    "slug": "garlic-scape-pesto-pasta",
+    "description": "A bright and vibrant pasta tossed in homemade garlic scape pesto with plenty of parmesan.",
+    "category": "Mains",
+    "prepTime": "5 mins",
+    "cookTime": "20 mins",
+    "servings": "3-4",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1QXYIb2iFmGPDd0WURsEo675mmWFSMB7z",
+    "tags": [
+      "mains",
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-15T22:43:59.381Z"
+  },
+  {
     "title": "Crispy Rice Salad",
     "slug": "crispy-rice-salad",
     "description": "A crunchy, flavour-packed salad with crispy rice, roasted vegetables, fresh herbs, and a creamy tahini dressing.",
