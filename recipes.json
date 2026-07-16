@@ -1,5 +1,24 @@
 [
   {
+    "title": "Sour Cherry and Feta Phyllo Rolls",
+    "slug": "sour-cherry-and-feta-phyllo-rolls",
+    "description": "Crispy phyllo rolls filled with salty feta, tart sour cherries, and a touch of hot honey.",
+    "category": "Sides",
+    "prepTime": "15 mins",
+    "cookTime": "15 mins",
+    "servings": "3-4",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1vb328miNNZOiXoWKcdiC_5tev-WNvlWK",
+    "tags": [
+      "vegetarian",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-16T22:12:52.540Z"
+  },
+  {
     "title": "Garlic Scape Pesto Pasta",
     "slug": "garlic-scape-pesto-pasta",
     "description": "A bright and vibrant pasta tossed in homemade garlic scape pesto with plenty of parmesan.",

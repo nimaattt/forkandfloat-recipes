@@ -1,0 +1,52 @@
+---
+title: "Sour Cherry and Feta Phyllo Rolls"
+description: "Crispy phyllo rolls filled with salty feta, tart sour cherries, and a touch of hot honey."
+category: "Sides"
+tags:
+  - "vegetarian"
+  - "crowd"
+  - "sides"
+prepTime: "15 mins"
+cookTime: "15 mins"
+servings: "3-4"
+difficulty: "Easy"
+coverImage: "https://lh3.googleusercontent.com/d/1vb328miNNZOiXoWKcdiC_5tev-WNvlWK"
+date: 2026-07-16T22:12:52.540Z
+emoji: "🍽️"
+dietaryTags: ""
+ingredients:
+  - name: "Phyllo pastry"
+    amount: "1 package"
+  - name: "Sour cherries"
+    amount: "1 cup, pitted"
+  - name: "Hot honey"
+    amount: "2 tbsp"
+  - name: "Olive oil"
+    amount: "2 tbsp"
+  - name: "Feta cheese"
+    amount: "400 g, good quality"
+  - name: "Black sesame seeds"
+    amount: "for garnish"
+steps:
+  - title: "Prepare the cherries"
+    body: "Pit the sour cherries and cut them in half."
+  - title: "Prepare the phyllo"
+    body: "Lay a sheet of phyllo pastry on a clean work surface. Fold it over itself to create additional layers and a sturdier roll. Lightly brush the edges with olive oil."
+  - title: "Fill the rolls"
+    body: "Place a piece of feta cheese in the center of the phyllo. Top with a spoonful of sour cherries and a drizzle of hot honey."
+  - title: "Roll the phyllo"
+    body: "Fold the bottom edge over the filling, then fold in the sides and continue rolling until fully enclosed. Brush the final edge with olive oil to seal."
+  - title: "Prepare for baking"
+    body: "Place the rolls seam-side down on a baking sheet. Brush the tops with the remaining olive oil and sprinkle with black sesame seeds."
+  - title: "Bake"
+    body: "Bake at 380°F for 10–15 minutes, or until the phyllo is golden brown and crisp."
+  - title: "Finish and serve"
+    body: "Remove from the oven and drizzle with additional hot honey or regular honey. Serve immediately while warm and crispy."
+howToServe:
+  - "Serve as a summer appetizer or snack."
+  - "Add to a grazing table or brunch spread."
+  - "Serve warm while the feta is still soft and creamy."
+chefsNote: "The contrast between the salty feta, tart sour cherries, and sweet honey is what makes these rolls special. 
+If fresh sour cherries aren't available, frozen sour cherries can be used (just thaw and drain them well before filling the rolls). 
+These are best enjoyed fresh from the oven when the phyllo is at its crispiest."
+---
