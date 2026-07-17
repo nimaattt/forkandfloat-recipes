@@ -1,5 +1,23 @@
 [
   {
+    "title": "Crispy Rice paper & Seaweed Cups",
+    "slug": "crispy-rice-paper-seaweed-cups",
+    "description": "Crispy seaweed and rice paper cups that can be filled with everything from spicy salmon to tofu, fruit, or fresh salads.",
+    "category": "Sides",
+    "prepTime": "10 mins",
+    "cookTime": "2 mins",
+    "servings": "3-4",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1ZPftWj4Q0JFopWXu8zJyyqXfo3VaebQg",
+    "tags": [
+      "vegetarian",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-17T20:54:40.687Z"
+  },
+  {
     "title": "Sour Cherry and Feta Phyllo Rolls",
     "slug": "sour-cherry-and-feta-phyllo-rolls",
     "description": "Crispy phyllo rolls filled with salty feta, tart sour cherries, and a touch of hot honey.",
