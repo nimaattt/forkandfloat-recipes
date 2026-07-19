@@ -1,5 +1,24 @@
 [
   {
+    "title": "Honey Sriracha Glazed Tofu",
+    "slug": "honey-sriracha-glazed-tofu",
+    "description": "Crispy golden tofu coated in a sticky sweet and spicy honey sriracha glaze.",
+    "category": "Mains",
+    "prepTime": "10 mins",
+    "cookTime": "15 mins",
+    "servings": "2-3",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1ksQoqtOszlGkt6OZ_EA5JYZH0R_lqfYR",
+    "tags": [
+      "mains",
+      "vegetarian",
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-19T17:12:29.012Z"
+  },
+  {
     "title": "Crispy Rice paper & Seaweed Cups",
     "slug": "crispy-rice-paper-seaweed-cups",
     "description": "Crispy seaweed and rice paper cups that can be filled with everything from spicy salmon to tofu, fruit, or fresh salads.",
