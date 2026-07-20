@@ -1,5 +1,25 @@
 [
   {
+    "title": "Sweet and Spicy Mango & Peach Salsa",
+    "slug": "sweet-and-spicy-mango-peach-salsa",
+    "description": "A fresh and juicy salsa that's sweet, spicy, and perfect for summer.",
+    "category": "Sides",
+    "prepTime": "10 mins",
+    "cookTime": "0",
+    "servings": "2-3",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1nZHxwcOdYyzkJ_v5hebroNTEwxdqt71w",
+    "tags": [
+      "vegetarian",
+      "quick",
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-20T22:48:47.220Z"
+  },
+  {
     "title": "Honey Sriracha Glazed Tofu",
     "slug": "honey-sriracha-glazed-tofu",
     "description": "Crispy golden tofu coated in a sticky sweet and spicy honey sriracha glaze.",
