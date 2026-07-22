@@ -1,5 +1,23 @@
 [
   {
+    "title": "Sour Cherry & Mascarpone Toast",
+    "slug": "sour-cherry-mascarpone-toast",
+    "description": "Creamy mascarpone topped with warm sour cherry compote, basil oil, and salted pistachios on crispy toast.",
+    "category": "Snacks",
+    "prepTime": "10 mins",
+    "cookTime": "5 mins",
+    "servings": "2",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/17zHnc2Xu6Pe00QwLZQyeh3M8yuqWTKaN",
+    "tags": [
+      "vegetarian",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-22T20:23:12.932Z"
+  },
+  {
     "title": "Sweet and Spicy Mango & Peach Salsa",
     "slug": "sweet-and-spicy-mango-peach-salsa",
     "description": "A fresh and juicy salsa that's sweet, spicy, and perfect for summer.",

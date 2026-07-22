@@ -1,0 +1,52 @@
+---
+title: "Sour Cherry & Mascarpone Toast"
+description: "Creamy mascarpone topped with warm sour cherry compote, basil oil, and salted pistachios on crispy toast."
+category: "Snacks"
+tags:
+  - "vegetarian"
+  - "sides"
+prepTime: "10 mins"
+cookTime: "5 mins"
+servings: "2"
+difficulty: "Easy"
+coverImage: "https://lh3.googleusercontent.com/d/17zHnc2Xu6Pe00QwLZQyeh3M8yuqWTKaN"
+date: 2026-07-22T20:23:12.932Z
+emoji: "🍽️"
+dietaryTags: ""
+ingredients:
+  - name: "Sour cherries"
+    amount: "1 cup, pitted"
+  - name: "Honey"
+    amount: "1 tbsp"
+  - name: "Mascarpone"
+    amount: "1/2 cup"
+  - name: "Bread"
+    amount: "2 slices, your preferred variety"
+  - name: "Pistachios"
+    amount: "6,7"
+  - name: "Basil oil"
+    amount: "for drizzling"
+  - name: "Salt"
+    amount: "to taste"
+  - name: "Freshly ground black pepper"
+    amount: "to taste"
+steps:
+  - title: "Make the sour cherry compote"
+    body: "Pit the sour cherries and add them to a small pan over medium heat. Stir in the honey and cook for about 5 minutes, until the cherries have softened slightly and the juices have thickened into a light compote. Remove from the heat."
+  - title: "Prep"
+    body: "Toast the bread until golden and crisp. Chop the pistachios."
+  - title: "Assemble the toast"
+    body: "Spread the mascarpone generously over the warm toast. Spoon the warm sour cherry compote over the mascarpone."
+  - title: "Finish"
+    body: "Season with a pinch of salt and freshly ground black pepper. Drizzle with basil oil and sprinkle over the chopped salted pistachios."
+  - title: "Serve"
+    body: "Serve immediately while the toast is still warm."
+howToServe:
+  - "Serve as a summer breakfast or brunch."
+  - "Pair with coffee or black tea."
+  - "Top with extra basil leaves for a fresh finish."
+  - "Enjoy with seasonal fruit on the side."
+chefsNote: "The contrast between the cool mascarpone and the warm sour cherry compote is what makes this toast so special. 
+If you don't have basil oil, drizzle with a high-quality extra virgin olive oil instead. 
+Fresh sour cherries work best, but frozen sour cherries can also be used (just thaw and drain any excess liquid before cooking)."
+---
