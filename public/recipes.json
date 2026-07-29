@@ -1,5 +1,23 @@
 [
   {
+    "title": "Whipped Ricotta",
+    "slug": "whipped-ricotta",
+    "description": "A light, creamy and zesty whipped ricotta that's perfect for spreading or dipping.",
+    "category": "Sides",
+    "prepTime": "5 mins",
+    "cookTime": "0",
+    "servings": "4-5",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1EfnpIhFUcDt1z_bWHHFeoKGh9QwcIlfI",
+    "tags": [
+      "quick",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-29T16:29:55.276Z"
+  },
+  {
     "title": "Sour Cherry & Mascarpone Toast",
     "slug": "sour-cherry-mascarpone-toast",
     "description": "Creamy mascarpone topped with warm sour cherry compote, basil oil, and salted pistachios on crispy toast.",
