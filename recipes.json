@@ -1,5 +1,23 @@
 [
   {
+    "title": "Halim Bademjoon (Persian Eggplant & Whey Dip)",
+    "slug": "halim-bademjoon-persian-eggplant-whey-dip",
+    "description": "A rich Persian eggplant dip made with caramelized onions, lentils, and tangy whey (kashk).",
+    "category": "Persian-Inspired",
+    "prepTime": "10 mins",
+    "cookTime": "30 mins",
+    "servings": "2-3",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1aeKD3fW9-ox3FRKkxzcqJ_IcDqbn_o93",
+    "tags": [
+      "vegetarian",
+      "persian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-30T18:02:23.070Z"
+  },
+  {
     "title": "Whipped Ricotta",
     "slug": "whipped-ricotta",
     "description": "A light, creamy and zesty whipped ricotta that's perfect for spreading or dipping.",
