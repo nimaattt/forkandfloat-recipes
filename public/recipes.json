@@ -1,5 +1,25 @@
 [
   {
+    "title": "Pickled Shallots",
+    "slug": "pickled-shallots",
+    "description": "Quick-pickled shallots with a vibrant ruby color perfect for salads, sandwiches, tacos, and grain bowls.",
+    "category": "Sides",
+    "prepTime": "5 mins",
+    "cookTime": "0",
+    "servings": "1 small jar",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1J4m6J60Bf42et9jTjKcLD0V8AgYLEZ0Z",
+    "tags": [
+      "vegetarian",
+      "persian",
+      "quick",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-07-31T19:50:40.370Z"
+  },
+  {
     "title": "Halim Bademjoon (Persian Eggplant & Whey Dip)",
     "slug": "halim-bademjoon-persian-eggplant-whey-dip",
     "description": "A rich Persian eggplant dip made with caramelized onions, lentils, and tangy whey (kashk).",
