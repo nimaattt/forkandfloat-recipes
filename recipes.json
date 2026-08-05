@@ -1,5 +1,23 @@
 [
   {
+    "title": "Charred Green Bean & Herb Dip",
+    "slug": "charred-green-bean-herb-dip",
+    "description": "A creamy, herby green bean dip topped with charred sugar snap peas, fresh herbs, and olive oil.",
+    "category": "Sides",
+    "prepTime": "5 mins",
+    "cookTime": "10 mins",
+    "servings": "3-4",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1pK84nYWQEtMDpWpZA57yXTvT_1n_7_Tk",
+    "tags": [
+      "vegetarian",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-08-05T21:26:35.364Z"
+  },
+  {
     "title": "Pickled Shallots",
     "slug": "pickled-shallots",
     "description": "Quick-pickled shallots with a vibrant ruby color perfect for salads, sandwiches, tacos, and grain bowls.",
