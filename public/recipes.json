@@ -1,5 +1,23 @@
 [
   {
+    "title": "Creamy Scrambled Eggs",
+    "slug": "creamy-scrambled-eggs",
+    "description": "Soft, buttery scrambled eggs cooked slowly until creamy.",
+    "category": "Mains",
+    "prepTime": "5 mins",
+    "cookTime": "15 mins",
+    "servings": "5-6",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1KqpWYbCyKuHbgzrWsDZaZVh_YKZXN7zl",
+    "tags": [
+      "mains",
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-08-11T21:34:19.145Z"
+  },
+  {
     "title": "Charred Green Bean & Herb Dip",
     "slug": "charred-green-bean-herb-dip",
     "description": "A creamy, herby green bean dip topped with charred sugar snap peas, fresh herbs, and olive oil.",
@@ -374,25 +392,6 @@
     "emoji": "🍽️",
     "dietaryTags": "",
     "date": "2026-06-29T22:32:31.687Z"
-  },
-  {
-    "title": "Creamy Scrambled Eggs",
-    "slug": "creamy-scrambled-eggs",
-    "description": "Soft, buttery scrambled eggs finished with fresh chives and cracked black pepper.",
-    "category": "Mains",
-    "prepTime": "5 mins",
-    "cookTime": "5 mins",
-    "servings": "2",
-    "difficulty": "Easy",
-    "coverImage": "https://lh3.googleusercontent.com/d/1DOieHpc1F72PA9QHFtUaaxiw6qWcdEsF",
-    "tags": [
-      "mains",
-      "vegetarian",
-      "quick"
-    ],
-    "emoji": "🍽️",
-    "dietaryTags": "",
-    "date": "2026-06-28T18:43:45.664Z"
   },
   {
     "title": "Carrot & Hazelnut Dip",
