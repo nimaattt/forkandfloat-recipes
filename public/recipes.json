@@ -1,5 +1,23 @@
 [
   {
+    "title": "Citrus vinaigrette",
+    "slug": "citrus-vinaigrette",
+    "description": "A bright, tangy everyday salad dressing.",
+    "category": "Sides",
+    "prepTime": "5 mins",
+    "cookTime": "0",
+    "servings": "4-5",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1ntYNSJWitGn4l8qtoT-DsnEqJh4EbmkL",
+    "tags": [
+      "salads",
+      "vegetarian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-08-11T21:52:39.428Z"
+  },
+  {
     "title": "Creamy Scrambled Eggs",
     "slug": "creamy-scrambled-eggs",
     "description": "Soft, buttery scrambled eggs cooked slowly until creamy.",

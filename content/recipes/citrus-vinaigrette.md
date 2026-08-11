@@ -1,0 +1,45 @@
+---
+title: "Citrus vinaigrette"
+description: "A bright, tangy everyday salad dressing."
+category: "Sides"
+tags:
+  - "salads"
+  - "vegetarian"
+prepTime: "5 mins"
+cookTime: "0"
+servings: "4-5"
+difficulty: "Easy"
+coverImage: "https://lh3.googleusercontent.com/d/1ntYNSJWitGn4l8qtoT-DsnEqJh4EbmkL"
+date: 2026-08-11T21:52:39.428Z
+emoji: "🍽️"
+dietaryTags: ""
+ingredients:
+  - name: "Dijon mustard"
+    amount: "1 tbsp"
+  - name: "Lemons"
+    amount: "2, juiced"
+  - name: "Extra virgin olive oil"
+    amount: "1/2 cup"
+  - name: "Maple syrup"
+    amount: "1 tbsp"
+  - name: "Garlic powder"
+    amount: "1 tsp"
+  - name: "Salt"
+    amount: "1 tsp"
+  - name: "Freshly ground black pepper"
+    amount: "to taste"
+steps:
+  - title: "Combine the base"
+    body: "Add the Dijon mustard, fresh lemon juice, maple syrup, garlic powder, salt, and freshly ground black pepper to a bowl or jar."
+  - title: "Add the olive oil"
+    body: "Slowly pour in the olive oil while whisking continuously until the dressing is smooth and emulsified. You can also use a hand blender to blend everything together until smooth and creamy."
+  - title: "Taste and adjust"
+    body: "Taste and adjust the salt, pepper, lemon, or maple syrup depending on how tangy or sweet you like your dressing."
+howToServe:
+  - "Toss with your favorite leafy salad."
+  - "Drizzle over roasted or grilled vegetables."
+  - "Use as a dressing for grain, pasta, or lentil salads."
+  - "Spoon over avocado, tomatoes, or grilled corn."
+chefsNote: "This is a great base dressing to keep in the fridge and use throughout the week. 
+The ingredients may naturally separate as it sits, so just give it a good shake or whisk before serving."
+---
