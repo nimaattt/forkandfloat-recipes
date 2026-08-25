@@ -1,5 +1,23 @@
 [
   {
+    "title": "Chicken Salad Cucumber Bites",
+    "slug": "chicken-salad-cucumber-bites",
+    "description": "A fresh and crunchy chicken salad served on crisp cucumber pieces.",
+    "category": "Sides",
+    "prepTime": "15 mins",
+    "cookTime": "1 hour",
+    "servings": "5-6",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1Z8otBoPcOxHAKV9JIXRRAO2q-rI97ZG8",
+    "tags": [
+      "salads",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-08-25T15:46:00.758Z"
+  },
+  {
     "title": "Citrus vinaigrette",
     "slug": "citrus-vinaigrette",
     "description": "A bright, tangy everyday salad dressing.",
