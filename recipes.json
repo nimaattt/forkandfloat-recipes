@@ -1,5 +1,22 @@
 [
   {
+    "title": "Honey Sriracha Meatballs",
+    "slug": "honey-sriracha-meatballs",
+    "description": "Juicy beef meatballs coated in a sticky honey sriracha glaze with just the right balance of sweet, spicy, and tangy.",
+    "category": "Mains",
+    "prepTime": "2 hours",
+    "cookTime": "15 mins",
+    "servings": "5-6",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/198PCvOXCdkOZA7moW_Hg00VkUjYEhkBr",
+    "tags": [
+      "mains"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-08-30T19:37:38.388Z"
+  },
+  {
     "title": "Chicken Salad Cucumber Bites",
     "slug": "chicken-salad-cucumber-bites",
     "description": "A fresh and crunchy chicken salad served on crisp cucumber pieces.",
