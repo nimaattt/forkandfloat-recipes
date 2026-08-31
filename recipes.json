@@ -1,5 +1,23 @@
 [
   {
+    "title": "Shrimp Tea Sandwiches",
+    "slug": "shrimp-tea-sandwiches",
+    "description": "Creamy and garlicky shrimp filling layered between soft white bread and finished with a fresh chive edge.",
+    "category": "Snacks",
+    "prepTime": "15 mins",
+    "cookTime": "5 mins",
+    "servings": "6",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1VPPx6oOQGD4lL1AFMkpd7fnbW9PTmdJp",
+    "tags": [
+      "crowd",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-08-31T22:51:42.402Z"
+  },
+  {
     "title": "Honey Sriracha Meatballs",
     "slug": "honey-sriracha-meatballs",
     "description": "Juicy beef meatballs coated in a sticky honey sriracha glaze with just the right balance of sweet, spicy, and tangy.",
