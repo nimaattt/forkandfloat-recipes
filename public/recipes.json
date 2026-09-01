@@ -1,5 +1,23 @@
 [
   {
+    "title": "Whipped Ricotta & Tromboncino Crostini",
+    "slug": "whipped-ricotta-tromboncino-crostini",
+    "description": "Creamy lemony whipped ricotta and delicate ribbons of golden tromboncino squash.",
+    "category": "Vegetarian",
+    "prepTime": "15 mins",
+    "cookTime": "10 mins",
+    "servings": "4-5",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1FzI09AFmKf5sqOFbij1KJuzfOLHzzj5i",
+    "tags": [
+      "vegetarian",
+      "sides"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-09-01T19:41:34.124Z"
+  },
+  {
     "title": "Shrimp Tea Sandwiches",
     "slug": "shrimp-tea-sandwiches",
     "description": "Creamy and garlicky shrimp filling layered between soft white bread and finished with a fresh chive edge.",

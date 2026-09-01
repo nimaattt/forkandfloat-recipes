@@ -1,0 +1,52 @@
+---
+title: "Whipped Ricotta & Tromboncino Crostini"
+description: "Creamy lemony whipped ricotta and delicate ribbons of golden tromboncino squash."
+category: "Vegetarian"
+tags:
+  - "vegetarian"
+  - "sides"
+prepTime: "15 mins"
+cookTime: "10 mins"
+servings: "4-5"
+difficulty: "Easy"
+coverImage: "https://lh3.googleusercontent.com/d/1FzI09AFmKf5sqOFbij1KJuzfOLHzzj5i"
+date: 2026-09-01T19:41:34.124Z
+emoji: "🍽️"
+dietaryTags: ""
+ingredients:
+  - name: "Smooth ricotta cheese"
+    amount: "500 g"
+  - name: "Lemon"
+    amount: "1, zested"
+  - name: "Extra virgin olive oil"
+    amount: "2 tbsp, plus more for cooking and grilling"
+  - name: "Salt"
+    amount: "to taste"
+  - name: "Freshly ground black pepper"
+    amount: "to taste"
+  - name: "Garlic"
+    amount: "optional"
+  - name: "Tromboncino squash"
+    amount: "1/3 medium"
+  - name: "Baguette"
+    amount: "1"
+steps:
+  - title: "Whip the ricotta"
+    body: "Add the ricotta, lemon zest, olive oil, salt, freshly ground black pepper, and garlic, if using, to a food processor or blender. Blend for a couple of minutes until light, creamy, and fluffy. Transfer to a piping bag and refrigerate until ready to assemble."
+  - title: "Prepare the crostini"
+    body: "Slice the baguette thinly on a diagonal. Lightly brush with olive oil and grill on the BBQ until golden and lightly charred on both sides. If you don't have a BBQ, toast the slices until crisp and golden."
+  - title: "Prepare the Tromboncino"
+    body: "Using a vegetable peeler, shave the tromboncino lengthwise into very thin ribbons."
+  - title: "Cook the Tromboncino"
+    body: "Heat a drizzle of olive oil in a medium pan. Add the tromboncino ribbons and cook for only a few seconds on each side, just until softened with lightly golden edges. Remove from the heat."
+  - title: "Assemble"
+    body: "Pipe the whipped ricotta generously onto each toasted baguette slice. Arrange the warm tromboncino ribbons on top and finish with freshly ground black pepper and a drizzle of olive oil, if desired."
+howToServe:
+  - "Serve as an appetizer or passed bite."
+  - "Add to a summer grazing table."
+  - "Serve alongside a fresh tomato or green salad."
+  - "Enjoy slightly warm or at room temperature."
+chefsNote: "Tromboncino has a delicate texture and only needs a few seconds in the pan, you want the ribbons soft and lightly golden without becoming mushy. 
+If you can't find tromboncino squash, zucchini works perfectly here too. 
+The whipped ricotta can be prepared ahead and refrigerated, but assemble the crostini close to serving so the bread stays crisp."
+---
