@@ -1,5 +1,24 @@
 [
   {
+    "title": "Kid’s Mac and Cheese",
+    "slug": "kid-s-mac-and-cheese",
+    "description": "A creamy, cheesy and healthy baked mac and cheese with golden, crispy top.",
+    "category": "Mains",
+    "prepTime": "15 mins",
+    "cookTime": "25 mins",
+    "servings": "5-6",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1AMPg2TXMvxh1yJBe4sOH2mni3cwViRq_",
+    "tags": [
+      "mains",
+      "vegetarian",
+      "crowd"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-09-10T22:22:05.476Z"
+  },
+  {
     "title": "Whipped Ricotta & Tromboncino Crostini",
     "slug": "whipped-ricotta-tromboncino-crostini",
     "description": "Creamy lemony whipped ricotta and delicate ribbons of golden tromboncino squash.",
