@@ -1,0 +1,48 @@
+---
+title: "Béchamel Sauce"
+description: "A smooth and creamy béchamel finished with lemon zest for a bright, fresh twist."
+category: "Quick & Easy"
+tags:
+  - "quick"
+prepTime: "5 mins"
+cookTime: "10 mins"
+servings: "4-5"
+difficulty: "Easy"
+coverImage: "https://lh3.googleusercontent.com/d/1ztZCgYdUGr7Ydp6xbfY1aBRGbPE2C26u"
+date: 2026-09-10T22:33:21.812Z
+emoji: "🍽️"
+dietaryTags: ""
+ingredients:
+  - name: "Butter"
+    amount: "50 gr"
+  - name: "All-purpose flour"
+    amount: "2 tbsp"
+  - name: "Milk"
+    amount: "2 cups, any kind"
+  - name: "Cream"
+    amount: "1/2 cup"
+  - name: "Lemon"
+    amount: "1, zested"
+  - name: "Salt"
+    amount: "to taste"
+  - name: "Freshly ground black pepper"
+    amount: "to taste"
+steps:
+  - title: "Make the roux"
+    body: "Melt the butter in a pan over medium heat. Once completely melted and bubbling, add the flour and whisk continuously until combined into a smooth paste."
+  - title: "Add the milk"
+    body: "Slowly add the milk, about 1/2 cup at a time, whisking continuously after each addition to prevent any lumps from forming."
+  - title: "Add the cream"
+    body: "Pour in the cream and continue whisking over medium heat until the sauce becomes smooth and thickens to your desired consistency."
+  - title: "Finish the sauce"
+    body: "Add the lemon zest and season with salt and freshly ground black pepper. Whisk until everything is well combined."
+  - title: "Adjust the consistency"
+    body: "If the béchamel becomes too thick, gradually whisk in a little more milk until you reach your desired consistency."
+howToServe:
+  - "Use for mac and cheese."
+  - "Layer into lasagna or other baked pasta dishes."
+  - "Use as a creamy base for vegetable gratins."
+  - "Spoon over roasted or grilled vegetables."
+chefsNote: "Add the milk gradually and keep whisking as you go, this is the easiest way to get a silky béchamel without lumps. 
+The sauce will continue to thicken as it cools, so keep it slightly looser if you're making it ahead."
+---

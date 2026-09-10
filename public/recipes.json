@@ -1,5 +1,22 @@
 [
   {
+    "title": "Béchamel Sauce",
+    "slug": "b-chamel-sauce",
+    "description": "A smooth and creamy béchamel finished with lemon zest for a bright, fresh twist.",
+    "category": "Quick & Easy",
+    "prepTime": "5 mins",
+    "cookTime": "10 mins",
+    "servings": "4-5",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1ztZCgYdUGr7Ydp6xbfY1aBRGbPE2C26u",
+    "tags": [
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-09-10T22:33:21.812Z"
+  },
+  {
     "title": "Kid’s Mac and Cheese",
     "slug": "kid-s-mac-and-cheese",
     "description": "A creamy, cheesy and healthy baked mac and cheese with golden, crispy top.",
