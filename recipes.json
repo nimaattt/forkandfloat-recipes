@@ -1,5 +1,22 @@
 [
   {
+    "title": "Homemade Apple & Nut Granola",
+    "slug": "homemade-apple-nut-granola",
+    "description": "A crunchy homemade granola packed with nuts and seeds.",
+    "category": "Breakfast",
+    "prepTime": "15 mins",
+    "cookTime": "35 mins",
+    "servings": "10-12",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1Lxno0DldEoooHDSSGneJ5gmK_HDHN-_D",
+    "tags": [
+      "quick"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-09-16T21:29:42.528Z"
+  },
+  {
     "title": "Béchamel Sauce",
     "slug": "b-chamel-sauce",
     "description": "A smooth and creamy béchamel finished with lemon zest for a bright, fresh twist.",
