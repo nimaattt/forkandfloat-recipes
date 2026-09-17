@@ -1,5 +1,23 @@
 [
   {
+    "title": "Persian Cabbage Rolls (Dolmeh Kalam)",
+    "slug": "persian-cabbage-rolls-dolmeh-kalam",
+    "description": "Tender cabbage leaves stuffed with a savory mixture of rice, split peas, herbs, and your choice of protein.",
+    "category": "Mains",
+    "prepTime": "30 mins",
+    "cookTime": "40 mins",
+    "servings": "6",
+    "difficulty": "Medium",
+    "coverImage": "https://lh3.googleusercontent.com/d/170fdVKEagKO-8ncaZASc-lPY1DgdFAb2",
+    "tags": [
+      "mains",
+      "persian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-09-17T21:30:03.411Z"
+  },
+  {
     "title": "Homemade Apple & Nut Granola",
     "slug": "homemade-apple-nut-granola",
     "description": "A crunchy homemade granola packed with nuts and seeds.",
