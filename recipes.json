@@ -1,5 +1,23 @@
 [
   {
+    "title": "Peach and Berry Olive Oil Cake",
+    "slug": "peach-and-berry-olive-oil-cake",
+    "description": "A soft and moist olive oil cake packed with juicy fruit, finished with a crunchy almond and brown sugar topping.",
+    "category": "Dessert",
+    "prepTime": "15 mins",
+    "cookTime": "45 mins",
+    "servings": "8",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1tn0rvFsenglQ7WT2txc_ZQESK5VqRcb_",
+    "tags": [
+      "vegetarian",
+      "dessert"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-09-21T23:59:24.679Z"
+  },
+  {
     "title": "Persian Cabbage Rolls (Dolmeh Kalam)",
     "slug": "persian-cabbage-rolls-dolmeh-kalam",
     "description": "Tender cabbage leaves stuffed with a savory mixture of rice, split peas, herbs, and your choice of protein.",
