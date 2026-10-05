@@ -9,8 +9,8 @@ prepTime: "15 min (approx.)"
 cookTime: "35 min (approx.)"
 servings: "4 (approx.)"
 difficulty: "Easy"
-coverImage: ""
-date: 2026-10-05T21:33:46.562Z
+coverImage: "https://lh3.googleusercontent.com/d/1ifc3SHnMrnuSVORTKBrrZGd3dJE9d8Ao"
+date: 2026-10-05T21:34:48.075Z
 emoji: "🍚"
 dietaryTags: ""
 ingredients:
