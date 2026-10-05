@@ -1,5 +1,23 @@
 [
   {
+    "title": "Honey-sriracha tofu and vegetable stir-fry with rice",
+    "slug": "honey-sriracha-tofu-and-vegetable-stir-fry-with-rice",
+    "description": "Crispy tofu and colourful vegetables in a sweet, spicy citrus sauce, served with fluffy rice.",
+    "category": "Mains",
+    "prepTime": "15 min (approx.)",
+    "cookTime": "35 min (approx.)",
+    "servings": "4 (approx.)",
+    "difficulty": "Easy",
+    "coverImage": "",
+    "tags": [
+      "mains",
+      "vegetarian"
+    ],
+    "emoji": "🍚",
+    "dietaryTags": "",
+    "date": "2026-10-05T21:33:46.562Z"
+  },
+  {
     "title": "Peach and Berry Olive Oil Cake",
     "slug": "peach-and-berry-olive-oil-cake",
     "description": "A soft and moist olive oil cake packed with juicy fruit, finished with a crunchy almond and brown sugar topping.",
