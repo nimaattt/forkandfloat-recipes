@@ -1,5 +1,23 @@
 [
   {
+    "title": "Stuffed bell pepper (vegetarian pepper dolmeh)",
+    "slug": "stuffed-bell-pepper-vegetarian-pepper-dolmeh",
+    "description": "Iranian pepper dolmeh or stuffed bell pepper with rice, split peas, soy chunks and fresh parsley.",
+    "category": "Mains",
+    "prepTime": "Approximately 20 minutes, plus soaking",
+    "cookTime": "Approximately 50 minutes",
+    "servings": "4",
+    "difficulty": "Medium",
+    "coverImage": "https://lh3.googleusercontent.com/d/1VHgSOy4YAIdIesVn4V7bJ9ESgoW7ejR5",
+    "tags": [
+      "vegetarian",
+      "persian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-10-14T21:11:03.615Z"
+  },
+  {
     "title": "Honey-sriracha tofu and vegetable stir-fry with rice",
     "slug": "honey-sriracha-tofu-and-vegetable-stir-fry-with-rice",
     "description": "Crispy tofu and colourful vegetables in a sweet, spicy citrus sauce, served with fluffy rice.",
