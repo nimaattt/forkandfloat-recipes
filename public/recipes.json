@@ -1,5 +1,24 @@
 [
   {
+    "title": "Iranian lentil soup (Adasi)",
+    "slug": "iranian-lentil-soup-adasi",
+    "description": "A warm and cozy lentil soup with potatoes, mushrooms and lemon for the colder months.",
+    "category": "Mains",
+    "prepTime": "10 minutes",
+    "cookTime": "55–65 minutes",
+    "servings": "4",
+    "difficulty": "Easy",
+    "coverImage": "https://lh3.googleusercontent.com/d/1CDK1ed_Vcd2j4LRv4UKCuWVwQc03L2oq",
+    "tags": [
+      "mains",
+      "vegetarian",
+      "persian"
+    ],
+    "emoji": "🍽️",
+    "dietaryTags": "",
+    "date": "2026-10-15T20:16:32.858Z"
+  },
+  {
     "title": "Stuffed bell pepper (vegetarian pepper dolmeh)",
     "slug": "stuffed-bell-pepper-vegetarian-pepper-dolmeh",
     "description": "Iranian pepper dolmeh or stuffed bell pepper with rice, split peas, soy chunks and fresh parsley.",
